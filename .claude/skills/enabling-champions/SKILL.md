@@ -13,6 +13,8 @@ description: Use for developing internal champions who sell on your behalf. Cove
 
 Your job: Be the "editor" helping champions create their narrative, not the "author" pushing your pitch.
 
+**The IKEA Effect**: People value what they help create. Co-create the business case WITH your champion—don't hand them a finished deck.
+
 ## Champion vs Coach
 
 | Champion | Coach |
@@ -27,20 +29,17 @@ Your job: Be the "editor" helping champions create their narrative, not the "aut
 
 ## Champion Tests
 
-**Will they multi-thread?**
-- "Would it help to include [stakeholder]?"
-- Champion: "Yes, I'll set that up" ✓
-- Not champion: "Let me think about it" ✗
+**Behavioral validation** (actions > words):
 
-**Will they share context?**
-- "What's the internal process for this decision?"
-- Champion: Shares details openly ✓
-- Not champion: Vague or defensive ✗
+| Test | Champion Signal | Not a Champion |
+|------|-----------------|----------------|
+| Multi-thread ask | "Yes, I'll set that up" | "Let me think about it" |
+| Context sharing | Shares details openly | Vague or defensive |
+| Co-creation invite | "Yes, here's what I need" | "Just send me something" |
+| Follow-through | Completes assigned tasks | Excuses, delays |
+| Internal advocacy | Presents to others proactively | Waits for you to push |
 
-**Will they co-create?**
-- "Can we work on the business case together?"
-- Champion: "Yes, here's what I need" ✓
-- Not champion: "Just send me something" ✗
+**Momentum signals**: Increasing time investment, shorter response cycles, champion driving pace forward.
 
 ## The 1-Page Business Case
 
@@ -54,26 +53,51 @@ Enable your champion to sell internally. **Presence > Perfection.**
 4. **Target Outcomes** - Specific, measurable transformation
 5. **Required Investment** - Budget, timeline, resources
 
-### Co-Creation Loop
+### The Build Loop (Co-Creation)
 
 ```
-Discovery → Draft → Champion Review → Refine → Enable
+Draft → Share → Expand Circle → Iterate → Socialize → Enable
 ```
 
-Champion should correct, add context, validate language. It's THEIR document.
+1. **Start with framework** - Few sentences in shared doc, not polished deck
+2. **Share early** - Request feedback to unlock collaboration
+3. **Expand the circle** - "Who do you turn to for advice on important projects?"
+4. **Assign accountability** - Use tasks as champion validation tests
+5. **Socialize internally** - Guide champion to present to stakeholders
+6. **Iterate based on feedback** - Quality emerges through cycles
+
+**It's THEIR document.** Champion should correct, add context, validate language.
+
+### SCR Framework (Alternative Structure)
+
+For executive presentations, use **Situation-Complication-Recommendation**:
+
+| Component | Purpose |
+|-----------|---------|
+| **Situation** | Facts everyone agrees on (company priorities, current state) |
+| **Complication** | Why this requires action NOW (consequences of inaction) |
+| **Recommendation** | Specific approach, not just "buy our product" |
+
+**Tip**: Flip to RCR (lead with recommendation) when buyer is already in active evaluation.
 
 ## Multi-Threading
 
-Single-threaded deals are fragile. For each key account:
+Single-threaded deals are fragile. 6-10 decision-makers is typical for enterprise deals.
 
-| Role | Focus |
-|------|-------|
-| Champion | Deep engagement, owns the deal |
-| Economic buyer | ROI, risk, budget |
-| Technical influencer | Integration, security |
-| End users | Day-to-day pain |
+| Role | Focus | Why They Matter |
+|------|-------|-----------------|
+| Champion | Deep engagement | Owns the deal internally |
+| Economic buyer | ROI, risk, budget | Signs the check |
+| Technical influencer | Integration, security | Can veto |
+| End users | Day-to-day pain | Use case validation |
 
-Get champion to facilitate introductions: "Would it help to include [person]?"
+**Multi-thread the RIGHT way**:
+- Champion facilitates intros: "Would it help to include [person]?"
+- Contain the group—laser focus on who moves the needle
+- Verify problem matters to COMPANY, not just your contact
+- Multiple roles agreeing problem is "big deal" = good sign
+
+**Two conversations happening**: The one with you AND the one they're having internally. Frame materials in THEIR language or leave your message to chance.
 
 ## When Champions Stall
 
@@ -139,3 +163,5 @@ Help champion articulate: "Every month we wait costs us $X." Create urgency with
 - Trust calibration → `trust-building-principles`
 - ABM warmup before champions emerge → `running-abm-programs`
 - Trigger identification → `mapping-buyer-triggers`
+
+**Framework sources**: Nate Nasralla's "Selling With" and Fluint buyer enablement methodology.
