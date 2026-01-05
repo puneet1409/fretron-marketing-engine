@@ -1,0 +1,101 @@
+Company,Category,Segment,Sub_Segment,Account_Type,HQ,Key_Locations,Sales_Rs_Cr,Employees,Total_Logistics_Spend_Rs_Cr,Priority,tier0_score,tier0_tier
+Reliance Industries,Chemicals & Petrochemicals,Petrochemicals Polymers,Integrated,Expansion,Mumbai,"Jamnagar (GJ), Hazira (GJ), Vadodara (GJ)",950000.0,250000.0,5500.0,,115,high_priority
+IOCL Petrochemicals,Chemicals & Petrochemicals,Petrochemicals Polymers,Integrated,Expansion,Delhi,"Panipat (HR), Paradip (OD), Barauni (BR)",850000.0,32000.0,2000.0,,115,high_priority
+Asian Paints,Chemicals & Petrochemicals,Paints Coatings,Decorative/Industrial,Expansion,Mumbai,"Ankleshwar (GJ), Kasna (UP), Sriperumbudur (TN), Mysore (KA), Rohtak (HR), Khandala (MH), Visakhapatnam",35000.0,8000.0,940.0,,100,high_priority
+IFFCO,Chemicals & Petrochemicals,Fertilizers,Cooperative,Expansion,Delhi,"Kalol (GJ), Kandla (GJ), Phulpur (UP), Aonla (UP), Paradeep (OD), Babrala (UP)",45000.0,6000.0,765.0,,95,high_priority
+BPCL,Chemicals & Petrochemicals,Petrochemicals Polymers,Refinery-Petrochem,Penetration,Mumbai,"Kochi (KL), Mumbai",550000.0,12000.0,605.0,,95,high_priority
+Berger Paints,Chemicals & Petrochemicals,Paints Coatings,Decorative,Expansion,Kolkata,"Rishra (WB), Pondicherry, Hindupur (AP), Jejuri (MH), Goa",11000.0,4500.0,308.0,,90,high_priority
+SRF Ltd,Chemicals & Petrochemicals,Petrochemicals Polymers,Specialty,Expansion,Gurugram,"Bhiwadi (RJ), Dahej (GJ), Kashipur (UK), Thailand",15000.0,8000.0,305.0,,85,high_priority
+Chemplast Sanmar,Chemicals & Petrochemicals,Petrochemicals Polymers,PVC,Expansion,Chennai,"Mettur (TN), Cuddalore (TN)",5500.0,3000.0,120.0,,75,high_priority
+Polyplex Corporation,Chemicals & Petrochemicals,Petrochemicals Polymers,PET Films,Penetration,Delhi,"Khatima (UK), Thailand, Turkey",5500.0,2500.0,120.0,,75,high_priority
+Atul Ltd,Chemicals & Petrochemicals,Specialty Chemicals,Diversified,Expansion,Valsad,"Atul (GJ), Ankleshwar (GJ), Tarapur (MH)",5800.0,5500.0,172.0,,75,high_priority
+Supreme Industries,Chemicals & Petrochemicals,Petrochemicals Polymers,PVC Pipes,Penetration,Mumbai,Pan-India,10500.0,8000.0,255.0,,75,high_priority
+Continental India,Chemicals & Petrochemicals,Rubber Latex,Hoses,Penetration,Bangalore,"Modipuram (UP), Manesar (HR)",1500.0,1800.0,46.0,,55,high_priority
+Bhuruka Gases,Chemicals & Petrochemicals,Industrial Gases,Atmospheric,Expansion,Bangalore,"South India (Bangalore, Hyderabad, Chennai)",400.0,450.0,17.0,,55,high_priority
+Paragon Polymer,Chemicals & Petrochemicals,Rubber Latex,Footwear,Penetration,Kottayam,"Kottayam (KL), Daman",1500.0,6000.0,46.0,,55,high_priority
+GAIL India,Chemicals & Petrochemicals,Petrochemicals Polymers,Polymers,Expansion,Delhi,"Pata (UP), Usar (MH)",135000.0,4500.0,680.0,,100,high_priority
+Hindalco Industries,Steel & Metals,Non Ferrous Metals,Aluminium/Copper,Expansion,Mumbai,"Hirakud (OD), Renukoot (UP), Dahej (GJ), Belgaum (KA), Aditya (OD)",215000.0,35000.0,1300.0,,120,high_priority
+Vedanta Aluminium,Steel & Metals,Non Ferrous Metals,Aluminium,Expansion,Delhi,"Jharsuguda (OD), Lanjigarh (OD), BALCO Korba (CG)",145000.0,25000.0,1030.0,,115,high_priority
+Motherson Sumi,Steel & Metals,Non Ferrous Metals,Al Die Casting,Penetration,Noida,"Noida, Pune, Chennai, Sanand",95000.0,135000.0,1350.0,,105,high_priority
+SAIL,Steel & Metals,Steel Coils,Integrated,Expansion,Delhi,"Bokaro (JH), Durgapur (WB), Rourkela (OD), Bhilai (CG), Burnpur (WB)",110000.0,60000.0,300.0,,95,high_priority
+JSW Steel Ltd,Steel & Metals,Steel Coils,Integrated,Expansion,Mumbai,"Dolvi (MH), Vijayanagar (KA), Salem (TN), Raigarh (CG)",180000.0,45000.0,465.0,,90,high_priority
+Hindustan Zinc,Steel & Metals,Non Ferrous Metals,Zinc/Lead,Expansion,Udaipur,"Debari, Chanderiya, Dariba, Zawar, Rampura Agucha (all RJ)",32500.0,4500.0,275.0,,90,high_priority
+SAIL (Long Products),Steel & Metals,Steel Structural,Integrated,Expansion,Delhi,"Rourkela (OD), Bhilai (CG), Durgapur (WB), Bokaro (JH), Burnpur (WB)",40000.0,20000.0,232.0,,85,high_priority
+Imports (Port Delivery),Steel & Metals,Metal Scrap,Import,Penetration,,"Kandla, JNPT, Chennai",20000.0,2000.0,170.0,,75,high_priority
+Secondary Steel Mills,Steel & Metals,Metal Scrap,Buyers,Penetration,,"Raipur, Mandi Gobindgarh, Ghaziabad",25000.0,30000.0,340.0,,75,high_priority
+Sterlite Technologies,Steel & Metals,Non Ferrous Metals,Cables,Penetration,Pune,"Aurangabad (MH), Shendra (MH), Silvassa",6500.0,3500.0,130.0,,75,high_priority
+BALCO (Vedanta),Steel & Metals,Non Ferrous Metals,Aluminium,Penetration,Delhi,Korba (CG),12000.0,3500.0,200.0,,75,high_priority
+Pengg Industries,Steel & Metals,Steel Wire Products,Wire Rope,Expansion,Ahmednagar,Ahmednagar (MH),400.0,600.0,17.0,,55,high_priority
+NMDC (Steel),Steel & Metals,Steel Flats Longs,Integrated,Penetration,Hyderabad,Nagarnar (CG),8000.0,2000.0,46.0,,55,high_priority
+JSW Ispat Special,Steel & Metals,Steel Coils,Specialty,Penetration,Mumbai,"Dolvi (MH), Tarapur (MH)",8000.0,2500.0,46.0,,55,high_priority
+Vedanta Resources (Holding),Steel & Metals,Non Ferrous Metals,Multi-Metal,Penetration,London,Pan-India,350000.0,75000.0,2600.0,,105,high_priority
+Hindustan Unilever,FMCG & Consumer,Fmcg Foods Personal Care,Multi-category,Expansion,Mumbai,"Doom Dooma (AS), Silvassa, Haridwar, Pondicherry, Mumbai",60000.0,21000.0,2000.0,,115,high_priority
+Amul (GCMMF),FMCG & Consumer,Fmcg Foods Personal Care,Dairy,Expansion,Anand,"Anand (GJ), Mumbai, Kolkata (Pan-India)",72000.0,35000.0,1350.0,,110,high_priority
+FCI (Food Corporation),FMCG & Consumer,Food Grains Staples,Procurement,Penetration,Delhi,Pan-India (all states),200000.0,25000.0,2700.0,,105,high_priority
+Nestle India,FMCG & Consumer,Fmcg Foods Personal Care,Foods,Expansion,Gurugram,"Nanjangud (KA), Samalkha (HR), Moga (PB), Tahliwal (HP)",19000.0,8500.0,595.0,,95,high_priority
+Varun Beverages (PepsiCo),FMCG & Consumer,Beverages,Soft Drinks,Expansion,Gurugram,"Pan-India (Greater Noida, Pathankot, Jaipur, Kolkata, Mumbai, Chennai, etc.)",18000.0,13000.0,510.0,,95,high_priority
+Sun Pharma,FMCG & Consumer,Pharma Healthcare,Formulations/API,Expansion,Mumbai,"Halol (GJ), Baddi (HP), Guwahati, Dewas, Karkhadi",50000.0,40000.0,680.0,,95,high_priority
+Cargill India,FMCG & Consumer,Fmcg Foods Personal Care,Edible Oil/Foods,Penetration,Gurugram,"Kandla (GJ), Kurkumbh (MH), Yavatmal",45000.0,4000.0,680.0,,90,high_priority
+Mondelez India,FMCG & Consumer,Fmcg Foods Personal Care,Confectionery,Penetration,Mumbai,"Baddi (HP), Induri (MH), Sricity (AP)",8500.0,4500.0,255.0,,75,high_priority
+Karnataka Milk Federation,FMCG & Consumer,Dairy Products,Cooperative,Penetration,Bangalore,"Bangalore, Mysore, Dharwad",25000.0,10000.0,167.0,,75,high_priority
+Louis Dreyfus,FMCG & Consumer,Food Grains Staples,Trading,Penetration,Geneva,"Kandla (GJ), Kakinada (AP), Mumbai",15000.0,1000.0,295.0,,75,high_priority
+KPR Mill,FMCG & Consumer,Textiles Apparel,Yarn/Garments,Expansion,Coimbatore,"Coimbatore (TN), Tirupur (TN), Arasur (TN)",6500.0,40000.0,179.0,,75,high_priority
+Godrej Consumer (Oils),FMCG & Consumer,Edible Oils,FMCG,Penetration,Mumbai,"Mumbai (MH), Malanpur (MP), Baddi",1500.0,800.0,46.0,,55,high_priority
+Neuland Labs,FMCG & Consumer,Pharma Healthcare,API,Penetration,Hyderabad,"Hyderabad (TS), Pashamylaram (TS)",1800.0,2200.0,26.0,,55,high_priority
+Donear Industries,FMCG & Consumer,Textiles Apparel,Fabrics,Penetration,Surat,"Surat (GJ), Daman",1500.0,3000.0,51.0,,55,high_priority
+Adani Wilmar,FMCG & Consumer,Food Grains Staples,Edible Oil/Staples,Expansion,Ahmedabad,"Mundra (GJ), Haldia (WB), Mangalore, Bundi",56000.0,5500.0,650.0,,100,high_priority
+Mahindra & Mahindra,Auto & Engineering,Auto Oem,PV/CV/Tractors,Expansion,Mumbai,"Chakan, Nashik, Igatpuri, Kandivali, Zaheerabad, Haridwar",140000.0,55000.0,1100.0,,120,high_priority
+Tata Motors,Auto & Engineering,Auto Oem,PV/CV,Expansion,Mumbai,"Pune, Sanand (GJ), Lucknow, Pantnagar, Jamshedpur, Dharwad",445000.0,80000.0,2600.0,,120,high_priority
+Maruti Suzuki,Auto & Engineering,Auto Oem,PV,Penetration,Delhi,"Gurugram (HR), Manesar (HR), Gujarat",145000.0,35000.0,1430.0,,110,high_priority
+Hyundai Motor India,Auto & Engineering,Auto Oem,PV,Penetration,Chennai,"Sriperumbudur (TN), Talegaon (MH)",75000.0,15000.0,630.0,,90,high_priority
+Ashok Leyland,Auto & Engineering,Auto Oem,CV,Expansion,Chennai,"Ennore (TN), Hosur (TN), Pantnagar (UK), Alwar (RJ), Vijayawada",45000.0,12000.0,440.0,,90,high_priority
+L&T (Heavy Engineering),Auto & Engineering,Project Cargo,EPC,Expansion,Mumbai,"Hazira (GJ), Powai (MH), Vadodara",150000.0,50000.0,305.0,,90,high_priority
+Hero MotoCorp,Auto & Engineering,Auto Oem,2W,Penetration,Delhi,"Dharuhera, Gurugram, Haridwar, Neemrana, Halol, Chittoor",40000.0,10000.0,360.0,,85,high_priority
+KEC International,Auto & Engineering,Project Cargo,EPC,Penetration,Mumbai,"Mumbai, Nagpur, Jaipur",18000.0,12000.0,175.0,,75,high_priority
+Skoda Auto VW,Auto & Engineering,Auto Oem,PV,Penetration,Pune,Chakan (MH),15000.0,5000.0,145.0,,75,high_priority
+Royal Enfield,Auto & Engineering,Auto Oem,2W,Penetration,Chennai,"Oragadam (TN), Vallam (TN)",17000.0,6000.0,155.0,,75,high_priority
+Suzlon Energy,Auto & Engineering,Project Cargo,Wind,Expansion,Pune,"Pune (MH), Pondicherry, Daman",6000.0,5000.0,155.0,,75,high_priority
+Epiroc India,Auto & Engineering,Construction Mining Equipment,,Penetration,Pune,,800.0,1600.0,0.0,HIGH,55,high_priority
+Bosch Rexroth India,Auto & Engineering,Construction Mining Equipment,,Penetration,Bengaluru,,1200.0,1500.0,0.0,HIGH,55,high_priority
+JCB India,Auto & Engineering,Project Cargo,Construction,Penetration,Ballabgarh,"Ballabgarh (HR), Pune (MH)",5000.0,4000.0,97.0,,55,high_priority
+Mahindra Tractors,Auto & Engineering,Two Wheelers Tractors,Tractors,Expansion,Mumbai,"Kandivali (MH), Nagpur (MH), Jaipur (RJ), Zaheerabad (TS), Rudrapur (UK)",35000.0,15000.0,325.0,,85,high_priority
+Coal India Ltd,Mining & Minerals,Mining Minerals,Coal,Expansion,Kolkata,"Jharkhand, Odisha, Chhattisgarh, MP, WB, Maharashtra",160000.0,240000.0,1350.0,,120,high_priority
+Vedanta Ltd,Mining & Minerals,Mining Minerals,Diversified,Expansion,Mumbai,"Odisha (Lanjigarh), Rajasthan (HZL), Goa",145000.0,25000.0,750.0,,105,high_priority
+NMDC Ltd,Mining & Minerals,Mining Minerals,Iron Ore,Expansion,Hyderabad,"Bailadila (CG), Donimalai (KA), Kumaraswamy (KA)",22000.0,6000.0,330.0,,85,high_priority
+Singareni Collieries,Mining & Minerals,Mining Minerals,Coal,Expansion,Hyderabad,"Telangana (Ramagundam, Kothagudem, Sathupalli)",35000.0,42000.0,325.0,,85,high_priority
+Tata Steel Mining,Mining & Minerals,Mining Minerals,Iron Ore,Expansion,Jamshedpur,"Noamundi (JH), Joda (OD), Khondbond",15000.0,4000.0,215.0,,85,high_priority
+NMDC,Mining & Minerals,Industrial Minerals,Multi,Penetration,Hyderabad,"CG, Karnataka, MP, Rajasthan",20000.0,7000.0,170.0,,75,high_priority
+OMC Ltd (Odisha Mining),Mining & Minerals,Mining Minerals,Iron Ore,Penetration,Bhubaneswar,"Odisha (Gandhamardan, Suakati, Daitari)",6500.0,2000.0,122.0,,75,high_priority
+Essel Mining (Aditya Birla),Mining & Minerals,Mining Minerals,Iron Ore,Expansion,Kolkata,"Odisha, Jharkhand",8000.0,3500.0,145.0,,75,high_priority
+NALCO (Captive),Mining & Minerals,Industrial Minerals,Bauxite,Penetration,Bhubaneswar,"Panchpatmali (OD), Damanjodi",0.0,3000.0,46.0,,55,high_priority
+JSW (Captive),Mining & Minerals,Industrial Minerals,Limestone,Penetration,Mumbai,"Karnataka, Maharashtra",0.0,1200.0,46.0,,55,high_priority
+Asahi India Glass,Building & Construction,Glass Glazing,Float/Auto,Expansion,Mumbai,"Taloja (MH), Roorkee (UK), Chennai (TN)",4500.0,3500.0,128.0,,60,high_priority
+Saint-Gobain India,Building & Construction,Glass Glazing,Float/Processed,Expansion,Chennai,"Sriperumbudur (TN), Jhagadia (GJ), Bhiwadi (RJ), Chennai",6500.0,5000.0,170.0,,60,high_priority
+GSECL,Building & Construction,Ash Infrastructure,Generation,Expansion,Vadodara,"Ukai, Gandhinagar, Wanakbori, Sikka, Dhuvaran",,6000.0,29.0,,55,high_priority
+UltraTech Building Products,Building & Construction,Blocks Bricks,AAC,Expansion,Mumbai,"Ahmedabad (GJ), Hyderabad, Pune, Bangalore, Roorkee",1200.0,1500.0,46.0,,55,high_priority
+Reliance (PVC Resin),Building & Construction,Pipes Fittings,Resin,Penetration,Mumbai,"Hazira (GJ), Dahej, Nagothane",8000.0,2000.0,165.0,,55,high_priority
+Mahagenco,Building & Construction,Ash Infrastructure,Generation,Expansion,Mumbai,"Chandrapur, Koradi, Khaparkheda, Bhusawal, Nashik",,15000.0,53.0,,55,high_priority
+SAIL CPP,Building & Construction,Ash Infrastructure,Generator,Penetration,Delhi,"Bhilai, Bokaro, Rourkela, Durgapur, Burnpur",,3000.0,21.0,,50,high_priority
+TANGEDCO,Building & Construction,Ash Infrastructure,Generation,Expansion,Chennai,"Tuticorin, Mettur, Ennore, North Chennai",,12000.0,26.0,,50,high_priority
+Reliance Power,Building & Construction,Ash Infrastructure,Generation,Expansion,Mumbai,"Sasan (MP), Rosa (UP), Butibori (MH)",,2000.0,33.0,,50,high_priority
+Tata Power,Building & Construction,Ash Infrastructure,Generation,Expansion,Mumbai,"Mundra (GJ), Trombay (MH), Maithon (JH), Jojobera",,4000.0,33.0,,50,high_priority
+Coal India Ltd (CIL),Energy & Fuel,Coal Fuel,Mining,Expansion,Kolkata,"Pan-India (JH, CG, OD, WB, MP, MH)",140000.0,250000.0,550.0,,90,high_priority
+BPCL (Projects),Energy & Fuel,Oil Gas Services,Refining,Expansion,Mumbai,"Mumbai, Kochi, Bina, Numaligarh",500000.0,12000.0,185.0,,75,high_priority
+IOCL (Projects),Energy & Fuel,Oil Gas Services,Refining,Expansion,Delhi,"Panipat, Mathura, Haldia, Paradip",800000.0,32000.0,270.0,,75,high_priority
+HPCL (Projects),Energy & Fuel,Oil Gas Services,Refining,Expansion,Mumbai,"Mumbai, Vizag, Bathinda",450000.0,10000.0,160.0,,75,high_priority
+Vikram Solar,Energy & Fuel,Solar Renewable,Solar Modules,Expansion,Kolkata,"Falta (WB), Chennai (TN)",6000.0,3000.0,168.0,,55,high_priority
+South Eastern Coalfields,Energy & Fuel,Coal Fuel,Mining,Penetration,Bilaspur,"Korba, Bilaspur (CG)",40000.0,50000.0,158.0,,55,high_priority
+ONGC,Energy & Fuel,Oil Gas Services,E&P,Expansion,Delhi,"Mumbai Offshore, Ahmedabad, Assam, KG Basin",150000.0,30000.0,220.0,,75,high_priority
+GAIL (Projects),Energy & Fuel,Oil Gas Services,Gas,Expansion,Delhi,Pan-India pipelines,120000.0,5000.0,122.0,,70,high_priority
+IOCL (Bitumen),Energy & Fuel,Bitumen,Refinery,Expansion,Delhi,"Mathura, Panipat, Barauni, Haldia, Gujarat, Paradip",12000.0,5000.0,175.0,,70,high_priority
+NTPC Ltd,Energy & Fuel,Coal Fuel,Power,Expansion,Delhi,Pan-India,175000.0,20000.0,430.0,,70,high_priority
+Suguna Foods,Agriculture & Food,Animal Feed,Poultry,Expansion,Coimbatore,"Coimbatore (TN), Hyderabad, Udumalpet, Bangalore",12000.0,25000.0,130.0,,65,high_priority
+Hindustan Unilever (Tea),Agriculture & Food,Tea Plantation,Tea,Expansion,Mumbai,"Assam, Bengal, TN (Nilgiris)",8000.0,3000.0,107.0,,60,high_priority
+Soybean Processors Assn,Agriculture & Food,Animal Feed,Ingredients,Penetration,,"MP, MH",20000.0,10000.0,170.0,,55,high_priority
+Ninjacart,Agriculture & Food,Agri Produce Perishables,B2B Fresh,Penetration,Bangalore,"Bangalore, Hyderabad, Chennai, Delhi",2500.0,4000.0,150.0,,55,high_priority
+NAFED,Agriculture & Food,Agri Produce Perishables,Procurement,Penetration,Delhi,Pan-India,25000.0,3000.0,400.0,,55,high_priority
+Venky's India,Agriculture & Food,Agri Produce Perishables,Poultry,Penetration,Pune,"Pune (MH), Hyderabad, Bangalore",3000.0,5000.0,132.0,,55,high_priority
+Rice Millers (Bran),Agriculture & Food,Animal Feed,Ingredients,Penetration,,Pan-India,15000.0,20000.0,135.0,,55,high_priority
+Amul (Cattle Feed),Agriculture & Food,Animal Feed,Cattle,Expansion,Anand,"Anand (GJ), Mehsana, Banaskantha",3500.0,1500.0,49.0,,50,high_priority
+SKM Animal Feeds,Agriculture & Food,Animal Feed,Poultry,Expansion,Erode,"Erode (TN), Puthukottai, Namakkal",2500.0,3000.0,40.0,,50,high_priority
+INI Farms,Agriculture & Food,Agri Produce Perishables,Fruits,Expansion,Pune,"Nashik (MH), Pune (MH), Satara, Bangalore",800.0,1500.0,41.0,,50,high_priority

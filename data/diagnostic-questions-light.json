@@ -1,0 +1,257 @@
+{
+  "version": "1.0-light",
+  "description": "Light Diagnostic for initial 30-45 minute discovery calls. Focuses on quick outcome assessment across 4 pillars.",
+  "totalQuestions": 10,
+  "pillars": {
+    "cost": {
+      "name": "Cost & Productivity",
+      "questions": [
+        {
+          "id": "cost_q01",
+          "question": "Do you have visibility into cost per lane (origin-destination pair)?",
+          "helpText": "Lane-level cost visibility enables targeted optimization and rate negotiations",
+          "options": [
+            {
+              "label": "No visibility - costs tracked only at aggregate level",
+              "value": 0,
+              "description": "Limited to monthly totals or vendor-level aggregates"
+            },
+            {
+              "label": "Partial visibility - tracked for major lanes only",
+              "value": 1,
+              "description": "Key lanes (top 20-30%) have cost tracking"
+            },
+            {
+              "label": "Full visibility - all lanes systematically tracked",
+              "value": 2,
+              "description": "Granular cost per lane available in TMS or reports"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q02",
+          "question": "How do you typically source spot freight (non-contract shipments)?",
+          "helpText": "Digital spot sourcing improves rate discovery and placement speed",
+          "options": [
+            {
+              "label": "Phone/WhatsApp calls to vendors",
+              "value": 0,
+              "description": "Manual vendor calling, no rate comparison"
+            },
+            {
+              "label": "Mix of phone and email/WhatsApp quotations",
+              "value": 1,
+              "description": "Some digital quotations but not systematic"
+            },
+            {
+              "label": "Digital platform with multi-vendor bidding",
+              "value": 2,
+              "description": "App or portal with real-time vendor quotes"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q03",
+          "question": "What % of your freight moves as Less-Than-Truckload (LTL) or part-loads?",
+          "helpText": "High LTL % indicates consolidation opportunity",
+          "options": [
+            {
+              "label": "> 30% of shipments are LTL",
+              "value": 0,
+              "description": "Significant consolidation opportunity"
+            },
+            {
+              "label": "15-30% are LTL",
+              "value": 1,
+              "description": "Moderate consolidation potential"
+            },
+            {
+              "label": "< 15% are LTL",
+              "value": 2,
+              "description": "Already well-consolidated"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "service": {
+      "name": "Service & Experience",
+      "questions": [
+        {
+          "id": "service_q01",
+          "question": "Do you have real-time visibility of truck location for in-transit shipments?",
+          "helpText": "GPS tracking enables proactive exception management",
+          "options": [
+            {
+              "label": "No tracking - wait for driver calls",
+              "value": 0,
+              "description": "Reactive updates only"
+            },
+            {
+              "label": "Partial tracking (key lanes or customers)",
+              "value": 1,
+              "description": "50-80% shipments tracked"
+            },
+            {
+              "label": "Full GPS/app-based tracking for all shipments",
+              "value": 2,
+              "description": ">90% shipments with real-time location"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q02",
+          "question": "How do you capture proof-of-delivery (POD)?",
+          "helpText": "Digital POD reduces disputes and speeds up billing",
+          "options": [
+            {
+              "label": "Paper POD - collected days/weeks later",
+              "value": 0,
+              "description": "Manual POD collection"
+            },
+            {
+              "label": "Mix of paper and digital (photos via WhatsApp)",
+              "value": 1,
+              "description": "Partial digitalization"
+            },
+            {
+              "label": "E-POD with GPS stamp via driver app",
+              "value": 2,
+              "description": "Full digital POD capture"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q03",
+          "question": "What is your typical On-Time Delivery (OTD) performance?",
+          "helpText": "OTD is a primary customer satisfaction metric",
+          "options": [
+            {
+              "label": "< 75% on-time",
+              "value": 0,
+              "description": "Frequent delays"
+            },
+            {
+              "label": "75-85% on-time",
+              "value": 1,
+              "description": "Moderate performance"
+            },
+            {
+              "label": "> 85% on-time",
+              "value": 2,
+              "description": "Strong delivery performance"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "efficiency": {
+      "name": "Efficiency & Throughput",
+      "questions": [
+        {
+          "id": "efficiency_q02",
+          "question": "What is your average truck turnaround time at plant (gate-in to gate-out)?",
+          "helpText": "Lower TAT improves asset utilization and vendor satisfaction",
+          "options": [
+            {
+              "label": "> 4 hours",
+              "value": 0,
+              "description": "Long detention"
+            },
+            {
+              "label": "2-4 hours",
+              "value": 1,
+              "description": "Moderate detention"
+            },
+            {
+              "label": "< 2 hours",
+              "value": 2,
+              "description": "Fast turnaround"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q06",
+          "question": "Do you actively measure and reduce detention time (loading + unloading)?",
+          "helpText": "Detention reduction improves vendor costs and fleet utilization",
+          "options": [
+            {
+              "label": "Detention not tracked",
+              "value": 0,
+              "description": "No visibility"
+            },
+            {
+              "label": "Tracked but not actively managed",
+              "value": 1,
+              "description": "Visibility without action"
+            },
+            {
+              "label": "Tracked with active reduction initiatives",
+              "value": 2,
+              "description": "Proactive management"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "compliance": {
+      "name": "Risk & Compliance",
+      "questions": [
+        {
+          "id": "compliance_q01",
+          "question": "What % of E-Way Bills are generated digitally (not manual entry)?",
+          "helpText": "E-Way bill automation ensures compliance and reduces errors",
+          "options": [
+            {
+              "label": "< 50% automated",
+              "value": 0,
+              "description": "Mostly manual generation"
+            },
+            {
+              "label": "50-80% automated",
+              "value": 1,
+              "description": "Partial automation"
+            },
+            {
+              "label": "> 80% automated",
+              "value": 2,
+              "description": "High automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q04",
+          "question": "What is your document completeness rate (LR, POD, E-way, invoices)?",
+          "helpText": "Complete documentation prevents disputes and speeds audits",
+          "options": [
+            {
+              "label": "< 80% complete within SLA",
+              "value": 0,
+              "description": "Frequent missing docs"
+            },
+            {
+              "label": "80-95% complete",
+              "value": 1,
+              "description": "Moderate completeness"
+            },
+            {
+              "label": "> 95% complete",
+              "value": 2,
+              "description": "High completeness"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    }
+  }
+}

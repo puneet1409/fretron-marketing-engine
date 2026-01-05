@@ -1,0 +1,426 @@
+#!/usr/bin/env python3
+"""
+TMS Buyer Signal Enrichment - Single Company
+Orchestrates multiple data sources to enrich company data with buying signals.
+"""
+
+import os
+import json
+import argparse
+import asyncio
+import aiohttp
+from datetime import datetime, timedelta
+from dataclasses import dataclass, asdict
+from typing import Optional, List, Dict, Any
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# API Keys from environment
+APOLLO_API_KEY = os.getenv("APOLLO_API_KEY")
+PROXYCURL_API_KEY = os.getenv("PROXYCURL_API_KEY")
+HUNTER_API_KEY = os.getenv("HUNTER_API_KEY")
+BUILTWITH_API_KEY = os.getenv("BUILTWITH_API_KEY")
+NEWSAPI_KEY = os.getenv("NEWSAPI_KEY")
+SERPAPI_KEY = os.getenv("SERPAPI_KEY")
+
+
+@dataclass
+class EnrichmentResult:
+    company: Dict[str, Any]
+    firmographics: Dict[str, Any]
+    logistics_profile: Dict[str, Any]
+    tech_stack: Dict[str, Any]
+    buying_signals: Dict[str, Any]
+    decision_makers: Dict[str, Any]
+    scoring: Dict[str, Any]
+    metadata: Dict[str, Any]
+
+
+class TMSEnricher:
+    """Orchestrates enrichment from multiple data sources."""
+    
+    def __init__(self):
+        self.session: Optional[aiohttp.ClientSession] = None
+        
+    async def __aenter__(self):
+        self.session = aiohttp.ClientSession()
+        return self
+        
+    async def __aexit__(self, *args):
+        if self.session:
+            await self.session.close()
+    
+    # ==================== APOLLO ====================
+    
+    async def enrich_from_apollo(self, company_name: str, domain: str = None) -> Dict:
+        """Get company info and contacts from Apollo."""
+        if not APOLLO_API_KEY:
+            return {"error": "APOLLO_API_KEY not set"}
+        
+        headers = {
+            "Content-Type": "application/json",
+            "Cache-Control": "no-cache",
+        }
+        
+        # Step 1: Find company
+        search_url = "https://api.apollo.io/v1/organizations/enrich"
+        params = {"api_key": APOLLO_API_KEY}
+        
+        if domain:
+            params["domain"] = domain
+        else:
+            params["name"] = company_name
+            
+        async with self.session.get(search_url, params=params, headers=headers) as resp:
+            if resp.status != 200:
+                return {"error": f"Apollo company search failed: {resp.status}"}
+            company_data = await resp.json()
+        
+        org = company_data.get("organization", {})
+        
+        # Step 2: Find decision makers
+        contacts = []
+        if org.get("id"):
+            people_url = "https://api.apollo.io/v1/mixed_people/search"
+            people_payload = {
+                "api_key": APOLLO_API_KEY,
+                "organization_ids": [org.get("id")],
+                "person_titles": [
+                    "CFO", "Chief Financial Officer",
+                    "CIO", "Chief Information Officer", 
+                    "COO", "Chief Operating Officer",
+                    "CEO", "Chief Executive Officer",
+                    "VP Supply Chain", "Head of Supply Chain", "Director Supply Chain",
+                    "VP Logistics", "Head of Logistics", "Director Logistics",
+                    "VP Procurement", "Head of Procurement",
+                    "VP IT", "Head of IT", "IT Director",
+                    "Digital Transformation"
+                ],
+                "page": 1,
+                "per_page": 25
+            }
+            
+            async with self.session.post(people_url, json=people_payload, headers=headers) as resp:
+                if resp.status == 200:
+                    people_data = await resp.json()
+                    contacts = people_data.get("people", [])
+        
+        return {
+            "company": {
+                "name": org.get("name"),
+                "domain": org.get("primary_domain"),
+                "linkedin_url": org.get("linkedin_url"),
+                "website": org.get("website_url"),
+                "industry": org.get("industry"),
+                "founded_year": org.get("founded_year"),
+                "headquarters": {
+                    "city": org.get("city"),
+                    "state": org.get("state"),
+                    "country": org.get("country")
+                }
+            },
+            "firmographics": {
+                "employee_count": org.get("estimated_num_employees"),
+                "revenue_usd": org.get("annual_revenue"),
+                "public_private": "Public" if org.get("publicly_traded_symbol") else "Private",
+                "stock_symbol": org.get("publicly_traded_symbol")
+            },
+            "tech_stack": {
+                "technologies": org.get("technologies", [])
+            },
+            "contacts": [
+                {
+                    "name": p.get("name"),
+                    "title": p.get("title"),
+                    "email": p.get("email"),
+                    "linkedin_url": p.get("linkedin_url"),
+                    "phone": p.get("phone_numbers", [{}])[0].get("number") if p.get("phone_numbers") else None
+                }
+                for p in contacts
+            ]
+        }
+    
+    # ==================== JOB POSTINGS ====================
+    
+    async def get_job_postings(self, company_name: str) -> List[Dict]:
+        """Search for TMS-relevant job postings via SerpAPI."""
+        if not SERPAPI_KEY:
+            return []
+        
+        keywords = [
+            "TMS", "Transportation Management", "Logistics Technology",
+            "Supply Chain Digital", "Freight Tech", "Fleet Management",
+            "ERP Implementation", "SAP Logistics"
+        ]
+        
+        jobs = []
+        search_url = "https://serpapi.com/search"
+        
+        for keyword in keywords[:3]:  # Limit to avoid rate limits
+            params = {
+                "engine": "google_jobs",
+                "q": f"{company_name} {keyword}",
+                "api_key": SERPAPI_KEY
+            }
+            
+            async with self.session.get(search_url, params=params) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    for job in data.get("jobs_results", [])[:5]:
+                        jobs.append({
+                            "title": job.get("title"),
+                            "company": job.get("company_name"),
+                            "location": job.get("location"),
+                            "posted_date": job.get("detected_extensions", {}).get("posted_at"),
+                            "description_snippet": job.get("description", "")[:500],
+                            "keywords_matched": [keyword],
+                            "source": "Google Jobs"
+                        })
+        
+        return jobs
+    
+    # ==================== NEWS ====================
+    
+    async def get_news(self, company_name: str) -> List[Dict]:
+        """Get recent news about the company."""
+        if not NEWSAPI_KEY:
+            return []
+        
+        # Search for logistics/supply chain related news
+        queries = [
+            f'"{company_name}" logistics',
+            f'"{company_name}" supply chain',
+            f'"{company_name}" digital transformation',
+            f'"{company_name}" expansion warehouse'
+        ]
+        
+        news = []
+        base_url = "https://newsapi.org/v2/everything"
+        from_date = (datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d")
+        
+        for query in queries[:2]:  # Limit queries
+            params = {
+                "q": query,
+                "from": from_date,
+                "sortBy": "relevancy",
+                "pageSize": 10,
+                "apiKey": NEWSAPI_KEY
+            }
+            
+            async with self.session.get(base_url, params=params) as resp:
+                if resp.status == 200:
+                    data = await resp.json()
+                    for article in data.get("articles", [])[:5]:
+                        news.append({
+                            "headline": article.get("title"),
+                            "summary": article.get("description"),
+                            "source": article.get("source", {}).get("name"),
+                            "date": article.get("publishedAt"),
+                            "url": article.get("url")
+                        })
+        
+        return news
+    
+    # ==================== TECH STACK ====================
+    
+    async def get_tech_stack(self, domain: str) -> Dict:
+        """Get technology stack from BuiltWith."""
+        if not BUILTWITH_API_KEY or not domain:
+            return {}
+        
+        url = f"https://api.builtwith.com/v21/api.json"
+        params = {
+            "KEY": BUILTWITH_API_KEY,
+            "LOOKUP": domain
+        }
+        
+        async with self.session.get(url, params=params) as resp:
+            if resp.status != 200:
+                return {}
+            data = await resp.json()
+        
+        # Extract relevant categories
+        erp_keywords = ["SAP", "Oracle", "Microsoft Dynamics", "NetSuite", "Salesforce"]
+        tms_keywords = ["Oracle Transportation", "SAP TM", "JDA", "Manhattan", "Blue Yonder", "Descartes", "MercuryGate"]
+        
+        technologies = []
+        erp_detected = None
+        tms_detected = None
+        
+        for result in data.get("Results", []):
+            for path in result.get("Result", {}).get("Paths", []):
+                for tech in path.get("Technologies", []):
+                    tech_name = tech.get("Name", "")
+                    technologies.append(tech_name)
+                    
+                    for erp in erp_keywords:
+                        if erp.lower() in tech_name.lower():
+                            erp_detected = tech_name
+                    
+                    for tms in tms_keywords:
+                        if tms.lower() in tech_name.lower():
+                            tms_detected = tech_name
+        
+        return {
+            "all_technologies": list(set(technologies)),
+            "erp_detected": erp_detected,
+            "tms_detected": tms_detected
+        }
+    
+    # ==================== SCORING ====================
+    
+    def calculate_score(self, enriched_data: Dict) -> Dict:
+        """Calculate buying intent score based on signals."""
+        score = 0
+        breakdown = {
+            "high_intent_total": 0,
+            "medium_intent_total": 0,
+            "firmographic_bonus": 0,
+            "negative_total": 0
+        }
+        
+        # High intent: Job postings with TMS keywords
+        job_count = len(enriched_data.get("job_postings", []))
+        if job_count > 0:
+            points = min(job_count * 15, 45)  # Cap at 45
+            breakdown["high_intent_total"] += points
+        
+        # High intent: Recent relevant news
+        news_count = len(enriched_data.get("news", []))
+        if news_count > 0:
+            points = min(news_count * 5, 20)
+            breakdown["medium_intent_total"] += points
+        
+        # Medium intent: No TMS detected
+        tech = enriched_data.get("tech_stack", {})
+        if not tech.get("tms_detected"):
+            breakdown["medium_intent_total"] += 15
+        
+        # Negative: TMS already detected
+        if tech.get("tms_detected"):
+            breakdown["negative_total"] -= 30
+        
+        # Firmographic bonus
+        emp_count = enriched_data.get("apollo", {}).get("firmographics", {}).get("employee_count", 0)
+        if 500 <= emp_count <= 5000:
+            breakdown["firmographic_bonus"] += 10
+        elif emp_count > 5000:
+            breakdown["firmographic_bonus"] += 5
+        
+        # Contact availability bonus
+        contacts = enriched_data.get("apollo", {}).get("contacts", [])
+        if len(contacts) >= 3:
+            breakdown["medium_intent_total"] += 10
+        
+        # Calculate totals
+        score = (
+            breakdown["high_intent_total"] +
+            breakdown["medium_intent_total"] +
+            breakdown["firmographic_bonus"] +
+            breakdown["negative_total"]
+        )
+        score = max(0, score)
+        
+        # Determine tier
+        if score >= 75:
+            tier, tier_label = 1, "Hot"
+        elif score >= 50:
+            tier, tier_label = 2, "Warm"
+        elif score >= 25:
+            tier, tier_label = 3, "Nurture"
+        else:
+            tier, tier_label = 4, "Cold"
+        
+        return {
+            "final_score": score,
+            "tier": tier,
+            "tier_label": tier_label,
+            "score_breakdown": breakdown,
+            "last_scored": datetime.now().isoformat()
+        }
+    
+    # ==================== ORCHESTRATION ====================
+    
+    async def enrich(self, company_name: str, domain: str = None) -> Dict:
+        """Run full enrichment pipeline."""
+        
+        print(f"Enriching: {company_name}")
+        
+        # Run all enrichments in parallel
+        tasks = [
+            self.enrich_from_apollo(company_name, domain),
+            self.get_job_postings(company_name),
+            self.get_news(company_name),
+        ]
+        
+        if domain:
+            tasks.append(self.get_tech_stack(domain))
+        
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        enriched = {
+            "apollo": results[0] if not isinstance(results[0], Exception) else {},
+            "job_postings": results[1] if not isinstance(results[1], Exception) else [],
+            "news": results[2] if not isinstance(results[2], Exception) else [],
+            "tech_stack": results[3] if len(results) > 3 and not isinstance(results[3], Exception) else {}
+        }
+        
+        # Calculate score
+        scoring = self.calculate_score(enriched)
+        
+        # Assemble final output
+        apollo_data = enriched.get("apollo", {})
+        
+        return {
+            "company": apollo_data.get("company", {"name": company_name}),
+            "firmographics": apollo_data.get("firmographics", {}),
+            "tech_stack": {
+                **enriched.get("tech_stack", {}),
+                "apollo_technologies": apollo_data.get("tech_stack", {}).get("technologies", [])
+            },
+            "decision_makers": apollo_data.get("contacts", []),
+            "buying_signals": {
+                "job_postings": enriched.get("job_postings", []),
+                "news": enriched.get("news", [])
+            },
+            "scoring": scoring,
+            "metadata": {
+                "enrichment_date": datetime.now().isoformat(),
+                "data_sources_used": ["apollo", "serpapi", "newsapi", "builtwith"],
+                "company_input": company_name,
+                "domain_input": domain
+            }
+        }
+
+
+async def main():
+    parser = argparse.ArgumentParser(description="Enrich company with TMS buying signals")
+    parser.add_argument("--company", required=True, help="Company name")
+    parser.add_argument("--domain", help="Company domain (optional)")
+    parser.add_argument("--output", default=".", help="Output directory")
+    args = parser.parse_args()
+    
+    output_dir = Path(args.output)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    async with TMSEnricher() as enricher:
+        result = await enricher.enrich(args.company, args.domain)
+    
+    # Save result
+    safe_name = "".join(c if c.isalnum() else "_" for c in args.company)
+    output_file = output_dir / f"{safe_name}_enriched.json"
+    
+    with open(output_file, "w") as f:
+        json.dump(result, f, indent=2, default=str)
+    
+    print(f"\nResults saved to: {output_file}")
+    print(f"Score: {result['scoring']['final_score']} ({result['scoring']['tier_label']})")
+    print(f"Contacts found: {len(result['decision_makers'])}")
+    print(f"Job postings: {len(result['buying_signals']['job_postings'])}")
+    print(f"News articles: {len(result['buying_signals']['news'])}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

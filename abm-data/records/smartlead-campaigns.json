@@ -1,0 +1,1059 @@
+{
+  "meta": {
+    "count": 75,
+    "syncedAt": "2026-01-03T15:42:57.337Z",
+    "source": "smartlead-api"
+  },
+  "records": [
+    {
+      "id": "sl_campaign_2774237",
+      "sourceId": 2774237,
+      "source": "smartlead",
+      "name": "Steel & Other Metals Ver 2 - December",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-12-15T19:18:46.746Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:20.243Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2774227",
+      "sourceId": 2774227,
+      "source": "smartlead",
+      "name": "Steel & Other Metals Ver 1 - December",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-12-15T19:12:59.238Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:20.895Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2756234",
+      "sourceId": 2756234,
+      "source": "smartlead",
+      "name": "FMCG/FMCD (Managers) - Version 1 -Original 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-12-09T13:51:19.940Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:21.600Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2743920",
+      "sourceId": 2743920,
+      "source": "smartlead",
+      "name": "FMCG/FMCD - Version 1 -Original",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-12-04T18:48:45.323Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:22.083Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2743474",
+      "sourceId": 2743474,
+      "source": "smartlead",
+      "name": "FMCG/FMCD - Version 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-12-04T16:25:53.054Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:22.584Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2718388",
+      "sourceId": 2718388,
+      "source": "smartlead",
+      "name": "Dormant Accounts - Bucket 4 - Set B",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-11-27T20:00:23.972Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:23.029Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2718378",
+      "sourceId": 2718378,
+      "source": "smartlead",
+      "name": "Dormant Accounts - Bucket 4 - Set A",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-11-27T19:44:07.452Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:23.469Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2715813",
+      "sourceId": 2715813,
+      "source": "smartlead",
+      "name": "Chemical campaign  - New",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-11-26T21:05:08.902Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:23.966Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2707575",
+      "sourceId": 2707575,
+      "source": "smartlead",
+      "name": "FMCG/FMCD- Logistics/operations - Content 1",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-11-24T14:29:46.886Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:24.604Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2655354",
+      "sourceId": 2655354,
+      "source": "smartlead",
+      "name": "ABM Sequence 1 – Enterprise Outreach",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-11-06T20:22:56.807Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:25.606Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2460231",
+      "sourceId": 2460231,
+      "source": "smartlead",
+      "name": "Avinash 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-09-10T10:46:55.767Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:26.407Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2452910",
+      "sourceId": 2452910,
+      "source": "smartlead",
+      "name": "Steel MR - Email 7",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-09-08T09:15:57.709Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:27.189Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2452896",
+      "sourceId": 2452896,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-09-08T09:11:01.066Z",
+        "updatedAt": "2025-09-08T09:11:25.417Z",
+        "lastSyncedAt": "2026-01-03T15:42:27.874Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2439300",
+      "sourceId": 2439300,
+      "source": "smartlead",
+      "name": "Steel MR - Email 6",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-09-03T09:59:49.055Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:28.333Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2421312",
+      "sourceId": 2421312,
+      "source": "smartlead",
+      "name": "FMCD 1 - Avinash",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-27T06:04:19.278Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:28.848Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2418808",
+      "sourceId": 2418808,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-26T11:41:10.367Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:29.368Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2417990",
+      "sourceId": 2417990,
+      "source": "smartlead",
+      "name": "Steel MR - Email 5",
+      "status": "STOPPED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-26T07:06:48.182Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:30.196Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2414634",
+      "sourceId": 2414634,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-25T09:30:19.028Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:30.652Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2409533",
+      "sourceId": 2409533,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-22T11:35:54.275Z",
+        "updatedAt": "2025-08-22T11:36:13.666Z",
+        "lastSyncedAt": "2026-01-03T15:42:31.131Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2409518",
+      "sourceId": 2409518,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-22T11:32:37.401Z",
+        "updatedAt": "2025-08-22T11:32:51.393Z",
+        "lastSyncedAt": "2026-01-03T15:42:31.611Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2408892",
+      "sourceId": 2408892,
+      "source": "smartlead",
+      "name": "ERP-in Place Accounts- NCR",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-22T06:49:04.795Z",
+        "updatedAt": "2025-08-22T09:31:13.836Z",
+        "lastSyncedAt": "2026-01-03T15:42:32.229Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2408794",
+      "sourceId": 2408794,
+      "source": "smartlead",
+      "name": "Steel MR - Email 4",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-22T05:47:04.956Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:32.678Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2391494",
+      "sourceId": 2391494,
+      "source": "smartlead",
+      "name": "Steel MR Email Campaign - Mail 3",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-18T07:34:07.280Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:33.102Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2364815",
+      "sourceId": 2364815,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-12T13:14:29.909Z",
+        "updatedAt": "2025-08-12T13:14:39.606Z",
+        "lastSyncedAt": "2026-01-03T15:42:33.593Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2363484",
+      "sourceId": 2363484,
+      "source": "smartlead",
+      "name": "Steel MR Report - Email 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-12T05:52:48.439Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:34.071Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2354985",
+      "sourceId": 2354985,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-08T11:53:29.212Z",
+        "updatedAt": "2025-08-08T11:53:32.195Z",
+        "lastSyncedAt": "2026-01-03T15:42:34.505Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2351114",
+      "sourceId": 2351114,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-07T07:32:33.539Z",
+        "updatedAt": "2025-08-07T07:32:47.753Z",
+        "lastSyncedAt": "2026-01-03T15:42:34.967Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2350836",
+      "sourceId": 2350836,
+      "source": "smartlead",
+      "name": "Steel MR Report - Email_1",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-07T06:08:10.605Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:35.422Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2350824",
+      "sourceId": 2350824,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-07T06:04:54.505Z",
+        "updatedAt": "2025-08-07T06:04:54.812Z",
+        "lastSyncedAt": "2026-01-03T15:42:36.041Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2339950",
+      "sourceId": 2339950,
+      "source": "smartlead",
+      "name": "Test email campaign",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-04T06:36:39.842Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:36.453Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2332029",
+      "sourceId": 2332029,
+      "source": "smartlead",
+      "name": "",
+      "status": "DRAFTED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-08-01T11:37:37.038Z",
+        "updatedAt": "2025-08-04T06:32:36.967Z",
+        "lastSyncedAt": "2026-01-03T15:42:36.905Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2213225",
+      "sourceId": 2213225,
+      "source": "smartlead",
+      "name": "FMCG Campaign ",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-06-24T15:17:30.781Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:37.330Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2212965",
+      "sourceId": 2212965,
+      "source": "smartlead",
+      "name": "Chemical campaign ",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-06-24T14:21:54.906Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:37.871Z"
+      }
+    },
+    {
+      "id": "sl_campaign_2212446",
+      "sourceId": 2212446,
+      "source": "smartlead",
+      "name": "Steel Campaign ",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-06-24T12:42:36.647Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:38.396Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1952572",
+      "sourceId": 1952572,
+      "source": "smartlead",
+      "name": "Anmol Pod Steel Email 2 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-05-15T10:29:38.770Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:38.887Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1944560",
+      "sourceId": 1944560,
+      "source": "smartlead",
+      "name": "Anmol Pod Chem Campaign ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-05-14T09:27:05.346Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:39.386Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1927685",
+      "sourceId": 1927685,
+      "source": "smartlead",
+      "name": "Lovinder Chemical Pod Email 1 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-05-12T05:44:18.869Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:39.855Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1848473",
+      "sourceId": 1848473,
+      "source": "smartlead",
+      "name": "Abhishek Pod Emails 1",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-04-30T06:22:17.161Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:40.388Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1844384",
+      "sourceId": 1844384,
+      "source": "smartlead",
+      "name": "CEMENT MR REPORT",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-04-29T06:30:44.384Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:40.931Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1823375",
+      "sourceId": 1823375,
+      "source": "smartlead",
+      "name": "Lovinder Pod Steel Email 1",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-04-23T12:35:49.972Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:41.386Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1823159",
+      "sourceId": 1823159,
+      "source": "smartlead",
+      "name": "Anmol Pod Steel Email 1 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-04-23T11:40:24.853Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:41.857Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1752197",
+      "sourceId": 1752197,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 2 > 3500 Test ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-04-04T07:05:07.832Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:42.262Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1735854",
+      "sourceId": 1735854,
+      "source": "smartlead",
+      "name": "Sweta March Co-Hort 3 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-31T06:06:59.596Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:42.722Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1721882",
+      "sourceId": 1721882,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 3",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-27T10:07:41.198Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:43.185Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1713644",
+      "sourceId": 1713644,
+      "source": "smartlead",
+      "name": "Pranav March Co-Hort 3",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-25T12:19:26.218Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:43.637Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1713456",
+      "sourceId": 1713456,
+      "source": "smartlead",
+      "name": "Steel Email 6 : Pain Point 3 Remastered",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-25T11:34:48.032Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:44.089Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1708848",
+      "sourceId": 1708848,
+      "source": "smartlead",
+      "name": "Pranav March Co-Hort 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-24T10:28:07.249Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:44.502Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1685463",
+      "sourceId": 1685463,
+      "source": "smartlead",
+      "name": "Mansi March Co-Hort 2 ",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-20T06:21:48.020Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:44.990Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1682156",
+      "sourceId": 1682156,
+      "source": "smartlead",
+      "name": "Sweta March Co-Hort 2 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-19T13:03:36.498Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:45.458Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1673081",
+      "sourceId": 1673081,
+      "source": "smartlead",
+      "name": "Khushi March Co-Hort 2 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-19T07:26:24.493Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:45.895Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1667323",
+      "sourceId": 1667323,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 2",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-18T03:55:32.715Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:46.329Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1667307",
+      "sourceId": 1667307,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1 Email 4 : 2nd Email Not Opened > Opened ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-18T03:40:50.717Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:46.779Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1667286",
+      "sourceId": 1667286,
+      "source": "smartlead",
+      "name": "Steel Email 5 : Pain Point 2 Remastered",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-18T03:21:34.121Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:47.170Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1650343",
+      "sourceId": 1650343,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 1 - Not Opened > Opened Follow Up",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-13T06:30:58.197Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:47.571Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1650170",
+      "sourceId": 1650170,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1 Email 4 : 2nd Email Not-Opened Follow Up  ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-13T05:04:13.153Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:48.036Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1650133",
+      "sourceId": 1650133,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1 Email 4 : 2nd Email Opened Follow Up  ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-13T04:51:12.973Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:48.473Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1642262",
+      "sourceId": 1642262,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1 Email 4 : First Email ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-11T05:27:54.147Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:48.891Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1630057",
+      "sourceId": 1630057,
+      "source": "smartlead",
+      "name": "Pranav March Co-Hort 1 Valid Emails",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-07T08:40:08.053Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:49.392Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1629511",
+      "sourceId": 1629511,
+      "source": "smartlead",
+      "name": "Garima March Co-Hort 1 Valid Emails  ",
+      "status": "PAUSED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-07T05:34:47.985Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:49.859Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1626854",
+      "sourceId": 1626854,
+      "source": "smartlead",
+      "name": "Sweta March Co-Hort 1 Valid Emails",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-06T11:39:44.167Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:50.269Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1626588",
+      "sourceId": 1626588,
+      "source": "smartlead",
+      "name": "Mansi March Co-Hort 1 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-06T10:16:28.786Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:50.712Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1626417",
+      "sourceId": 1626417,
+      "source": "smartlead",
+      "name": "Khushi March Co-Hort 1 Valid Emails ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-06T09:31:01.425Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:51.119Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1626340",
+      "sourceId": 1626340,
+      "source": "smartlead",
+      "name": "Steel Pain Point 3 Not Opened > Opened Follow Up",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-06T09:08:04.261Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:51.531Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1616791",
+      "sourceId": 1616791,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 1 - Not Opened 1st Email Follow Up ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-04T10:28:09.915Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:51.929Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1616689",
+      "sourceId": 1616689,
+      "source": "smartlead",
+      "name": "FMCG Pain Point 1 - Opened 1st Email Follow Up",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-04T10:11:37.070Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:52.461Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1616592",
+      "sourceId": 1616592,
+      "source": "smartlead",
+      "name": "Steel Pain Point 3 - Not Opened 1st Email Follow Up ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-04T09:44:50.547Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:52.888Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1616459",
+      "sourceId": 1616459,
+      "source": "smartlead",
+      "name": "Steel Pain Point 3 - Opened 1st Email Follow Up ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-03-04T09:06:54.034Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:53.376Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1568604",
+      "sourceId": 1568604,
+      "source": "smartlead",
+      "name": "Steel Pain Point 3",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-25T06:36:28.566Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:53.791Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1528511",
+      "sourceId": 1528511,
+      "source": "smartlead",
+      "name": "Steel Pain Point 2 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-19T05:47:16.663Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:54.250Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1523922",
+      "sourceId": 1523922,
+      "source": "smartlead",
+      "name": "Chem Pain Point 1 ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-18T09:17:44.931Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:54.697Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1495956",
+      "sourceId": 1495956,
+      "source": "smartlead",
+      "name": "FMCG Retail Pain Point 1 with Links",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-13T10:43:52.920Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:55.169Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1495066",
+      "sourceId": 1495066,
+      "source": "smartlead",
+      "name": "FMCG RETAIL Pain Point 1 No links",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-13T08:10:30.114Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:55.625Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1470801",
+      "sourceId": 1470801,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1 > Opened Follow up with Links",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-10T06:31:57.034Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:56.052Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1444114",
+      "sourceId": 1444114,
+      "source": "smartlead",
+      "name": "Steel Pain Point 1",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-02-04T09:29:26.783Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:56.497Z"
+      }
+    },
+    {
+      "id": "sl_campaign_1362702",
+      "sourceId": 1362702,
+      "source": "smartlead",
+      "name": "White Hole Steel Verified Emails 22nd Jan ",
+      "status": "COMPLETED",
+      "settings": {},
+      "statistics": null,
+      "metadata": {
+        "createdAt": "2025-01-22T06:38:49.298Z",
+        "updatedAt": "2026-01-02T18:30:20.962Z",
+        "lastSyncedAt": "2026-01-03T15:42:56.990Z"
+      }
+    }
+  ]
+}

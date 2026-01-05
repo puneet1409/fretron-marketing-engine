@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "accountId": "257715925271819",
+    "accountName": "Fretron-Marketing",
+    "count": 4,
+    "totalSpend": 25639.81,
+    "syncedAt": "2026-01-03T15:43:06.157Z",
+    "source": "meta-marketing-api"
+  },
+  "records": [
+    {
+      "id": "meta_campaign_120238639819780564",
+      "sourceId": "120238639819780564",
+      "source": "meta_ads",
+      "name": "IN | Enterprise | Lead Gen",
+      "status": "PAUSED",
+      "objective": "OUTCOME_LEADS",
+      "budget": {
+        "daily": 1000,
+        "lifetime": null,
+        "currency": "INR"
+      },
+      "performance": {
+        "impressions": 67530,
+        "reach": 39174,
+        "clicks": 849,
+        "spend": 13047.67,
+        "cpc": 15.36828,
+        "cpm": 193.212942,
+        "ctr": 1.257219,
+        "actions": {
+          "offsite_complete_registration_add_meta_leads": 24,
+          "link_click": 516,
+          "page_engagement": 654,
+          "landing_page_view": 154,
+          "omni_landing_page_view": 154,
+          "onsite_conversion.post_unlike": 5,
+          "post_engagement": 654,
+          "comment": 1,
+          "post_interaction_gross": 131,
+          "offsite_search_add_meta_leads": 24,
+          "post": 14,
+          "onsite_conversion.post_save": 10,
+          "onsite_conversion.post_net_like": 101,
+          "onsite_conversion.post_net_save": 10,
+          "lead": 24,
+          "offsite_content_view_add_meta_leads": 24,
+          "onsite_conversion.lead_grouped": 24,
+          "video_view": 7,
+          "post_reaction": 106,
+          "offsite_conversion.fb_pixel_custom": 146,
+          "offsite_conversion.custom.864105469296971": 145,
+          "offsite_conversion.custom.820673377510624": 1
+        },
+        "costPerAction": {
+          "offsite_submit_application_add_meta_leads": 543.652917,
+          "offsite_search_add_meta_leads": 543.652917,
+          "offsite_conversion.fb_pixel_custom": 89.367603,
+          "offsite_complete_registration_add_meta_leads": 543.652917,
+          "video_view": 1863.952857,
+          "link_click": 25.286182,
+          "onsite_conversion.lead_grouped": 543.652917,
+          "post_interaction_gross": 99.600534,
+          "lead": 543.652917,
+          "post_engagement": 19.950566,
+          "offsite_content_view_add_meta_leads": 543.652917,
+          "landing_page_view": 84.72513,
+          "offsite_contact_website_add_meta_leads": 543.652917,
+          "page_engagement": 19.950566,
+          "omni_landing_page_view": 84.72513,
+          "offsite_conversion.custom.864105469296971": 89.983931,
+          "offsite_conversion.custom.820673377510624": 13047.67
+        }
+      },
+      "metadata": {
+        "createdAt": "2025-12-15T10:50:02-0800",
+        "updatedAt": "2025-12-28T23:52:18-0800",
+        "lastSyncedAt": "2026-01-03T15:43:02.366Z"
+      }
+    },
+    {
+      "id": "meta_campaign_120238315725700564",
+      "sourceId": "120238315725700564",
+      "source": "meta_ads",
+      "name": "In | Lead Gen December | Enterprise",
+      "status": "PAUSED",
+      "objective": "OUTCOME_LEADS",
+      "budget": {
+        "daily": 1000,
+        "lifetime": null,
+        "currency": "INR"
+      },
+      "performance": {
+        "impressions": 355857,
+        "reach": 249362,
+        "clicks": 2762,
+        "spend": 4298.94,
+        "cpc": 1.556459,
+        "cpm": 12.080527,
+        "ctr": 0.776154,
+        "actions": {
+          "link_click": 2293,
+          "page_engagement": 2642,
+          "landing_page_view": 1032,
+          "omni_landing_page_view": 1032,
+          "onsite_conversion.post_unlike": 39,
+          "post_engagement": 2642,
+          "comment": 1,
+          "post_interaction_gross": 342,
+          "post": 2,
+          "onsite_conversion.post_net_like": 300,
+          "video_view": 7,
+          "post_reaction": 339,
+          "offsite_conversion.fb_pixel_custom": 896,
+          "offsite_conversion.custom.864105469296971": 896
+        },
+        "costPerAction": {
+          "offsite_conversion.fb_pixel_custom": 4.797924,
+          "video_view": 614.134286,
+          "link_click": 1.87481,
+          "post_interaction_gross": 12.57,
+          "post_engagement": 1.627154,
+          "landing_page_view": 4.16564,
+          "page_engagement": 1.627154,
+          "omni_landing_page_view": 4.16564,
+          "offsite_conversion.custom.864105469296971": 4.797924
+        }
+      },
+      "metadata": {
+        "createdAt": "2025-12-11T07:18:07-0800",
+        "updatedAt": "2025-12-15T11:00:32-0800",
+        "lastSyncedAt": "2026-01-03T15:43:02.976Z"
+      }
+    },
+    {
+      "id": "meta_campaign_120238155710330564",
+      "sourceId": "120238155710330564",
+      "source": "meta_ads",
+      "name": "IN | Lead Gen Campaign | TMS",
+      "status": "PAUSED",
+      "objective": "OUTCOME_LEADS",
+      "budget": {
+        "daily": 1000,
+        "lifetime": null,
+        "currency": "INR"
+      },
+      "performance": {
+        "impressions": 15745,
+        "reach": 12498,
+        "clicks": 278,
+        "spend": 2083.58,
+        "cpc": 7.494892,
+        "cpm": 132.332804,
+        "ctr": 1.76564,
+        "actions": {
+          "onsite_conversion.total_messaging_connection": 1,
+          "offsite_complete_registration_add_meta_leads": 27,
+          "link_click": 164,
+          "page_engagement": 217,
+          "landing_page_view": 23,
+          "omni_landing_page_view": 23,
+          "onsite_conversion.post_unlike": 2,
+          "post_engagement": 216,
+          "comment": 1,
+          "like": 1,
+          "post_interaction_gross": 48,
+          "offsite_search_add_meta_leads": 27,
+          "post": 2,
+          "onsite_conversion.post_save": 3,
+          "onsite_conversion.post_net_like": 40,
+          "onsite_conversion.post_net_save": 3,
+          "onsite_conversion.messaging_first_reply": 1,
+          "lead": 27,
+          "offsite_content_view_add_meta_leads": 27,
+          "onsite_conversion.messaging_conversation_started_7d": 1,
+          "onsite_conversion.messaging_conversation_replied_7d": 1,
+          "onsite_conversion.lead_grouped": 27,
+          "video_view": 4,
+          "post_reaction": 42
+        },
+        "costPerAction": {
+          "onsite_conversion.total_messaging_connection": 2083.58,
+          "offsite_submit_application_add_meta_leads": 77.16963,
+          "offsite_search_add_meta_leads": 77.16963,
+          "offsite_complete_registration_add_meta_leads": 77.16963,
+          "video_view": 520.895,
+          "link_click": 12.704756,
+          "like": 2083.58,
+          "onsite_conversion.lead_grouped": 77.16963,
+          "post_interaction_gross": 43.407917,
+          "onsite_conversion.messaging_conversation_replied_7d": 2083.58,
+          "lead": 77.16963,
+          "post_engagement": 9.646204,
+          "offsite_content_view_add_meta_leads": 77.16963,
+          "landing_page_view": 90.590435,
+          "offsite_contact_website_add_meta_leads": 77.16963,
+          "page_engagement": 9.601751,
+          "onsite_conversion.messaging_first_reply": 2083.58,
+          "omni_landing_page_view": 90.590435,
+          "onsite_conversion.messaging_conversation_started_7d": 2083.58
+        }
+      },
+      "metadata": {
+        "createdAt": "2025-12-06T03:19:31-0800",
+        "updatedAt": "2025-12-09T05:30:39-0800",
+        "lastSyncedAt": "2026-01-03T15:43:03.554Z"
+      }
+    },
+    {
+      "id": "meta_campaign_120236383722060564",
+      "sourceId": "120236383722060564",
+      "source": "meta_ads",
+      "name": "IN | ABM | Banner Ad",
+      "status": "PAUSED",
+      "objective": "OUTCOME_LEADS",
+      "budget": {
+        "daily": 1000,
+        "lifetime": null,
+        "currency": "INR"
+      },
+      "performance": {
+        "impressions": 34108,
+        "reach": 26753,
+        "clicks": 444,
+        "spend": 6209.62,
+        "cpc": 13.985631,
+        "cpm": 182.057582,
+        "ctr": 1.301747,
+        "actions": {
+          "link_click": 401,
+          "page_engagement": 439,
+          "landing_page_view": 186,
+          "omni_landing_page_view": 186,
+          "onsite_conversion.post_unlike": 1,
+          "post_engagement": 439,
+          "post_interaction_gross": 34,
+          "post": 4,
+          "onsite_conversion.post_save": 1,
+          "onsite_conversion.post_net_like": 28,
+          "onsite_conversion.post_net_save": 1,
+          "video_view": 4,
+          "post_reaction": 29,
+          "offsite_conversion.fb_pixel_custom": 18,
+          "offsite_conversion.custom.864105469296971": 17,
+          "offsite_conversion.custom.820673377510624": 1
+        },
+        "costPerAction": {
+          "offsite_conversion.fb_pixel_custom": 344.978889,
+          "video_view": 1552.405,
+          "link_click": 15.485337,
+          "post_interaction_gross": 182.635882,
+          "post_engagement": 14.14492,
+          "landing_page_view": 33.385054,
+          "page_engagement": 14.14492,
+          "omni_landing_page_view": 33.385054,
+          "offsite_conversion.custom.864105469296971": 365.271765,
+          "offsite_conversion.custom.820673377510624": 6209.62
+        }
+      },
+      "metadata": {
+        "createdAt": "2025-11-16T20:36:16-0800",
+        "updatedAt": "2025-12-09T05:30:34-0800",
+        "lastSyncedAt": "2026-01-03T15:43:04.159Z"
+      }
+    }
+  ]
+}

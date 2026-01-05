@@ -1,0 +1,12 @@
+# Environment files with secrets
+.env
+.env.local
+
+# Node modules
+node_modules/
+
+# Raw API responses (regenerated on sync)
+records/hubspot-*-raw.json
+
+# Sync state (local to each machine)
+sync-state.json

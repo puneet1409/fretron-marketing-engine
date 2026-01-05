@@ -1,0 +1,426 @@
+[
+  {
+    "id": "baseline",
+    "name": "Baseline",
+    "description": "Current state before lever activation - typical Indian steel manufacturer with mixed optimization",
+    "kpiValues": [
+      {
+        "kpiId": "C01",
+        "current": 12500000,
+        "target": 11000000,
+        "lastQuarter": 13200000,
+        "sparkline": [13200000, 13000000, 12800000, 12600000, 12700000, 12500000],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "C02",
+        "current": 3.85,
+        "target": 3.20,
+        "lastQuarter": 3.95,
+        "sparkline": [3.95, 3.92, 3.88, 3.87, 3.90, 3.85],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "C05",
+        "current": 12800,
+        "target": 11000,
+        "lastQuarter": 13500,
+        "sparkline": [13500, 13200, 13000, 12900, 13100, 12800],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "C06",
+        "current": 8.5,
+        "target": 4.0,
+        "lastQuarter": 9.2,
+        "sparkline": [9.2, 9.0, 8.8, 8.7, 8.6, 8.5],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "S01",
+        "current": 82,
+        "target": 92,
+        "lastQuarter": 78,
+        "sparkline": [78, 79, 80, 81, 81, 82],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "S04",
+        "current": 75,
+        "target": 90,
+        "lastQuarter": 72,
+        "sparkline": [72, 73, 74, 74, 75, 75],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "S05",
+        "current": 52,
+        "target": 40,
+        "lastQuarter": 56,
+        "sparkline": [56, 55, 54, 53, 52, 52],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "E01",
+        "current": 68,
+        "target": 85,
+        "lastQuarter": 65,
+        "sparkline": [65, 66, 67, 67, 68, 68],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "E02",
+        "current": 62,
+        "target": 78,
+        "lastQuarter": 60,
+        "sparkline": [60, 61, 61, 62, 62, 62],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "E04",
+        "current": 38,
+        "target": 20,
+        "lastQuarter": 42,
+        "sparkline": [42, 41, 40, 39, 38, 38],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "E06",
+        "current": 6.8,
+        "target": 2.5,
+        "lastQuarter": 7.5,
+        "sparkline": [7.5, 7.3, 7.0, 6.9, 6.9, 6.8],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "E07",
+        "current": 28,
+        "target": 15,
+        "lastQuarter": 30,
+        "sparkline": [30, 29, 29, 28, 28, 28],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "CP01",
+        "current": 92,
+        "target": 99,
+        "lastQuarter": 89,
+        "sparkline": [89, 90, 91, 91, 92, 92],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "CP02",
+        "current": 85,
+        "target": 96,
+        "lastQuarter": 82,
+        "sparkline": [82, 83, 84, 84, 85, 85],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "V01",
+        "current": 45000,
+        "target": 50000,
+        "lastQuarter": 42000,
+        "sparkline": [42000, 43000, 44000, 44500, 45000, 45000],
+        "status": "on_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "V03",
+        "current": 76,
+        "target": 90,
+        "lastQuarter": 72,
+        "sparkline": [72, 74, 75, 75, 76, 76],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "ESG01",
+        "current": 62,
+        "target": 45,
+        "lastQuarter": 65,
+        "sparkline": [65, 64, 63, 62, 62, 62],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "DA01",
+        "current": 68,
+        "target": 92,
+        "lastQuarter": 62,
+        "sparkline": [62, 64, 65, 66, 67, 68],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "DA02",
+        "current": 58,
+        "target": 88,
+        "lastQuarter": 52,
+        "sparkline": [52, 54, 55, 56, 57, 58],
+        "status": "off_track",
+        "activeLeverIds": []
+      }
+    ],
+    "activeLevers": []
+  },
+  {
+    "id": "post-lever",
+    "name": "Post-Lever-Activation",
+    "description": "Projected state after activating 5 hero levers: LU10, TB01, C05, RS19, YG52",
+    "kpiValues": [
+      {
+        "kpiId": "C01",
+        "current": 11200000,
+        "target": 11000000,
+        "lastQuarter": 12500000,
+        "sparkline": [12500000, 12200000, 11900000, 11600000, 11400000, 11200000],
+        "status": "on_track",
+        "activeLeverIds": ["LU10", "TB01", "RS19"]
+      },
+      {
+        "kpiId": "C02",
+        "current": 3.35,
+        "target": 3.20,
+        "lastQuarter": 3.85,
+        "sparkline": [3.85, 3.75, 3.65, 3.55, 3.45, 3.35],
+        "status": "on_track",
+        "activeLeverIds": ["LU10", "TB01", "RS19"]
+      },
+      {
+        "kpiId": "C05",
+        "current": 11500,
+        "target": 11000,
+        "lastQuarter": 12800,
+        "sparkline": [12800, 12400, 12100, 11800, 11600, 11500],
+        "status": "on_track",
+        "activeLeverIds": ["LU10", "TB01"]
+      },
+      {
+        "kpiId": "C06",
+        "current": 5.2,
+        "target": 4.0,
+        "lastQuarter": 8.5,
+        "sparkline": [8.5, 7.8, 7.0, 6.2, 5.6, 5.2],
+        "status": "at_risk",
+        "activeLeverIds": ["YG52"]
+      },
+      {
+        "kpiId": "S01",
+        "current": 88,
+        "target": 92,
+        "lastQuarter": 82,
+        "sparkline": [82, 84, 85, 86, 87, 88],
+        "status": "on_track",
+        "activeLeverIds": ["RS19", "YG52"]
+      },
+      {
+        "kpiId": "S04",
+        "current": 83,
+        "target": 90,
+        "lastQuarter": 75,
+        "sparkline": [75, 77, 79, 81, 82, 83],
+        "status": "at_risk",
+        "activeLeverIds": ["RS19"]
+      },
+      {
+        "kpiId": "S05",
+        "current": 46,
+        "target": 40,
+        "lastQuarter": 52,
+        "sparkline": [52, 50, 49, 48, 47, 46],
+        "status": "on_track",
+        "activeLeverIds": ["RS19"]
+      },
+      {
+        "kpiId": "E01",
+        "current": 78,
+        "target": 85,
+        "lastQuarter": 68,
+        "sparkline": [68, 71, 73, 75, 77, 78],
+        "status": "on_track",
+        "activeLeverIds": ["LU10"]
+      },
+      {
+        "kpiId": "E02",
+        "current": 68,
+        "target": 78,
+        "lastQuarter": 62,
+        "sparkline": [62, 64, 65, 66, 67, 68],
+        "status": "at_risk",
+        "activeLeverIds": ["LU10"]
+      },
+      {
+        "kpiId": "E04",
+        "current": 28,
+        "target": 20,
+        "lastQuarter": 38,
+        "sparkline": [38, 35, 33, 31, 29, 28],
+        "status": "on_track",
+        "activeLeverIds": ["LU10"]
+      },
+      {
+        "kpiId": "E06",
+        "current": 4.2,
+        "target": 2.5,
+        "lastQuarter": 6.8,
+        "sparkline": [6.8, 6.2, 5.6, 5.0, 4.6, 4.2],
+        "status": "at_risk",
+        "activeLeverIds": ["YG52"]
+      },
+      {
+        "kpiId": "E07",
+        "current": 28,
+        "target": 15,
+        "lastQuarter": 28,
+        "sparkline": [28, 28, 28, 28, 28, 28],
+        "status": "off_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "CP01",
+        "current": 96,
+        "target": 99,
+        "lastQuarter": 92,
+        "sparkline": [92, 93, 94, 95, 96, 96],
+        "status": "on_track",
+        "activeLeverIds": ["DB60"]
+      },
+      {
+        "kpiId": "CP02",
+        "current": 91,
+        "target": 96,
+        "lastQuarter": 85,
+        "sparkline": [85, 87, 88, 89, 90, 91],
+        "status": "on_track",
+        "activeLeverIds": ["DB62"]
+      },
+      {
+        "kpiId": "V01",
+        "current": 47500,
+        "target": 50000,
+        "lastQuarter": 45000,
+        "sparkline": [45000, 45500, 46000, 46500, 47000, 47500],
+        "status": "on_track",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "V03",
+        "current": 85,
+        "target": 90,
+        "lastQuarter": 76,
+        "sparkline": [76, 78, 80, 82, 84, 85],
+        "status": "on_track",
+        "activeLeverIds": ["TB01"]
+      },
+      {
+        "kpiId": "ESG01",
+        "current": 58,
+        "target": 45,
+        "lastQuarter": 62,
+        "sparkline": [62, 61, 60, 59, 58, 58],
+        "status": "at_risk",
+        "activeLeverIds": []
+      },
+      {
+        "kpiId": "DA01",
+        "current": 82,
+        "target": 92,
+        "lastQuarter": 68,
+        "sparkline": [68, 72, 75, 78, 80, 82],
+        "status": "on_track",
+        "activeLeverIds": ["DB60", "DB61"]
+      },
+      {
+        "kpiId": "DA02",
+        "current": 78,
+        "target": 88,
+        "lastQuarter": 58,
+        "sparkline": [58, 62, 66, 70, 74, 78],
+        "status": "at_risk",
+        "activeLeverIds": ["DB62"]
+      }
+    ],
+    "activeLevers": [
+      {
+        "leverId": "LU10",
+        "coverage": 72,
+        "activatedDate": "2024-08-15",
+        "observedImpact": [
+          { "kpiId": "C02", "actualChange": -13 },
+          { "kpiId": "E04", "actualChange": -26 },
+          { "kpiId": "E01", "actualChange": 15 }
+        ]
+      },
+      {
+        "leverId": "TB01",
+        "coverage": 45,
+        "activatedDate": "2024-09-01",
+        "observedImpact": [
+          { "kpiId": "C02", "actualChange": -5 },
+          { "kpiId": "C05", "actualChange": -8 },
+          { "kpiId": "V03", "actualChange": 12 }
+        ]
+      },
+      {
+        "leverId": "RS19",
+        "coverage": 85,
+        "activatedDate": "2024-09-15",
+        "observedImpact": [
+          { "kpiId": "C02", "actualChange": -3 },
+          { "kpiId": "S05", "actualChange": -12 },
+          { "kpiId": "S01", "actualChange": 7 }
+        ]
+      },
+      {
+        "leverId": "YG52",
+        "coverage": 100,
+        "activatedDate": "2024-10-01",
+        "observedImpact": [
+          { "kpiId": "E06", "actualChange": -38 },
+          { "kpiId": "C06", "actualChange": -39 }
+        ]
+      },
+      {
+        "leverId": "DB60",
+        "coverage": 95,
+        "activatedDate": "2024-07-01",
+        "observedImpact": [
+          { "kpiId": "CP01", "actualChange": 4 },
+          { "kpiId": "DA01", "actualChange": 21 }
+        ]
+      },
+      {
+        "leverId": "DB61",
+        "coverage": 88,
+        "activatedDate": "2024-07-01",
+        "observedImpact": [
+          { "kpiId": "DA01", "actualChange": 14 }
+        ]
+      },
+      {
+        "leverId": "DB62",
+        "coverage": 68,
+        "activatedDate": "2024-08-01",
+        "observedImpact": [
+          { "kpiId": "CP02", "actualChange": 7 },
+          { "kpiId": "DA02", "actualChange": 35 }
+        ]
+      }
+    ]
+  }
+]

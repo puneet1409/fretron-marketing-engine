@@ -1,0 +1,337 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fretron.com/abm/schemas/account.json",
+  "title": "ABM Account",
+  "description": "Canonical account record for ABM targeting and warmup campaigns",
+  "type": "object",
+  "required": ["id", "name", "source", "classification", "lifecycle"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique account identifier"
+    },
+    "sourceId": {
+      "type": "string",
+      "description": "Original ID from source system (e.g., HubSpot company ID)"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["hubspot", "linkedin", "manual", "import"],
+      "description": "Data source system"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Company name"
+    },
+    "domain": {
+      "type": ["string", "null"],
+      "description": "Primary company domain"
+    },
+
+    "firmographics": {
+      "type": "object",
+      "properties": {
+        "industry": {
+          "type": ["string", "null"],
+          "description": "Industry vertical"
+        },
+        "industryNormalized": {
+          "type": ["string", "null"],
+          "enum": ["steel", "cement", "manufacturing", "fmcg", "auto_parts", "chemical", "retail", "pharma", "other", null],
+          "description": "Normalized industry for ICP matching"
+        },
+        "annualRevenue": {
+          "type": ["number", "null"],
+          "description": "Annual revenue in INR Crores"
+        },
+        "revenueRange": {
+          "type": ["string", "null"],
+          "enum": ["<50cr", "50-100cr", "100-200cr", "200-500cr", "500-1000cr", "1000-2000cr", ">2000cr", null],
+          "description": "Revenue range bucket"
+        },
+        "employeeCount": {
+          "type": ["integer", "null"],
+          "description": "Number of employees"
+        },
+        "employeeRange": {
+          "type": ["string", "null"],
+          "enum": ["<100", "100-500", "500-1000", "1000-5000", "5000-10000", ">10000", null],
+          "description": "Employee count range"
+        },
+        "estimatedShipmentsPerDay": {
+          "type": ["integer", "null"],
+          "description": "Estimated daily shipment volume"
+        },
+        "shipmentRange": {
+          "type": ["string", "null"],
+          "enum": ["<20", "20-50", "50-100", "100-500", "500-1000", ">1000", null]
+        },
+        "plantCount": {
+          "type": ["integer", "null"],
+          "description": "Number of manufacturing plants"
+        },
+        "headquarters": {
+          "type": "object",
+          "properties": {
+            "city": { "type": ["string", "null"] },
+            "state": { "type": ["string", "null"] },
+            "country": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+
+    "technographics": {
+      "type": "object",
+      "properties": {
+        "currentState": {
+          "type": ["string", "null"],
+          "enum": ["excel_manual", "partial_digitization", "legacy_tms", "modern_tms", "unknown", null],
+          "description": "Current logistics management state"
+        },
+        "currentTmsVendor": {
+          "type": ["string", "null"],
+          "description": "Current TMS vendor if any"
+        },
+        "erpSystem": {
+          "type": ["string", "null"],
+          "description": "Primary ERP system"
+        },
+        "itMaturity": {
+          "type": ["string", "null"],
+          "enum": ["low", "moderate", "high", null]
+        }
+      }
+    },
+
+    "classification": {
+      "type": "object",
+      "required": ["tier"],
+      "properties": {
+        "tier": {
+          "type": "string",
+          "enum": ["tier1", "tier2", "tier3", "unclassified", "disqualified"],
+          "description": "ABM tier based on ICP fit"
+        },
+        "fitScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "ICP fit score (0-100)"
+        },
+        "fitScoreBreakdown": {
+          "type": "object",
+          "properties": {
+            "industryScore": { "type": "integer", "minimum": 0, "maximum": 15 },
+            "sizeScore": { "type": "integer", "minimum": 0, "maximum": 15 },
+            "shipmentScore": { "type": "integer", "minimum": 0, "maximum": 15 },
+            "techStateScore": { "type": "integer", "minimum": 0, "maximum": 15 }
+          }
+        },
+        "intentScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Buying intent score (0-100)"
+        },
+        "priorityRank": {
+          "type": ["integer", "null"],
+          "description": "Priority rank within tier"
+        },
+        "classificationReason": {
+          "type": ["string", "null"],
+          "description": "Reason for tier assignment"
+        },
+        "lastClassifiedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+
+    "lifecycle": {
+      "type": "object",
+      "required": ["stage"],
+      "properties": {
+        "stage": {
+          "type": "string",
+          "enum": ["target_account", "engaged", "sal", "opportunity", "proposal", "closed_won", "closed_lost", "churned"],
+          "description": "Account lifecycle stage"
+        },
+        "stageEnteredAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "isCustomer": {
+          "type": "boolean",
+          "default": false
+        },
+        "customerSince": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+
+    "warmup": {
+      "type": "object",
+      "description": "ABM warmup campaign tracking",
+      "properties": {
+        "trustLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6,
+          "description": "Trust ladder level (0=unknown, 1=stranger, 2=familiar, 3=connected, 4=engaged, 5=interested, 6=qualified)"
+        },
+        "trustLevelLabel": {
+          "type": ["string", "null"],
+          "enum": ["unknown", "stranger", "familiar", "connected", "engaged", "interested", "qualified", null]
+        },
+        "touchCount": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "lastTouchAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "lastTouchChannel": {
+          "type": ["string", "null"],
+          "enum": ["linkedin", "email", "phone", "event", "webinar", "content", "ad", null]
+        },
+        "engagementScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        },
+        "warmupCampaigns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "campaignId": { "type": "string" },
+              "campaignName": { "type": "string" },
+              "enrolledAt": { "type": "string", "format": "date-time" },
+              "status": { "type": "string", "enum": ["active", "completed", "paused", "removed"] }
+            }
+          }
+        }
+      }
+    },
+
+    "triggers": {
+      "type": "object",
+      "description": "Buying triggers and timing signals",
+      "properties": {
+        "activeTrigger": {
+          "type": ["string", "null"],
+          "description": "Current active buying trigger"
+        },
+        "triggerType": {
+          "type": ["string", "null"],
+          "enum": ["leadership_change", "growth_expansion", "contract_renewal", "pain_event", "budget_cycle", "digital_initiative", "competitor_issue", null]
+        },
+        "urgency": {
+          "type": ["string", "null"],
+          "enum": ["high", "medium", "low", null]
+        },
+        "budgetCycle": {
+          "type": ["string", "null"],
+          "description": "Budget planning cycle (e.g., 'Q4', 'April')"
+        },
+        "triggerIdentifiedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        }
+      }
+    },
+
+    "contacts": {
+      "type": "object",
+      "description": "Summary of associated contacts",
+      "properties": {
+        "totalCount": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "keyContactIds": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of key contacts (champions, decision makers)"
+        },
+        "hasChampion": {
+          "type": "boolean",
+          "default": false
+        },
+        "hasEconomicBuyer": {
+          "type": "boolean",
+          "default": false
+        },
+        "highestNLevel": {
+          "type": ["string", "null"],
+          "enum": ["N", "N-1", "N-2", "N-3", null],
+          "description": "Highest seniority level of contacts"
+        }
+      }
+    },
+
+    "deals": {
+      "type": "object",
+      "properties": {
+        "activeDeals": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of active deals"
+        },
+        "wonDeals": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "lostDeals": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "totalDealValue": {
+          "type": "number",
+          "default": 0
+        }
+      }
+    },
+
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Free-form notes about the account"
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Tags for filtering and segmentation"
+    },
+
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastSyncedAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "syncSource": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
+}

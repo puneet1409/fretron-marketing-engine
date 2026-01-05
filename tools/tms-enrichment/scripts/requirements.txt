@@ -1,0 +1,16 @@
+# TMS Enrichment Pipeline Dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+pandas>=2.0.0
+requests>=2.28.0
+
+# Tier 0 (FREE enrichment)
+feedparser>=6.0.0      # RSS parsing
+dnspython>=2.3.0       # DNS resolution
+
+# Optional: Tier 1 & 2 API clients
+# These are built-in using requests, no extra dependencies needed
+
+# Development
+python-dotenv>=1.0.0   # Environment variable management

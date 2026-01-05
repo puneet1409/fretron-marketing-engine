@@ -1,0 +1,223 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fretron.com/abm/schemas/contact.json",
+  "title": "ABM Contact",
+  "description": "Canonical contact record for ABM targeting and outreach",
+  "type": "object",
+  "required": ["id", "source", "lifecycle"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique contact identifier"
+    },
+    "sourceId": {
+      "type": "string",
+      "description": "Original ID from source system"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["hubspot", "linkedin", "manual", "import"]
+    },
+
+    "name": {
+      "type": "object",
+      "properties": {
+        "firstName": { "type": ["string", "null"] },
+        "lastName": { "type": ["string", "null"] },
+        "fullName": { "type": ["string", "null"] }
+      }
+    },
+
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": { "type": ["string", "null"] },
+        "phone": { "type": ["string", "null"] },
+        "mobile": { "type": ["string", "null"] },
+        "hasMobileNumber": {
+          "type": "boolean",
+          "default": false,
+          "description": "Jen Abel: Cell phone = qualified indicator"
+        },
+        "linkedin": { "type": ["string", "null"] },
+        "whatsapp": { "type": ["string", "null"] }
+      }
+    },
+
+    "professional": {
+      "type": "object",
+      "properties": {
+        "title": { "type": ["string", "null"] },
+        "titleNormalized": {
+          "type": ["string", "null"],
+          "description": "Normalized title for matching"
+        },
+        "department": {
+          "type": ["string", "null"],
+          "enum": ["logistics", "supply_chain", "operations", "finance", "it", "procurement", "management", "other", null]
+        },
+        "nLevel": {
+          "type": ["string", "null"],
+          "enum": ["N", "N-1", "N-2", "N-3", null],
+          "description": "Organizational level per Jen Abel framework"
+        },
+        "nLevelReason": {
+          "type": ["string", "null"],
+          "description": "Why this N-level was assigned"
+        },
+        "seniority": {
+          "type": ["string", "null"],
+          "enum": ["c_level", "vp", "director", "manager", "individual_contributor", "unknown", null]
+        },
+        "buyingRole": {
+          "type": ["string", "null"],
+          "enum": ["economic_buyer", "champion", "influencer", "user", "blocker", "unknown", null]
+        },
+        "formerConsultant": {
+          "type": "boolean",
+          "default": false,
+          "description": "Jen Abel: Former consultants make good champions"
+        }
+      }
+    },
+
+    "account": {
+      "type": "object",
+      "properties": {
+        "accountId": { "type": ["string", "null"] },
+        "companyName": { "type": ["string", "null"] },
+        "isPrimaryContact": { "type": "boolean", "default": false }
+      }
+    },
+
+    "lifecycle": {
+      "type": "object",
+      "required": ["stage"],
+      "properties": {
+        "stage": {
+          "type": "string",
+          "description": "Contact lifecycle stage"
+        },
+        "stageEnteredAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "isCustomer": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+
+    "warmup": {
+      "type": "object",
+      "properties": {
+        "trustLevel": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6,
+          "description": "Trust ladder level (0=unknown to 6=qualified)"
+        },
+        "trustLevelLabel": {
+          "type": ["string", "null"],
+          "enum": ["unknown", "stranger", "familiar", "connected", "engaged", "interested", "qualified", null]
+        },
+        "linkedinConnectionStatus": {
+          "type": ["string", "null"],
+          "enum": ["not_connected", "pending", "connected", null]
+        },
+        "lastOutreachAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "lastOutreachChannel": {
+          "type": ["string", "null"],
+          "enum": ["linkedin", "email", "phone", "whatsapp", null]
+        },
+        "outreachCount": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "responseCount": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 0
+        },
+        "engagementScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100,
+          "default": 0
+        }
+      }
+    },
+
+    "engagement": {
+      "type": "object",
+      "properties": {
+        "emailOpens": { "type": "integer", "minimum": 0, "default": 0 },
+        "emailClicks": { "type": "integer", "minimum": 0, "default": 0 },
+        "websiteVisits": { "type": "integer", "minimum": 0, "default": 0 },
+        "contentDownloads": { "type": "integer", "minimum": 0, "default": 0 },
+        "eventAttendance": { "type": "integer", "minimum": 0, "default": 0 },
+        "lastEngagementAt": {
+          "type": ["string", "null"],
+          "format": "date-time"
+        },
+        "lastEngagementType": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "qualification": {
+      "type": "object",
+      "description": "Jen Abel qualification signals",
+      "properties": {
+        "hasPersonalMobile": {
+          "type": "boolean",
+          "default": false,
+          "description": "Cell phone = qualified (Jen Abel Point 4)"
+        },
+        "isNOrN1": {
+          "type": "boolean",
+          "default": false,
+          "description": "N or N-1 level (Jen Abel Point 6)"
+        },
+        "qualificationScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "qualificationNotes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "deals": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Associated deal IDs"
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "notes": {
+      "type": ["string", "null"]
+    },
+
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "lastSyncedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  }
+}

@@ -1,0 +1,946 @@
+{
+  "version": "1.0",
+  "totalQuestions": 44,
+  "pillars": {
+    "cost": {
+      "name": "Cost & Productivity",
+      "questions": [
+        {
+          "id": "cost_q01",
+          "question": "Do you have visibility into cost per lane (origin-destination pair)?",
+          "helpText": "Lane-level cost visibility enables targeted optimization and rate negotiations",
+          "options": [
+            {
+              "label": "No visibility - costs tracked only at aggregate level",
+              "value": 0,
+              "description": "Limited to monthly totals or vendor-level aggregates"
+            },
+            {
+              "label": "Partial visibility - tracked for major lanes only",
+              "value": 1,
+              "description": "Key lanes (top 20-30%) have cost tracking"
+            },
+            {
+              "label": "Full visibility - all lanes systematically tracked",
+              "value": 2,
+              "description": "Granular cost per lane available in TMS or reports"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q02",
+          "question": "How do you typically source spot freight (non-contract shipments)?",
+          "helpText": "Digital spot sourcing improves rate discovery and placement speed",
+          "options": [
+            {
+              "label": "Phone/WhatsApp calls to vendors",
+              "value": 0,
+              "description": "Manual vendor calling, no rate comparison"
+            },
+            {
+              "label": "Mix of phone and email/WhatsApp quotations",
+              "value": 1,
+              "description": "Some digital quotations but not systematic"
+            },
+            {
+              "label": "Digital platform with multi-vendor bidding",
+              "value": 2,
+              "description": "App or portal with real-time vendor quotes"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q03",
+          "question": "What % of your freight moves as Less-Than-Truckload (LTL) or part-loads?",
+          "helpText": "High LTL % indicates consolidation opportunity",
+          "options": [
+            {
+              "label": "> 30% of shipments are LTL",
+              "value": 0,
+              "description": "Significant consolidation opportunity"
+            },
+            {
+              "label": "15-30% are LTL",
+              "value": 1,
+              "description": "Moderate consolidation potential"
+            },
+            {
+              "label": "< 15% are LTL",
+              "value": 2,
+              "description": "Already well-consolidated"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q04",
+          "question": "Do you actively consolidate shipments by destination or time window?",
+          "helpText": "Load consolidation reduces cost per unit shipped",
+          "options": [
+            {
+              "label": "No consolidation - shipments dispatched as they come",
+              "value": 0,
+              "description": "Ad-hoc dispatch without planning"
+            },
+            {
+              "label": "Occasional manual consolidation by planners",
+              "value": 1,
+              "description": "Done when obvious opportunities arise"
+            },
+            {
+              "label": "Systematic consolidation using rules or software",
+              "value": 2,
+              "description": "Auto-planning or clear SOP for consolidation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q05",
+          "question": "How do you optimize truck weight and volume utilization?",
+          "helpText": "Optimizing both dimensions reduces cost per unit",
+          "options": [
+            {
+              "label": "No optimization - loaded until weight or volume limit hit",
+              "value": 0,
+              "description": "Single constraint optimization"
+            },
+            {
+              "label": "Planners manually balance weight and volume",
+              "value": 1,
+              "description": "Experience-based balancing"
+            },
+            {
+              "label": "Software optimizes both weight and cube simultaneously",
+              "value": 2,
+              "description": "Dual optimization engine in use"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q06",
+          "question": "Do you use route optimization for primary/milk-run lanes?",
+          "helpText": "Route optimization reduces distance, tolls, and transit time",
+          "options": [
+            {
+              "label": "No route optimization - drivers choose routes",
+              "value": 0,
+              "description": "Ad-hoc routing by drivers"
+            },
+            {
+              "label": "Standard routes defined but not optimized",
+              "value": 1,
+              "description": "Fixed routes but not mathematically optimized"
+            },
+            {
+              "label": "Routes optimized for distance/toll/time",
+              "value": 2,
+              "description": "Software-driven optimal routing"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q07",
+          "question": "What % of your fleet returns empty (backhaul not utilized)?",
+          "helpText": "Empty miles represent significant cost opportunity",
+          "options": [
+            {
+              "label": "> 40% empty return trips",
+              "value": 0,
+              "description": "High empty miles, major opportunity"
+            },
+            {
+              "label": "20-40% empty returns",
+              "value": 1,
+              "description": "Moderate backhaul utilization"
+            },
+            {
+              "label": "< 20% empty returns",
+              "value": 2,
+              "description": "Good backhaul management"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q08",
+          "question": "Do you have vendor scorecards showing cost AND performance?",
+          "helpText": "Vendor scorecards enable data-driven negotiations",
+          "options": [
+            {
+              "label": "No vendor scorecards",
+              "value": 0,
+              "description": "No systematic vendor evaluation"
+            },
+            {
+              "label": "Basic scorecards (OTIF or cost only)",
+              "value": 1,
+              "description": "One-dimensional scoring"
+            },
+            {
+              "label": "Comprehensive scorecards (cost, OTIF, claims, etc.)",
+              "value": 2,
+              "description": "Multi-dimensional vendor performance"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q09",
+          "question": "How do you manage contract rate governance and escalations?",
+          "helpText": "Contract governance prevents rate creep and ensures compliance",
+          "options": [
+            {
+              "label": "No systematic rate governance",
+              "value": 0,
+              "description": "Ad-hoc contract management"
+            },
+            {
+              "label": "Annual rate reviews but no systematic tracking",
+              "value": 1,
+              "description": "Periodic reviews without enforcement"
+            },
+            {
+              "label": "Active rate governance with fuel indexation",
+              "value": 2,
+              "description": "Systematic tracking and quarterly reviews"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "cost_q10",
+          "question": "Do you conduct freight invoice audits to catch billing errors?",
+          "helpText": "Freight audits typically recover 2-5% in overbilling",
+          "options": [
+            {
+              "label": "No systematic audit - pay as invoiced",
+              "value": 0,
+              "description": "No invoice validation"
+            },
+            {
+              "label": "Sample checks or manual audit of large invoices",
+              "value": 1,
+              "description": "Partial audit coverage"
+            },
+            {
+              "label": "Automated audit engine for all invoices",
+              "value": 2,
+              "description": "100% invoice validation"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "service": {
+      "name": "Service & Experience",
+      "questions": [
+        {
+          "id": "service_q01",
+          "question": "Do you have real-time visibility of truck location for in-transit shipments?",
+          "helpText": "GPS tracking enables proactive exception management",
+          "options": [
+            {
+              "label": "No tracking - wait for driver calls",
+              "value": 0,
+              "description": "Reactive updates only"
+            },
+            {
+              "label": "Partial tracking (key lanes or customers)",
+              "value": 1,
+              "description": "50-80% shipments tracked"
+            },
+            {
+              "label": "Full GPS/app-based tracking for all shipments",
+              "value": 2,
+              "description": ">90% shipments with real-time location"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q02",
+          "question": "How do you capture proof-of-delivery (POD)?",
+          "helpText": "Digital POD reduces disputes and speeds up billing",
+          "options": [
+            {
+              "label": "Paper POD - collected days/weeks later",
+              "value": 0,
+              "description": "Manual POD collection"
+            },
+            {
+              "label": "Mix of paper and digital (photos via WhatsApp)",
+              "value": 1,
+              "description": "Partial digitalization"
+            },
+            {
+              "label": "E-POD with GPS stamp via driver app",
+              "value": 2,
+              "description": "Full digital POD capture"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q03",
+          "question": "What is your typical On-Time Delivery (OTD) performance?",
+          "helpText": "OTD is a primary customer satisfaction metric",
+          "options": [
+            {
+              "label": "< 75% on-time",
+              "value": 0,
+              "description": "Frequent delays"
+            },
+            {
+              "label": "75-85% on-time",
+              "value": 1,
+              "description": "Moderate performance"
+            },
+            {
+              "label": "> 85% on-time",
+              "value": 2,
+              "description": "Strong delivery performance"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q04",
+          "question": "How do you manage vehicle placement (indent to vehicle arrival)?",
+          "helpText": "Digital placement reduces waiting time and improves planning",
+          "options": [
+            {
+              "label": "Phone/WhatsApp indent, manual coordination",
+              "value": 0,
+              "description": "Fully manual process"
+            },
+            {
+              "label": "Email or app indent with manual vendor confirmation",
+              "value": 1,
+              "description": "Partial digitalization"
+            },
+            {
+              "label": "App-based indent with auto-accept/reject by vendor",
+              "value": 2,
+              "description": "Full digital placement"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q05",
+          "question": "Do you have a Control Tower view for at-risk or delayed shipments?",
+          "helpText": "Control tower enables proactive intervention",
+          "options": [
+            {
+              "label": "No unified view - spreadsheets or emails",
+              "value": 0,
+              "description": "Reactive management"
+            },
+            {
+              "label": "Basic dashboard showing delayed shipments",
+              "value": 1,
+              "description": "Visibility without automation"
+            },
+            {
+              "label": "Control tower with alerts and exception workflows",
+              "value": 2,
+              "description": "Proactive exception management"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q06",
+          "question": "Do you use predictive ETA or risk scoring for shipments?",
+          "helpText": "Predictive analytics enable early intervention",
+          "options": [
+            {
+              "label": "No prediction - rely on standard transit time",
+              "value": 0,
+              "description": "Static ETA only"
+            },
+            {
+              "label": "Dynamic ETA based on live location",
+              "value": 1,
+              "description": "Real-time ETA updates"
+            },
+            {
+              "label": "AI-based predictive ETA with risk scoring",
+              "value": 2,
+              "description": "Predictive analytics in use"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q07",
+          "question": "Do you have yard/gate management with slot booking?",
+          "helpText": "Slot booking reduces loading/unloading detention",
+          "options": [
+            {
+              "label": "No slot booking - first come first served",
+              "value": 0,
+              "description": "Ad-hoc yard management"
+            },
+            {
+              "label": "Manual slot allocation by planner",
+              "value": 1,
+              "description": "Partial scheduling"
+            },
+            {
+              "label": "Digital slot booking with yard orchestration",
+              "value": 2,
+              "description": "Automated yard management"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q08",
+          "question": "Do you offer differentiated service tiers to customers (Gold/Silver/Bronze)?",
+          "helpText": "Service tiers enable premium pricing for priority customers",
+          "options": [
+            {
+              "label": "No service differentiation - same service for all",
+              "value": 0,
+              "description": "Uniform service level"
+            },
+            {
+              "label": "Informal prioritization for key customers",
+              "value": 1,
+              "description": "Ad-hoc prioritization"
+            },
+            {
+              "label": "Formal SLA-based service tiers",
+              "value": 2,
+              "description": "Structured service differentiation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q09",
+          "question": "What is your average transit time variance (actual vs promised)?",
+          "helpText": "Low variance indicates predictable service",
+          "options": [
+            {
+              "label": "> 20% variance",
+              "value": 0,
+              "description": "High unpredictability"
+            },
+            {
+              "label": "10-20% variance",
+              "value": 1,
+              "description": "Moderate predictability"
+            },
+            {
+              "label": "< 10% variance",
+              "value": 2,
+              "description": "Highly predictable service"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "service_q10",
+          "question": "How do you handle customer complaints and claims?",
+          "helpText": "Systematic complaint handling improves customer satisfaction",
+          "options": [
+            {
+              "label": "Ad-hoc resolution via email/calls",
+              "value": 0,
+              "description": "No systematic process"
+            },
+            {
+              "label": "Tracking system for complaints but manual resolution",
+              "value": 1,
+              "description": "Visibility without automation"
+            },
+            {
+              "label": "Automated complaint workflow with SLA tracking",
+              "value": 2,
+              "description": "Systematic complaint management"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "efficiency": {
+      "name": "Efficiency & Throughput",
+      "questions": [
+        {
+          "id": "efficiency_q01",
+          "question": "What % of your loads are auto-planned (without manual intervention)?",
+          "helpText": "Auto-planning reduces planner effort and improves consistency",
+          "options": [
+            {
+              "label": "< 20% auto-planned",
+              "value": 0,
+              "description": "Mostly manual planning"
+            },
+            {
+              "label": "20-50% auto-planned",
+              "value": 1,
+              "description": "Partial automation"
+            },
+            {
+              "label": "> 50% auto-planned",
+              "value": 2,
+              "description": "High automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q02",
+          "question": "What is your average truck turnaround time at plant (gate-in to gate-out)?",
+          "helpText": "Lower TAT improves asset utilization and vendor satisfaction",
+          "options": [
+            {
+              "label": "> 4 hours",
+              "value": 0,
+              "description": "Long detention"
+            },
+            {
+              "label": "2-4 hours",
+              "value": 1,
+              "description": "Moderate detention"
+            },
+            {
+              "label": "< 2 hours",
+              "value": 2,
+              "description": "Fast turnaround"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q03",
+          "question": "What % of freight indents are digitally placed (not phone/WhatsApp)?",
+          "helpText": "Digital indents reduce coordination time",
+          "options": [
+            {
+              "label": "< 30% digital",
+              "value": 0,
+              "description": "Mostly manual indents"
+            },
+            {
+              "label": "30-70% digital",
+              "value": 1,
+              "description": "Partial digitalization"
+            },
+            {
+              "label": "> 70% digital",
+              "value": 2,
+              "description": "Highly digital"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q04",
+          "question": "Do you have automated document generation (LR, E-way bill, etc.)?",
+          "helpText": "Auto-docs reduce manual effort and errors",
+          "options": [
+            {
+              "label": "Fully manual document creation",
+              "value": 0,
+              "description": "No automation"
+            },
+            {
+              "label": "Templates used but manual data entry",
+              "value": 1,
+              "description": "Partial automation"
+            },
+            {
+              "label": "Fully automated doc generation from TMS",
+              "value": 2,
+              "description": "Full automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q05",
+          "question": "What is your dock/loading bay utilization at peak hours?",
+          "helpText": "High utilization indicates efficiency; >90% may indicate bottleneck",
+          "options": [
+            {
+              "label": "< 60% utilized or > 95% (bottleneck)",
+              "value": 0,
+              "description": "Under-utilized or over-saturated"
+            },
+            {
+              "label": "60-75% or 90-95% utilized",
+              "value": 1,
+              "description": "Moderate utilization"
+            },
+            {
+              "label": "75-90% utilized",
+              "value": 2,
+              "description": "Optimal utilization"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q06",
+          "question": "Do you actively measure and reduce detention time (loading + unloading)?",
+          "helpText": "Detention reduction improves vendor costs and fleet utilization",
+          "options": [
+            {
+              "label": "Detention not tracked",
+              "value": 0,
+              "description": "No measurement"
+            },
+            {
+              "label": "Tracked but no active reduction initiatives",
+              "value": 1,
+              "description": "Visibility without action"
+            },
+            {
+              "label": "Actively tracked with reduction targets",
+              "value": 2,
+              "description": "Systematic reduction efforts"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q07",
+          "question": "What % of invoices are auto-generated and matched to shipments?",
+          "helpText": "Invoice automation speeds up billing cycle",
+          "options": [
+            {
+              "label": "< 30% automated",
+              "value": 0,
+              "description": "Mostly manual invoicing"
+            },
+            {
+              "label": "30-70% automated",
+              "value": 1,
+              "description": "Partial automation"
+            },
+            {
+              "label": "> 70% automated",
+              "value": 2,
+              "description": "High automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q08",
+          "question": "Do you use hub-and-spoke or cross-dock models for network efficiency?",
+          "helpText": "Hub models improve consolidation and reduce cost on long lanes",
+          "options": [
+            {
+              "label": "No hub model - point-to-point only",
+              "value": 0,
+              "description": "Direct shipping only"
+            },
+            {
+              "label": "Ad-hoc use of hubs for specific lanes",
+              "value": 1,
+              "description": "Limited hub usage"
+            },
+            {
+              "label": "Systematic hub-and-spoke or cross-dock network",
+              "value": 2,
+              "description": "Network optimization in use"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q09",
+          "question": "What is your average Days Sales Outstanding (DSO) for freight billing?",
+          "helpText": "Lower DSO improves cash flow",
+          "options": [
+            {
+              "label": "> 60 days",
+              "value": 0,
+              "description": "Slow billing cycle"
+            },
+            {
+              "label": "30-60 days",
+              "value": 1,
+              "description": "Moderate cycle"
+            },
+            {
+              "label": "< 30 days",
+              "value": 2,
+              "description": "Fast billing cycle"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "efficiency_q10",
+          "question": "Do you have weighbridge integration for automated weight capture?",
+          "helpText": "Automated weight capture reduces errors and speeds gate processes",
+          "options": [
+            {
+              "label": "No weighbridge or manual entry",
+              "value": 0,
+              "description": "Manual weight recording"
+            },
+            {
+              "label": "Weighbridge present but data manually entered",
+              "value": 1,
+              "description": "Semi-automated"
+            },
+            {
+              "label": "Fully integrated weighbridge with TMS",
+              "value": 2,
+              "description": "Full automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    },
+    "compliance": {
+      "name": "Risk & Compliance",
+      "questions": [
+        {
+          "id": "compliance_q01",
+          "question": "What % of E-Way Bills are generated digitally (not manual entry)?",
+          "helpText": "E-Way bill automation ensures compliance and reduces errors",
+          "options": [
+            {
+              "label": "< 50% automated",
+              "value": 0,
+              "description": "Mostly manual generation"
+            },
+            {
+              "label": "50-80% automated",
+              "value": 1,
+              "description": "Partial automation"
+            },
+            {
+              "label": "> 80% automated",
+              "value": 2,
+              "description": "High automation"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q02",
+          "question": "Do you have overload prevention controls (weight limits at gate)?",
+          "helpText": "Overload controls prevent penalties and safety incidents",
+          "options": [
+            {
+              "label": "No controls - occasional overloading happens",
+              "value": 0,
+              "description": "No systematic prevention"
+            },
+            {
+              "label": "Manual checks by planner/security",
+              "value": 1,
+              "description": "Manual enforcement"
+            },
+            {
+              "label": "System interlock preventing gate-out if overloaded",
+              "value": 2,
+              "description": "Automated controls"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q03",
+          "question": "Do you track route compliance (trucks following designated routes)?",
+          "helpText": "Route compliance prevents unauthorized detours and reduces risk",
+          "options": [
+            {
+              "label": "No route tracking",
+              "value": 0,
+              "description": "No visibility"
+            },
+            {
+              "label": "GPS tracking but no route enforcement",
+              "value": 1,
+              "description": "Visibility without enforcement"
+            },
+            {
+              "label": "Route compliance monitored with alerts",
+              "value": 2,
+              "description": "Active enforcement"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q04",
+          "question": "What is your document completeness rate (LR, POD, E-way, invoices)?",
+          "helpText": "Complete documentation prevents disputes and speeds audits",
+          "options": [
+            {
+              "label": "< 80% complete within SLA",
+              "value": 0,
+              "description": "Frequent missing docs"
+            },
+            {
+              "label": "80-95% complete",
+              "value": 1,
+              "description": "Moderate completeness"
+            },
+            {
+              "label": "> 95% complete",
+              "value": 2,
+              "description": "High completeness"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q05",
+          "question": "Do you have a no-go zone or restricted route policy?",
+          "helpText": "Restricted routes reduce security and safety risks",
+          "options": [
+            {
+              "label": "No policy - drivers choose routes",
+              "value": 0,
+              "description": "No restrictions"
+            },
+            {
+              "label": "Policy exists but not enforced systematically",
+              "value": 1,
+              "description": "Informal enforcement"
+            },
+            {
+              "label": "System-enforced no-go zones with GPS tracking",
+              "value": 2,
+              "description": "Systematic enforcement"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q06",
+          "question": "How do you track and analyze claims/incidents (damage, theft, accidents)?",
+          "helpText": "Claims analytics enable root cause analysis and prevention",
+          "options": [
+            {
+              "label": "No systematic tracking - handled case by case",
+              "value": 0,
+              "description": "Reactive handling"
+            },
+            {
+              "label": "Tracked in spreadsheet or basic system",
+              "value": 1,
+              "description": "Visibility without analytics"
+            },
+            {
+              "label": "Claims analytics with root cause and prevention",
+              "value": 2,
+              "description": "Proactive prevention"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q07",
+          "question": "Do you validate vendor/driver insurance and documentation?",
+          "helpText": "Vendor compliance validation reduces risk exposure",
+          "options": [
+            {
+              "label": "No systematic validation",
+              "value": 0,
+              "description": "Reactive checks only"
+            },
+            {
+              "label": "Manual validation at onboarding",
+              "value": 1,
+              "description": "One-time checks"
+            },
+            {
+              "label": "Automated validation with expiry alerts",
+              "value": 2,
+              "description": "Continuous compliance monitoring"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q08",
+          "question": "What is your cargo claims rate (% of shipments with damage/shortage)?",
+          "helpText": "Low claims rate indicates good handling and security",
+          "options": [
+            {
+              "label": "> 2% claims rate",
+              "value": 0,
+              "description": "High claims incidence"
+            },
+            {
+              "label": "0.5-2% claims rate",
+              "value": 1,
+              "description": "Moderate claims"
+            },
+            {
+              "label": "< 0.5% claims rate",
+              "value": 2,
+              "description": "Low claims incidence"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q09",
+          "question": "Do you track and reduce detention/demurrage charges?",
+          "helpText": "Detention tracking enables dispute resolution and cost recovery",
+          "options": [
+            {
+              "label": "Not tracked systematically",
+              "value": 0,
+              "description": "No visibility"
+            },
+            {
+              "label": "Tracked but not actively disputed or reduced",
+              "value": 1,
+              "description": "Passive tracking"
+            },
+            {
+              "label": "Automated computation with dispute workflow",
+              "value": 2,
+              "description": "Active management"
+            }
+          ],
+          "pillarWeight": 1.0
+        },
+        {
+          "id": "compliance_q10",
+          "question": "Do you measure CO2 emissions or have sustainability targets?",
+          "helpText": "ESG tracking becomes increasingly important for compliance",
+          "options": [
+            {
+              "label": "No measurement or targets",
+              "value": 0,
+              "description": "No ESG focus"
+            },
+            {
+              "label": "Basic tracking (fuel or distance-based estimates)",
+              "value": 1,
+              "description": "Basic measurement"
+            },
+            {
+              "label": "Systematic CO2 accounting with reduction targets",
+              "value": 2,
+              "description": "Active ESG management"
+            }
+          ],
+          "pillarWeight": 1.0
+        }
+      ]
+    }
+  }
+}

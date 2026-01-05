@@ -1,0 +1,93 @@
+{
+  "version": "1.0",
+  "description": "Hero levers for external-facing exposure. Plain-English, outcome-focused levers shown in early-stage conversations.",
+  "totalHeroLevers": 7,
+  "heroLevers": [
+    {
+      "id": "C01",
+      "externalName": "Truck Fill & Consolidation",
+      "externalDescription": "Reduce LTL shipments by consolidating loads and optimizing truck utilization",
+      "outcomes": ["8-15% cost reduction", "Fewer vehicles needed", "Better rates from carriers"],
+      "plainEnglishPitch": "Stop sending half-empty trucks. We help you consolidate shipments to fill trucks properly and cut freight cost.",
+      "typicalROI": "10-15% PKMMT reduction",
+      "icon": "package"
+    },
+    {
+      "id": "TB01",
+      "externalName": "Better Routing & Lane Selection",
+      "externalDescription": "Optimize routes to reduce distance, tolls, and transit time",
+      "outcomes": ["5-10% distance savings", "Lower toll costs", "Faster deliveries"],
+      "plainEnglishPitch": "Use the smartest routes, not just the familiar ones. Cut unnecessary kilometers and tolls.",
+      "typicalROI": "5-8% cost reduction per lane",
+      "icon": "route"
+    },
+    {
+      "id": "TB02",
+      "externalName": "Disciplined Spot Buying",
+      "externalDescription": "Digital multi-vendor bidding for non-contract freight",
+      "outcomes": ["8-12% spot rate reduction", "Faster vendor placement", "Better rate visibility"],
+      "plainEnglishPitch": "Get 3-5 vendor quotes instantly instead of calling around. Always know you're getting the best spot rate.",
+      "typicalROI": "8-12% spot freight savings",
+      "icon": "dollar-sign"
+    },
+    {
+      "id": "E06",
+      "externalName": "Detention Hygiene",
+      "externalDescription": "Reduce truck waiting time at plants and delivery points",
+      "outcomes": ["30-50% detention reduction", "Lower vendor detention charges", "Better vendor relationships"],
+      "plainEnglishPitch": "Cut the hours trucks waste waiting at your gates. Slot booking and faster processes mean lower detention penalties.",
+      "typicalROI": "₹2-5L per plant per year",
+      "icon": "clock"
+    },
+    {
+      "id": "CT44",
+      "externalName": "Basic Tracking & Proof of Delivery",
+      "externalDescription": "GPS tracking and digital POD capture for all shipments",
+      "outcomes": ["3-5 point OTIF improvement", "Faster billing cycle", "Fewer disputes"],
+      "plainEnglishPitch": "Know where every truck is, and get delivery proof instantly—not weeks later via courier.",
+      "typicalROI": "3-6 point OTIF uplift",
+      "icon": "map-pin"
+    },
+    {
+      "id": "V01",
+      "externalName": "Digital Indent & Placement",
+      "externalDescription": "App-based vehicle indenting with auto-accept/reject",
+      "outcomes": ["40-60% faster placement", "Reduced coordination calls", "Better vendor compliance"],
+      "plainEnglishPitch": "Stop the back-and-forth calls. Send indent, get confirmation, track placement—all in an app.",
+      "typicalROI": "50% faster vehicle placement",
+      "icon": "smartphone"
+    },
+    {
+      "id": "CP01",
+      "externalName": "E-Way Bill Automation",
+      "externalDescription": "Automated generation and tracking of compliance documents",
+      "outcomes": ["90%+ automation rate", "Zero penalty risk", "Faster dispatch"],
+      "plainEnglishPitch": "Auto-generate E-Way Bills and compliance docs. No manual errors, no last-minute scrambling.",
+      "typicalROI": "2-3 hour time savings per day",
+      "icon": "file-text"
+    }
+  ],
+  "exposureGuidelines": {
+    "stage0_outreach": {
+      "show": ["externalName", "outcomes"],
+      "hide": ["id", "internalLeverDetails", "maturityLevel"]
+    },
+    "stage1_discover": {
+      "show": ["externalName", "externalDescription", "outcomes", "plainEnglishPitch"],
+      "hide": ["id", "complexImpactLogic"]
+    },
+    "stage2_design": {
+      "show": ["externalName", "externalDescription", "outcomes", "typicalROI"],
+      "allowReveal": ["id", "readinessAssessment", "detailedImpact"]
+    }
+  },
+  "mappingToFullLibrary": {
+    "C01": "Load Optimizer & Consolidation Engine",
+    "TB01": "Route Optimization",
+    "TB02": "Digital Spot Bidding Platform",
+    "E06": "Detention Management & Slot Booking",
+    "CT44": "GPS Tracking & Control Tower",
+    "V01": "Digital Vehicle Placement",
+    "CP01": "E-Way Bill Automation"
+  }
+}

@@ -1,0 +1,486 @@
+[
+  {
+    "id": "C01",
+    "name": "Total Freight Cost",
+    "description": "Total transport spend over period",
+    "pillar": "cost",
+    "unit": "₹",
+    "formula": "Sum of all freight invoices",
+    "benchmarks": {
+      "industry": "Manufacturing",
+      "typical": 5000000,
+      "bestInClass": 4200000
+    }
+  },
+  {
+    "id": "C02",
+    "name": "Cost per MT-km (PKMMT)",
+    "description": "Total freight cost divided by tonnes and kilometers",
+    "pillar": "cost",
+    "unit": "₹",
+    "formula": "Total Freight Cost / (Tonnes × Kilometers)",
+    "benchmarks": {
+      "industry": "Steel/Metals",
+      "typical": 3.85,
+      "bestInClass": 3.15
+    }
+  },
+  {
+    "id": "C03",
+    "name": "Freight Cost % of Revenue",
+    "description": "Freight cost as percentage of total revenue",
+    "pillar": "cost",
+    "unit": "%",
+    "formula": "(Total Freight Cost / Revenue) × 100",
+    "benchmarks": {
+      "industry": "Manufacturing",
+      "typical": 7.5,
+      "bestInClass": 5.2
+    }
+  },
+  {
+    "id": "C04",
+    "name": "Freight Cost % of COGS",
+    "description": "Freight cost as percentage of cost of goods sold",
+    "pillar": "cost",
+    "unit": "%",
+    "formula": "(Total Freight Cost / COGS) × 100",
+    "benchmarks": {
+      "industry": "CPG",
+      "typical": 4.8,
+      "bestInClass": 3.5
+    }
+  },
+  {
+    "id": "C05",
+    "name": "Cost per Shipment",
+    "description": "Average freight cost per shipment",
+    "pillar": "cost",
+    "unit": "₹",
+    "formula": "Total Freight Cost / Number of Shipments",
+    "benchmarks": {
+      "industry": "Manufacturing",
+      "typical": 12500,
+      "bestInClass": 10200
+    }
+  },
+  {
+    "id": "C06",
+    "name": "Accessorial Cost %",
+    "description": "Detention, demurrage, and other extra charges as % of freight",
+    "pillar": "cost",
+    "unit": "%",
+    "formula": "(Accessorial Costs / Total Freight Cost) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 8.5,
+      "bestInClass": 3.2
+    }
+  },
+  {
+    "id": "C07",
+    "name": "Freight Cost Variance vs Budget",
+    "description": "Difference between actual and budgeted freight cost",
+    "pillar": "cost",
+    "unit": "%",
+    "formula": "((Actual - Budget) / Budget) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 5,
+      "bestInClass": 1
+    }
+  },
+  {
+    "id": "S01",
+    "name": "On-Time Delivery (OTD) %",
+    "description": "Percentage of deliveries made on or before promised time",
+    "pillar": "service",
+    "unit": "%",
+    "formula": "(On-Time Deliveries / Total Deliveries) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 85,
+      "bestInClass": 95
+    }
+  },
+  {
+    "id": "S02",
+    "name": "On-Time Pickup (OTP) %",
+    "description": "Percentage of pickups completed at or before scheduled time",
+    "pillar": "service",
+    "unit": "%",
+    "formula": "(On-Time Pickups / Total Pickups) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 82,
+      "bestInClass": 92
+    }
+  },
+  {
+    "id": "S03",
+    "name": "In-Full Delivery % (IFD)",
+    "description": "Orders delivered complete vs requested quantity",
+    "pillar": "service",
+    "unit": "%",
+    "formula": "(In-Full Deliveries / Total Deliveries) × 100",
+    "benchmarks": {
+      "industry": "CPG",
+      "typical": 88,
+      "bestInClass": 96
+    }
+  },
+  {
+    "id": "S04",
+    "name": "OTIF %",
+    "description": "On-Time and In-Full delivery percentage",
+    "pillar": "service",
+    "unit": "%",
+    "formula": "(OTIF Deliveries / Total Deliveries) × 100",
+    "benchmarks": {
+      "industry": "Manufacturing",
+      "typical": 78,
+      "bestInClass": 92
+    }
+  },
+  {
+    "id": "S05",
+    "name": "Average Transit Time",
+    "description": "Average time from pickup to delivery",
+    "pillar": "service",
+    "unit": "hours",
+    "formula": "Total Transit Time / Number of Shipments",
+    "benchmarks": {
+      "industry": "Road",
+      "typical": 48,
+      "bestInClass": 36
+    }
+  },
+  {
+    "id": "S06",
+    "name": "Order Accuracy %",
+    "description": "Correct product and quantity delivered",
+    "pillar": "service",
+    "unit": "%",
+    "formula": "(Accurate Orders / Total Orders) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 94,
+      "bestInClass": 98.5
+    }
+  },
+  {
+    "id": "S07",
+    "name": "Customer Complaint Rate",
+    "description": "Complaints per 100 shipments",
+    "pillar": "service",
+    "unit": "per 100",
+    "formula": "(Total Complaints / Total Shipments) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 3.2,
+      "bestInClass": 0.8
+    }
+  },
+  {
+    "id": "E01",
+    "name": "Weight Utilisation %",
+    "description": "Actual load weight as % of vehicle capacity",
+    "pillar": "efficiency",
+    "unit": "%",
+    "formula": "(Actual Weight / Vehicle Capacity) × 100",
+    "benchmarks": {
+      "industry": "Bulk",
+      "typical": 72,
+      "bestInClass": 88
+    }
+  },
+  {
+    "id": "E02",
+    "name": "Volume Utilisation %",
+    "description": "Actual cube used as % of vehicle cube capacity",
+    "pillar": "efficiency",
+    "unit": "%",
+    "formula": "(Actual Volume / Vehicle Volume Capacity) × 100",
+    "benchmarks": {
+      "industry": "CPG",
+      "typical": 65,
+      "bestInClass": 82
+    }
+  },
+  {
+    "id": "E03",
+    "name": "Combined Utilisation Index",
+    "description": "Function of both weight and volume utilisation",
+    "pillar": "efficiency",
+    "unit": "score",
+    "formula": "min(Weight%, Volume%) + 0.3 × (Weight% + Volume%)/2",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 70,
+      "bestInClass": 85
+    }
+  },
+  {
+    "id": "E04",
+    "name": "LTL %",
+    "description": "Percentage of shipments as less-than-truckload",
+    "pillar": "efficiency",
+    "unit": "%",
+    "formula": "(LTL Shipments / Total Shipments) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 38,
+      "bestInClass": 18
+    }
+  },
+  {
+    "id": "E05",
+    "name": "Loading/Unloading TAT",
+    "description": "Average turnaround time at dock",
+    "pillar": "efficiency",
+    "unit": "hours",
+    "formula": "Total Time at Dock / Number of Trips",
+    "benchmarks": {
+      "industry": "Manufacturing",
+      "typical": 4.2,
+      "bestInClass": 2.1
+    }
+  },
+  {
+    "id": "E06",
+    "name": "Detention Time",
+    "description": "Average detention hours per trip (plant & consignee)",
+    "pillar": "efficiency",
+    "unit": "hours",
+    "formula": "Total Detention Hours / Number of Trips",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 6.5,
+      "bestInClass": 2.0
+    }
+  },
+  {
+    "id": "E07",
+    "name": "Empty Km %",
+    "description": "Empty running as % of total distance",
+    "pillar": "efficiency",
+    "unit": "%",
+    "formula": "(Empty Distance / Total Distance) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 28,
+      "bestInClass": 12
+    }
+  },
+  {
+    "id": "E08",
+    "name": "Vehicle Fill Rate %",
+    "description": "Overall vehicle capacity usage at trip level",
+    "pillar": "efficiency",
+    "unit": "%",
+    "formula": "Average of Weight and Volume Utilisation",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 68,
+      "bestInClass": 85
+    }
+  },
+  {
+    "id": "CP01",
+    "name": "E-Way Bill Compliance %",
+    "description": "Valid EWBs for trips requiring them",
+    "pillar": "compliance",
+    "unit": "%",
+    "formula": "(Valid EWBs / Required EWBs) × 100",
+    "benchmarks": {
+      "industry": "India",
+      "typical": 92,
+      "bestInClass": 99.5
+    }
+  },
+  {
+    "id": "CP02",
+    "name": "POD Capture %",
+    "description": "Trips with valid proof of delivery",
+    "pillar": "compliance",
+    "unit": "%",
+    "formula": "(PODs Captured / Delivered Shipments) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 87,
+      "bestInClass": 98
+    }
+  },
+  {
+    "id": "CP03",
+    "name": "Documentation Completeness %",
+    "description": "Required documents present and valid",
+    "pillar": "compliance",
+    "unit": "%",
+    "formula": "(Complete Documentation / Total Shipments) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 89,
+      "bestInClass": 97
+    }
+  },
+  {
+    "id": "CP04",
+    "name": "Claims Frequency",
+    "description": "Claims per 1000 shipments",
+    "pillar": "compliance",
+    "unit": "per 1000",
+    "formula": "(Total Claims / Total Shipments) × 1000",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 8.5,
+      "bestInClass": 2.1
+    }
+  },
+  {
+    "id": "CP05",
+    "name": "Claims Severity",
+    "description": "Claim value as % of freight or revenue",
+    "pillar": "compliance",
+    "unit": "%",
+    "formula": "(Total Claim Value / Total Freight Cost) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 1.2,
+      "bestInClass": 0.3
+    }
+  },
+  {
+    "id": "CP06",
+    "name": "Regulatory Fine Incidents",
+    "description": "Overload, EWB, RTO fines per period",
+    "pillar": "compliance",
+    "unit": "count",
+    "formula": "Count of regulatory violations",
+    "benchmarks": {
+      "industry": "India",
+      "typical": 12,
+      "bestInClass": 1
+    }
+  },
+  {
+    "id": "V01",
+    "name": "Total Dispatch Volume (MT)",
+    "description": "Total tonnes dispatched in period",
+    "pillar": "volume",
+    "unit": "MT",
+    "formula": "Sum of all shipment weights"
+  },
+  {
+    "id": "V02",
+    "name": "Shipment Count",
+    "description": "Total number of shipments",
+    "pillar": "volume",
+    "unit": "count",
+    "formula": "Count of shipments"
+  },
+  {
+    "id": "V03",
+    "name": "On-Time Placement %",
+    "description": "Requested vs actual placement time at loading",
+    "pillar": "volume",
+    "unit": "%",
+    "formula": "(On-Time Placements / Total Placements) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 78,
+      "bestInClass": 92
+    }
+  },
+  {
+    "id": "ESG01",
+    "name": "CO₂ Intensity (g CO₂ / t-km)",
+    "description": "Carbon emissions per tonne-kilometer",
+    "pillar": "esg",
+    "unit": "g CO₂/t-km",
+    "formula": "Total Emissions / (Tonnes × Distance)",
+    "benchmarks": {
+      "industry": "Road",
+      "typical": 62,
+      "bestInClass": 42
+    }
+  },
+  {
+    "id": "ESG02",
+    "name": "Empty Km % (ESG View)",
+    "description": "Empty running impact on sustainability",
+    "pillar": "esg",
+    "unit": "%",
+    "formula": "(Empty Distance / Total Distance) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 28,
+      "bestInClass": 12
+    }
+  },
+  {
+    "id": "ESG03",
+    "name": "Green Fleet Share %",
+    "description": "Shipments by green/efficient vehicles",
+    "pillar": "esg",
+    "unit": "%",
+    "formula": "(Green Fleet Tonnes / Total Tonnes) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 12,
+      "bestInClass": 35
+    }
+  },
+  {
+    "id": "DA01",
+    "name": "Digital Indent %",
+    "description": "Indents created via system/app/API",
+    "pillar": "digital",
+    "unit": "%",
+    "formula": "(Digital Indents / Total Indents) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 65,
+      "bestInClass": 95
+    }
+  },
+  {
+    "id": "DA02",
+    "name": "E-POD Adoption %",
+    "description": "Deliveries closed with electronic POD",
+    "pillar": "digital",
+    "unit": "%",
+    "formula": "(E-PODs / Total Deliveries) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 58,
+      "bestInClass": 92
+    }
+  },
+  {
+    "id": "DA03",
+    "name": "Auto-Planned Load %",
+    "description": "Loads generated via optimization engine",
+    "pillar": "digital",
+    "unit": "%",
+    "formula": "(Auto-Planned Loads / Total Loads) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 32,
+      "bestInClass": 78
+    }
+  },
+  {
+    "id": "DA04",
+    "name": "Exception Playbook Adoption %",
+    "description": "Alerts handled via standard workflows",
+    "pillar": "digital",
+    "unit": "%",
+    "formula": "(Playbook-Handled Exceptions / Total Exceptions) × 100",
+    "benchmarks": {
+      "industry": "All",
+      "typical": 45,
+      "bestInClass": 85
+    }
+  }
+]

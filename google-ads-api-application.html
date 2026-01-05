@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretron - Google Ads API Basic Access Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4285f4;
+        }
+        .header h1 {
+            color: #4285f4;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .header p {
+            color: #666;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-weight: bold;
+            color: #1a73e8;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .section-content {
+            padding-left: 0;
+            font-size: 14px;
+        }
+        .section-content p {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .api-services {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .api-services code {
+            background: #e8f0fe;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #1967d2;
+        }
+        .mockup {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .mockup-header {
+            background: #1a73e8;
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mockup-header h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .mockup-header span {
+            background: white;
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .mockup-content {
+            padding: 20px;
+            background: #fafafa;
+        }
+        .mockup-title {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .mockup-title select {
+            padding: 4px 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+        .metric-card {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .metric-card .label {
+            font-size: 12px;
+            color: #1565c0;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .metric-card .value {
+            font-size: 20px;
+            color: #0d47a1;
+            font-weight: bold;
+        }
+        .mockup-link {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #1a73e8;
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .company-info {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .company-info table {
+            width: 100%;
+            font-size: 14px;
+        }
+        .company-info td {
+            padding: 5px 0;
+        }
+        .company-info td:first-child {
+            font-weight: 600;
+            width: 150px;
+            color: #555;
+        }
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .mockup {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Google Ads API - Basic Access Application</h1>
+        <p>Fretron Technologies Pvt Ltd</p>
+    </div>
+
+    <div class="company-info">
+        <table>
+            <tr>
+                <td>Company Name:</td>
+                <td>Fretron Technologies Pvt Ltd</td>
+            </tr>
+            <tr>
+                <td>Website:</td>
+                <td>https://www.fretron.com</td>
+            </tr>
+            <tr>
+                <td>Google Ads Customer ID:</td>
+                <td>378-584-3095</td>
+            </tr>
+            <tr>
+                <td>Contact Email:</td>
+                <td>puneet@fretron.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Business Model:</div>
+        <div class="section-content">
+            <p>Fretron is a B2B SaaS company providing Transportation Management System (TMS) software to enterprises in India. We run Google Ads campaigns to generate leads for our software products at fretron.com.</p>
+            <p>We advertise only for our own company and do not manage ads for any third parties or external clients.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Tool Access/Use:</div>
+        <div class="section-content">
+            <p>Our internal marketing analytics tool will be used by Fretron's marketing team (2-3 employees) to:</p>
+            <ul>
+                <li>View and analyze Google Ads campaign performance alongside other marketing channels (Meta Ads, email campaigns, HubSpot CRM)</li>
+                <li>Generate unified marketing reports combining data from multiple advertising platforms</li>
+                <li>Track lead generation metrics and calculate ROI across all paid channels</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>The tool is for internal use only</strong> and will not be accessible to external parties or clients.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Tool Design:</div>
+        <div class="section-content">
+            <p>Our marketing tool has two main functions:</p>
+            <p style="margin-top: 10px;"><strong>1. Reporting & Analytics:</strong></p>
+            <ul>
+                <li>Sync Google Ads data daily into our internal database</li>
+                <li>Display campaign and ad group performance metrics (impressions, clicks, conversions, cost)</li>
+                <li>Compare performance with other advertising platforms (Meta Ads)</li>
+                <li>Track lead attribution from ads to CRM deals in HubSpot</li>
+            </ul>
+            <p style="margin-top: 15px;"><strong>2. Campaign Management:</strong></p>
+            <ul>
+                <li>Create and manage campaigns programmatically based on our marketing calendar</li>
+                <li>Update ad copy and targeting based on performance data</li>
+                <li>Pause/enable campaigns based on budget allocation</li>
+                <li>Automate A/B testing of ad creatives</li>
+            </ul>
+            <p style="margin-top: 15px;">All API operations are performed only on our own Fretron ad account. We do not manage ads for third parties.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">API Services Called:</div>
+        <div class="api-services">
+            <ul style="margin-left: 20px;">
+                <li><code>GoogleAdsService</code> (search/searchStream) - Pull campaign and ad group performance reports</li>
+                <li><code>CampaignService</code> - Create, update, and manage campaigns</li>
+                <li><code>AdGroupService</code> - Create and manage ad groups</li>
+                <li><code>AdGroupAdService</code> - Create and manage ads within ad groups</li>
+                <li><code>Customer</code> resource - Retrieve account information and settings</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Tool Mockups:</div>
+        <div class="section-content">
+            <p>Below is a mockup of our internal marketing dashboard showing Google Ads data integration:</p>
+        </div>
+
+        <div class="mockup">
+            <div class="mockup-header">
+                <h3>Fretron Marketing Dashboard</h3>
+                <span>fretron.com</span>
+            </div>
+            <div class="mockup-content">
+                <div class="mockup-title">
+                    <strong>Google Ads Account Performance</strong>
+                    <select>
+                        <option>Last 30 Days</option>
+                    </select>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="label">Impressions</div>
+                        <div class="value">4,73,240</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Clicks</div>
+                        <div class="value">4,333</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Conversions</div>
+                        <div class="value">52</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="label">Cost</div>
+                        <div class="value">₹25,640</div>
+                    </div>
+                </div>
+                <div class="mockup-link">Click for Campaign-Level Performance →</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Document prepared for Google Ads API Basic Access Application</p>
+        <p>Fretron Technologies Pvt Ltd | January 2026</p>
+    </div>
+</body>
+</html>

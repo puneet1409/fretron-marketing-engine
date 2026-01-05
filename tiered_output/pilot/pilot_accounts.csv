@@ -1,0 +1,21 @@
+Company,Category,Segment,Sub_Segment,Account_Type,HQ,Key_Locations,Sales_Rs_Cr,Employees,Total_Logistics_Spend_Rs_Cr,Priority,tier0_score,tier0_tier
+Mahindra & Mahindra,Auto & Engineering,Auto Oem,PV/CV/Tractors,Expansion,Mumbai,"Chakan, Nashik, Igatpuri, Kandivali, Zaheerabad, Haridwar",140000.0,55000.0,1100.0,,120,high_priority
+Tata Motors,Auto & Engineering,Auto Oem,PV/CV,Expansion,Mumbai,"Pune, Sanand (GJ), Lucknow, Pantnagar, Jamshedpur, Dharwad",445000.0,80000.0,2600.0,,120,high_priority
+Coal India Ltd,Mining & Minerals,Mining Minerals,Coal,Expansion,Kolkata,"Jharkhand, Odisha, Chhattisgarh, MP, WB, Maharashtra",160000.0,240000.0,1350.0,,120,high_priority
+Hindalco Industries,Steel & Metals,Non Ferrous Metals,Aluminium/Copper,Expansion,Mumbai,"Hirakud (OD), Renukoot (UP), Dahej (GJ), Belgaum (KA), Aditya (OD)",215000.0,35000.0,1300.0,,120,high_priority
+Reliance Industries,Chemicals & Petrochemicals,Petrochemicals Polymers,Integrated,Expansion,Mumbai,"Jamnagar (GJ), Hazira (GJ), Vadodara (GJ)",950000.0,250000.0,5500.0,,115,high_priority
+IFFCO,Chemicals & Petrochemicals,Fertilizers,Cooperative,Expansion,Delhi,"Kalol (GJ), Kandla (GJ), Phulpur (UP), Aonla (UP), Paradeep (OD), Babrala (UP)",45000.0,6000.0,765.0,,95,high_priority
+Nestle India,FMCG & Consumer,Fmcg Foods Personal Care,Foods,Expansion,Gurugram,"Nanjangud (KA), Samalkha (HR), Moga (PB), Tahliwal (HP)",19000.0,8500.0,595.0,,95,high_priority
+SAIL,Steel & Metals,Steel Coils,Integrated,Expansion,Delhi,"Bokaro (JH), Durgapur (WB), Rourkela (OD), Bhilai (CG), Burnpur (WB)",110000.0,60000.0,300.0,,95,high_priority
+Varun Beverages (PepsiCo),FMCG & Consumer,Beverages,Soft Drinks,Expansion,Gurugram,"Pan-India (Greater Noida, Pathankot, Jaipur, Kolkata, Mumbai, Chennai, etc.)",18000.0,13000.0,510.0,,95,high_priority
+BPCL,Chemicals & Petrochemicals,Petrochemicals Polymers,Refinery-Petrochem,Penetration,Mumbai,"Kochi (KL), Mumbai",550000.0,12000.0,605.0,,95,high_priority
+Chemplast Sanmar,Chemicals & Petrochemicals,Petrochemicals Polymers,PVC,Expansion,Chennai,"Mettur (TN), Cuddalore (TN)",5500.0,3000.0,120.0,,75,high_priority
+Mondelez India,FMCG & Consumer,Fmcg Foods Personal Care,Confectionery,Penetration,Mumbai,"Baddi (HP), Induri (MH), Sricity (AP)",8500.0,4500.0,255.0,,75,high_priority
+Karnataka Milk Federation,FMCG & Consumer,Dairy Products,Cooperative,Penetration,Bangalore,"Bangalore, Mysore, Dharwad",25000.0,10000.0,167.0,,75,high_priority
+Imports (Port Delivery),Steel & Metals,Metal Scrap,Import,Penetration,,"Kandla, JNPT, Chennai",20000.0,2000.0,170.0,,75,high_priority
+NMDC,Mining & Minerals,Industrial Minerals,Multi,Penetration,Hyderabad,"CG, Karnataka, MP, Rajasthan",20000.0,7000.0,170.0,,75,high_priority
+Pengg Industries,Steel & Metals,Steel Wire Products,Wire Rope,Expansion,Ahmednagar,Ahmednagar (MH),400.0,600.0,17.0,,55,high_priority
+NMDC (Steel),Steel & Metals,Steel Flats Longs,Integrated,Penetration,Hyderabad,Nagarnar (CG),8000.0,2000.0,46.0,,55,high_priority
+Chemplast Sanmar,Chemicals & Petrochemicals,Acids Solvents,Chlor-Alkali,Penetration,Chennai,"Mettur (TN), Karaikal",2000.0,1200.0,29.0,,55,high_priority
+Piaggio India,Auto & Engineering,Two Wheelers Tractors,3W/2W,Penetration,Pune,Baramati (MH),3500.0,1800.0,45.0,,55,high_priority
+JSW Ispat Special,Steel & Metals,Steel Coils,Specialty,Penetration,Mumbai,"Dolvi (MH), Tarapur (MH)",8000.0,2500.0,46.0,,55,high_priority

@@ -1,0 +1,1307 @@
+[
+  {
+    "id": "TB01",
+    "name": "Digital Spot Bidding (Basic)",
+    "description": "Move from phone-based spot sourcing to digital bidding platform for price transparency and faster placement",
+    "theme": "buying_rate",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-3, -7], "unit": "%" },
+      { "kpiId": "C05", "expectedImpactRange": [-5, -10], "unit": "%" },
+      { "kpiId": "V03", "expectedImpactRange": [3, 8], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals", "cement"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "benchmarkSource": "TMS optimization typically delivers 3-7% savings on spot freight via better sourcing discipline",
+    "typicalROI": "3-7% reduction in spot freight cost, 15-25% faster placement"
+  },
+  {
+    "id": "TB02",
+    "name": "Reverse Auction Engine (Multi-round)",
+    "description": "Multi-round digital auctions for contract and dedicated fleet sourcing with live bidding",
+    "theme": "buying_rate",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-5, -12], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-8, -15], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "benchmarkSource": "Reverse auctions can deliver 8-15% freight cost reduction through competitive bidding",
+    "typicalROI": "8-15% contract rate reduction, 20-30% reduction in tender cycle time"
+  },
+  {
+    "id": "TB03",
+    "name": "Contract Rate Governance & Fuel Indexation",
+    "description": "Systematic rate card management with fuel price indexation and quarterly reviews",
+    "theme": "buying_rate",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C07", "expectedImpactRange": [-3, -8], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-2, -5], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "2-5% cost avoidance, reduced budget variance"
+  },
+  {
+    "id": "TB04",
+    "name": "Lane-level Rate Benchmarking vs Market",
+    "description": "Compare contracted rates against market benchmarks by lane, identify savings opportunities",
+    "theme": "buying_rate",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" },
+      { "kpiId": "C05", "expectedImpactRange": [-3, -8], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "amber" },
+    "typicalROI": "5-10% savings on outlier lanes, better negotiation leverage"
+  },
+  {
+    "id": "TB05",
+    "name": "Lane Bundling / Portfolio-based Tendering",
+    "description": "Bundle lanes into portfolios for better carrier commitment and volume discounts",
+    "theme": "buying_rate",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-8, -15], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 7], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals"],
+    "maturityLevel": 3,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "benchmarkSource": "Portfolio tendering can achieve 8-15% cost reduction through volume consolidation",
+    "typicalROI": "8-15% rate reduction, improved carrier reliability"
+  },
+  {
+    "id": "TB06",
+    "name": "Mode Mix Policy (Road vs Rail/Sea/Air)",
+    "description": "Optimize mode selection based on cost, service requirements, and lead times",
+    "theme": "buying_rate",
+    "pillars": ["cost", "service", "esg"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-10, -20], "unit": "%" },
+      { "kpiId": "ESG01", "expectedImpactRange": [-15, -30], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "benchmarkSource": "Mode shift to rail can reduce freight costs by 10-20% and emissions by 15-30%",
+    "typicalROI": "10-20% cost savings on bulk lanes, significant CO₂ reduction"
+  },
+  {
+    "id": "TB07",
+    "name": "Dedicated vs Market Fleet Mix Optimisation",
+    "description": "Balance owned/dedicated fleet against spot market for optimal cost and flexibility",
+    "theme": "buying_rate",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-5, -12], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [2, 6], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "5-12% cost optimization, better service predictability"
+  },
+  {
+    "id": "TB08",
+    "name": "Volume Commitment & Take-or-Pay Optimisation",
+    "description": "Structure carrier contracts with volume commitments for better rates and guaranteed capacity",
+    "theme": "buying_rate",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" },
+      { "kpiId": "V03", "expectedImpactRange": [5, 12], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "5-10% rate discount, improved capacity availability"
+  },
+  {
+    "id": "TB09",
+    "name": "Incentive Schemes & Penalties (OTIF-linked)",
+    "description": "Link carrier payments to OTIF performance with bonus/penalty structure",
+    "theme": "buying_rate",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "S04", "expectedImpactRange": [5, 15], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "5-15% OTIF improvement, better carrier accountability"
+  },
+  {
+    "id": "LU10",
+    "name": "LTL→FTL Load Consolidation (Multi-drop)",
+    "description": "Consolidate less-than-truckload shipments into full truckloads with multi-drop routing",
+    "theme": "load_cube",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-8, -15], "unit": "%" },
+      { "kpiId": "E04", "expectedImpactRange": [-15, -30], "unit": "%" },
+      { "kpiId": "E01", "expectedImpactRange": [10, 25], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "benchmarkSource": "Load consolidation delivers 8-15% freight savings through better capacity utilization",
+    "typicalROI": "8-15% PKMMT reduction, 15-30% reduction in LTL shipments"
+  },
+  {
+    "id": "LU11",
+    "name": "3D Load Building / Cube Optimisation",
+    "description": "Advanced 3D packing algorithms to maximize cube utilization considering weight, dims, stacking",
+    "theme": "load_cube",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E02", "expectedImpactRange": [8, 18], "unit": "%" },
+      { "kpiId": "E03", "expectedImpactRange": [5, 15], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "green", "technology": "red" },
+    "typicalROI": "8-18% volume utilization improvement, fewer trips"
+  },
+  {
+    "id": "LU12",
+    "name": "Weight + Volume Dual Optimisation",
+    "description": "Optimize loads against both weight and volume constraints simultaneously",
+    "theme": "load_cube",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "E02", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "E03", "expectedImpactRange": [8, 20], "unit": "%" }
+    ],
+    "industries": ["cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "amber" },
+    "typicalROI": "8-20% combined utilization improvement"
+  },
+  {
+    "id": "LU13",
+    "name": "Axle-load-aware Loading (Bulk)",
+    "description": "Balance loads across axles to maximize legal weight without violations",
+    "theme": "load_cube",
+    "pillars": ["efficiency", "compliance"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "CP06", "expectedImpactRange": [-50, -80], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "5-10% weight utilization gain, 50-80% reduction in overload fines"
+  },
+  {
+    "id": "LU14",
+    "name": "Multi-principal Load Mixing (3PL)",
+    "description": "Combine loads from multiple customers on same vehicle for 3PL consolidation",
+    "theme": "load_cube",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [15, 30], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "green" },
+    "typicalROI": "10-20% cost reduction through shared freight"
+  },
+  {
+    "id": "LU15",
+    "name": "Palletisation & Unit-load Design Standards",
+    "description": "Standardize packaging on pallets for faster loading and better cube usage",
+    "theme": "load_cube",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-30, -50], "unit": "%" },
+      { "kpiId": "E02", "expectedImpactRange": [5, 12], "unit": "%" }
+    ],
+    "industries": ["cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "red", "technology": "green" },
+    "typicalROI": "30-50% loading time reduction, 5-12% cube gain"
+  },
+  {
+    "id": "LU16",
+    "name": "MOQ / Full-truck-order Rules Linked to Capacities",
+    "description": "Set customer order minimums aligned to vehicle capacities to reduce LTL",
+    "theme": "load_cube",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E04", "expectedImpactRange": [-20, -40], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "red", "technology": "green" },
+    "typicalROI": "20-40% LTL reduction, 5-10% PKMMT improvement"
+  },
+  {
+    "id": "LU17",
+    "name": "Dynamic Consolidation Windows (Planning Horizon Tuning)",
+    "description": "Adjust order consolidation windows based on volume patterns to balance service and cost",
+    "theme": "load_cube",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "S05", "expectedImpactRange": [-5, 5], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "5-12% utilization gain with minimal service impact"
+  },
+  {
+    "id": "LU18",
+    "name": "Temperature-zone Segregation within Vehicles (Cold Chain)",
+    "description": "Multi-temp zone loading for mixed ambient/chilled/frozen products",
+    "theme": "load_cube",
+    "pillars": ["efficiency", "service"],
+    "impactedKPIs": [
+      { "kpiId": "E02", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "S06", "expectedImpactRange": [2, 5], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 3,
+    "readiness": { "data": "green", "process": "amber", "technology": "red" },
+    "typicalROI": "10-20% vehicle reduction for cold chain, better product quality"
+  },
+  {
+    "id": "RS19",
+    "name": "Primary/Linehaul Route Optimisation (Distance/Toll/Time)",
+    "description": "Optimize main lane routing considering distance, toll costs, and transit time",
+    "theme": "routing_scheduling",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-2, -5], "unit": "%" },
+      { "kpiId": "S05", "expectedImpactRange": [-5, -12], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals", "cement"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "benchmarkSource": "Route optimization delivers 2-5% distance/cost savings and 5-12% transit time improvement",
+    "typicalROI": "2-5% PKMMT reduction, 5-12% faster transit"
+  },
+  {
+    "id": "RS20",
+    "name": "Street-level Routing & Drop Sequence (Secondary/Tertiary)",
+    "description": "Optimize multi-drop delivery sequences at street level for last-mile efficiency",
+    "theme": "routing_scheduling",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-8, -15], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "amber" },
+    "typicalROI": "8-15% last-mile cost reduction, 5-10% OTD improvement"
+  },
+  {
+    "id": "RS21",
+    "name": "Time-window Routing (Stores, Plants, Ports)",
+    "description": "Route optimization respecting delivery time windows and appointment slots",
+    "theme": "routing_scheduling",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [8, 15], "unit": "%" },
+      { "kpiId": "E06", "expectedImpactRange": [-20, -40], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "8-15% OTD improvement, 20-40% detention reduction"
+  },
+  {
+    "id": "RS22",
+    "name": "Dynamic Re-routing Based on Live Events",
+    "description": "Real-time route adjustments for traffic, weather, breakdowns, order changes",
+    "theme": "routing_scheduling",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "S05", "expectedImpactRange": [-8, -15], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "red", "process": "amber", "technology": "red" },
+    "typicalROI": "5-10% OTD gain, 8-15% transit time reduction"
+  },
+  {
+    "id": "RS23",
+    "name": "Multi-day Tour Planning for Dedicated Fleets",
+    "description": "Plan multi-day routes for dedicated fleet with backhauling opportunities",
+    "theme": "routing_scheduling",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E07", "expectedImpactRange": [-30, -50], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-10, -18], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "30-50% empty km reduction, 10-18% cost savings"
+  },
+  {
+    "id": "RS24",
+    "name": "Driver Shift / Hours-of-Service-aware Routing",
+    "description": "Route planning respecting driver shift limits and rest requirements",
+    "theme": "routing_scheduling",
+    "pillars": ["compliance", "service"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-40, -70], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [2, 5], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "amber" },
+    "typicalROI": "40-70% reduction in HOS violations, improved driver safety"
+  },
+  {
+    "id": "RS25",
+    "name": "Cluster-based Territory / Beat Planning",
+    "description": "Group customers into service territories for regular route optimization",
+    "theme": "routing_scheduling",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-5, -12], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 8], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "5-12% distribution cost reduction, better service consistency"
+  },
+  {
+    "id": "RS26",
+    "name": "FEFO / Freshness-priority Routing",
+    "description": "Route prioritization based on product shelf life and expiry dates",
+    "theme": "routing_scheduling",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S06", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "CP04", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "30-50% reduction in expiry claims, better customer satisfaction"
+  },
+  {
+    "id": "ND27",
+    "name": "Hub-and-spoke vs Point-to-point Lane Design",
+    "description": "Network design optimization: hub consolidation vs direct lanes",
+    "theme": "network_footprint",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-10, -20], "unit": "%" },
+      { "kpiId": "S05", "expectedImpactRange": [-10, 10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "10-20% network cost reduction with service trade-offs"
+  },
+  {
+    "id": "ND28",
+    "name": "Cross-dock vs DC Flow Decisions",
+    "description": "Optimize which SKUs flow through cross-dock vs storage DC",
+    "theme": "network_footprint",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-40, -60], "unit": "%" },
+      { "kpiId": "C01", "expectedImpactRange": [-5, -12], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "40-60% faster throughput, 5-12% cost reduction"
+  },
+  {
+    "id": "ND29",
+    "name": "Virtual Pooling of Inventory Across DCs",
+    "description": "Dynamic inventory allocation across DCs to minimize split shipments",
+    "theme": "network_footprint",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "S03", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-3, -8], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "red" },
+    "typicalROI": "5-12% in-full improvement, fewer split shipments"
+  },
+  {
+    "id": "ND30",
+    "name": "Rail-rake vs Road Share Optimisation (Bulk)",
+    "description": "Optimize rail vs road mode mix for bulk lanes based on cost and service",
+    "theme": "network_footprint",
+    "pillars": ["cost", "esg"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-15, -25], "unit": "%" },
+      { "kpiId": "ESG01", "expectedImpactRange": [-20, -35], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "red", "technology": "amber" },
+    "benchmarkSource": "Rail mode shift can reduce freight costs by 15-25% and emissions by 20-35%",
+    "typicalROI": "15-25% cost reduction on bulk lanes, major CO₂ savings"
+  },
+  {
+    "id": "ND31",
+    "name": "Rake Composition & Wagon Allocation Planning",
+    "description": "Optimize rail rake composition and wagon types for different product mixes",
+    "theme": "network_footprint",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "10-20% better wagon utilization, 5-10% cost savings"
+  },
+  {
+    "id": "ND32",
+    "name": "Inbound Supplier Milk-run Design",
+    "description": "Optimize inbound collection routes from suppliers to plants",
+    "theme": "network_footprint",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-15, -30], "unit": "%" }
+    ],
+    "industries": ["cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "green" },
+    "typicalROI": "15-30% inbound freight reduction through consolidation"
+  },
+  {
+    "id": "ND33",
+    "name": "Seasonal Overflow DC / Pop-up Hub Planning",
+    "description": "Plan temporary DCs or hubs for seasonal demand spikes",
+    "theme": "network_footprint",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-5, -12], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "10-20% seasonal OTD improvement, 5-12% cost avoidance"
+  },
+  {
+    "id": "ND34",
+    "name": "Backhaul Lane Creation & Stitching Networks",
+    "description": "Identify and create backhaul opportunities by stitching complementary networks",
+    "theme": "network_footprint",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E07", "expectedImpactRange": [-25, -45], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-8, -15], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "25-45% empty km reduction, 8-15% cost savings"
+  },
+  {
+    "id": "ND35",
+    "name": "Mode-shift Lane Identification (Road→Rail/Sea, Cost & ESG)",
+    "description": "Systematic identification of lanes suitable for mode shift based on cost and sustainability",
+    "theme": "network_footprint",
+    "pillars": ["cost", "esg"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-10, -20], "unit": "%" },
+      { "kpiId": "ESG01", "expectedImpactRange": [-15, -30], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "benchmarkSource": "Mode shift optimization can achieve 10-20% cost reduction and 15-30% emissions reduction",
+    "typicalROI": "10-20% cost savings, major sustainability gains"
+  },
+  {
+    "id": "CV36",
+    "name": "Carrier Performance Scorecards & Auto-allocation",
+    "description": "Score carriers on KPIs and auto-allocate loads to top performers",
+    "theme": "capacity_vendor",
+    "pillars": ["service", "cost"],
+    "impactedKPIs": [
+      { "kpiId": "S04", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 8], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "5-12% OTIF improvement through better carrier selection"
+  },
+  {
+    "id": "CV37",
+    "name": "Share-of-business Caps per Carrier",
+    "description": "Set maximum share limits per carrier to reduce concentration risk",
+    "theme": "capacity_vendor",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "V03", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "Better capacity resilience, reduced single-carrier risk"
+  },
+  {
+    "id": "CV38",
+    "name": "Secondary/Backup Carrier Pool per Lane",
+    "description": "Maintain qualified backup carriers for each lane for capacity resilience",
+    "theme": "capacity_vendor",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "V03", "expectedImpactRange": [8, 15], "unit": "%" },
+      { "kpiId": "S02", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "8-15% on-time placement improvement, better capacity availability"
+  },
+  {
+    "id": "CV39",
+    "name": "Own Fleet vs 3PL vs Spot Mix Optimisation",
+    "description": "Optimize the mix of owned, dedicated, and spot capacity",
+    "theme": "capacity_vendor",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-8, -15], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 7], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "8-15% cost optimization with balanced service"
+  },
+  {
+    "id": "CV40",
+    "name": "Driver / Fleet Loyalty Programs",
+    "description": "Incentive programs for driver retention and performance",
+    "theme": "capacity_vendor",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [3, 8], "unit": "%" },
+      { "kpiId": "V03", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "3-8% OTD improvement, better driver retention"
+  },
+  {
+    "id": "CV41",
+    "name": "Early Payment / Dynamic Discounting",
+    "description": "Offer early payment to carriers in exchange for rate discounts",
+    "theme": "capacity_vendor",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-2, -5], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "2-5% rate discount for early payment"
+  },
+  {
+    "id": "CV42",
+    "name": "Carrier Onboarding & Qualification Workflow",
+    "description": "Systematic carrier qualification process with compliance checks",
+    "theme": "capacity_vendor",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-40, -70], "unit": "%" },
+      { "kpiId": "CP04", "expectedImpactRange": [-20, -40], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "40-70% reduction in compliance incidents"
+  },
+  {
+    "id": "CV43",
+    "name": "Carrier Capacity Forecasting & Reservation",
+    "description": "Forecast capacity needs and reserve carrier capacity in advance",
+    "theme": "capacity_vendor",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "V03", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "S02", "expectedImpactRange": [8, 15], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "red" },
+    "typicalROI": "10-20% placement improvement, better peak season handling"
+  },
+  {
+    "id": "CT44",
+    "name": "End-to-end Track & Trace (GPS/Driver App)",
+    "description": "Real-time shipment tracking via GPS devices or driver mobile apps",
+    "theme": "visibility_control_tower",
+    "pillars": ["service", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "DA01", "expectedImpactRange": [20, 40], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [3, 7], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "3-7% OTD improvement through proactive exception management"
+  },
+  {
+    "id": "CT45",
+    "name": "Customer-facing Visibility Portal & Notifications",
+    "description": "Self-service portal for customers to track shipments and receive alerts",
+    "theme": "visibility_control_tower",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S07", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "amber" },
+    "typicalROI": "30-50% reduction in customer complaint calls"
+  },
+  {
+    "id": "CT46",
+    "name": "Multi-site Control Tower (Central View of All Plants / Lanes)",
+    "description": "Centralized control tower with unified view across all plants and lanes",
+    "theme": "visibility_control_tower",
+    "pillars": ["service", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "E06", "expectedImpactRange": [-15, -30], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "benchmarkSource": "Control towers add 3-5% logistics efficiency and 10-20% labor productivity improvement",
+    "typicalROI": "5-12% OTD improvement, 15-30% detention reduction"
+  },
+  {
+    "id": "CT47",
+    "name": "Proactive Exception Alerting (Rule-based)",
+    "description": "Automated alerts for delays, deviations, and exceptions with rule engine",
+    "theme": "visibility_control_tower",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "DA04", "expectedImpactRange": [20, 40], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "5-10% OTD gain through proactive intervention"
+  },
+  {
+    "id": "CT48",
+    "name": "Predictive ETA & Risk Scoring",
+    "description": "ML-based predictive ETA and delivery risk scores for proactive management",
+    "theme": "visibility_control_tower",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [8, 15], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "green", "technology": "red" },
+    "typicalROI": "8-15% OTD improvement through predictive interventions"
+  },
+  {
+    "id": "CT49",
+    "name": "Playbook-driven Exception Workflows",
+    "description": "Standard operating procedures triggered automatically for exception types",
+    "theme": "visibility_control_tower",
+    "pillars": ["service", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "DA04", "expectedImpactRange": [30, 60], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "5-10% OTD gain, 30-60% faster exception resolution"
+  },
+  {
+    "id": "CT50",
+    "name": "Scenario Simulation for Disruptions (What-if for Port Closure, Demand Spike)",
+    "description": "Simulation tools for testing network resilience to disruptions",
+    "theme": "visibility_control_tower",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [10, 20], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "red" },
+    "typicalROI": "10-20% service improvement during disruptions"
+  },
+  {
+    "id": "CT51",
+    "name": "Digital Twin & Multi-lever What-if Planning",
+    "description": "Digital twin of network for testing multiple lever combinations before activation",
+    "theme": "visibility_control_tower",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C01", "expectedImpactRange": [-5, -15], "unit": "%" },
+      { "kpiId": "S01", "expectedImpactRange": [5, 12], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "red", "process": "amber", "technology": "red" },
+    "benchmarkSource": "Digital twin enables 5-15% cost optimization through scenario testing",
+    "typicalROI": "5-15% cost reduction, better lever selection"
+  },
+  {
+    "id": "YG52",
+    "name": "Gate Scheduling & Appointment Booking",
+    "description": "Online appointment system for carrier gate slots to reduce yard congestion",
+    "theme": "yard_plant",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-30, -50], "unit": "%" },
+      { "kpiId": "E06", "expectedImpactRange": [-40, -60], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "30-50% loading TAT reduction, 40-60% detention cut"
+  },
+  {
+    "id": "YG53",
+    "name": "Slot Booking for Loading/Unloading",
+    "description": "Time-slot reservation system for dock bays with capacity management",
+    "theme": "yard_plant",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-25, -45], "unit": "%" },
+      { "kpiId": "E06", "expectedImpactRange": [-35, -55], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "25-45% TAT reduction, 35-55% detention improvement"
+  },
+  {
+    "id": "YG54",
+    "name": "Yard Queue Management",
+    "description": "Real-time queue management and priority handling in yard",
+    "theme": "yard_plant",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E06", "expectedImpactRange": [-25, -40], "unit": "%" }
+    ],
+    "industries": ["steel", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "25-40% yard detention reduction"
+  },
+  {
+    "id": "YG55",
+    "name": "Weighbridge Automation & Integration",
+    "description": "Automated weighbridge with TMS integration for faster processing",
+    "theme": "yard_plant",
+    "pillars": ["efficiency", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-20, -35], "unit": "%" },
+      { "kpiId": "DA01", "expectedImpactRange": [10, 20], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "amber" },
+    "typicalROI": "20-35% faster weigh-out, better data accuracy"
+  },
+  {
+    "id": "YG56",
+    "name": "Dock Assignment & Loading Bay Automation",
+    "description": "Automated dock door assignment based on load type and equipment",
+    "theme": "yard_plant",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-15, -30], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "15-30% dock TAT reduction"
+  },
+  {
+    "id": "YG57",
+    "name": "Checklist-driven Loading/Unloading SOPs",
+    "description": "Digital checklists for loading quality and safety compliance",
+    "theme": "yard_plant",
+    "pillars": ["compliance", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "CP03", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "CP04", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "30-50% claims reduction, better loading quality"
+  },
+  {
+    "id": "YG58",
+    "name": "Shunting / Internal Tractor Optimisation",
+    "description": "Optimize yard tractor movements for trailer positioning",
+    "theme": "yard_plant",
+    "pillars": ["efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "red" },
+    "typicalROI": "10-20% yard efficiency improvement"
+  },
+  {
+    "id": "YG59",
+    "name": "Stockyard Dispatch Sequencing by Grade/Age (Bulk)",
+    "description": "FIFO/FEFO sequencing for bulk material dispatch from stockyards",
+    "theme": "yard_plant",
+    "pillars": ["efficiency", "service"],
+    "impactedKPIs": [
+      { "kpiId": "E05", "expectedImpactRange": [-15, -25], "unit": "%" },
+      { "kpiId": "S06", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["steel", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "15-25% dispatch TAT reduction, better material quality"
+  },
+  {
+    "id": "DB60",
+    "name": "E-Way Bill Automation",
+    "description": "Automated E-Way Bill generation integrated with ERP and TMS",
+    "theme": "docs_billing",
+    "pillars": ["compliance", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "CP01", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "DA01", "expectedImpactRange": [15, 25], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "95%+ EWB compliance, faster dispatch"
+  },
+  {
+    "id": "DB61",
+    "name": "Auto LR / Consignment Note Generation",
+    "description": "Automated lorry receipt generation from load plan",
+    "theme": "docs_billing",
+    "pillars": ["digital"],
+    "impactedKPIs": [
+      { "kpiId": "DA01", "expectedImpactRange": [20, 35], "unit": "%" },
+      { "kpiId": "E05", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "20-35% digital adoption, 10-20% faster gate-out"
+  },
+  {
+    "id": "DB62",
+    "name": "E-POD with Geofence Lock",
+    "description": "Electronic proof of delivery with GPS verification at customer location",
+    "theme": "docs_billing",
+    "pillars": ["compliance", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "CP02", "expectedImpactRange": [15, 30], "unit": "%" },
+      { "kpiId": "DA02", "expectedImpactRange": [25, 45], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "95%+ POD capture, faster invoice closure"
+  },
+  {
+    "id": "DB63",
+    "name": "Auto-invoicing on POD or Gate-out",
+    "description": "Automated freight invoice generation triggered by POD or gate-out event",
+    "theme": "docs_billing",
+    "pillars": ["digital"],
+    "impactedKPIs": [
+      { "kpiId": "DA01", "expectedImpactRange": [20, 40], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "20-40% digital adoption, 40-60% faster invoicing"
+  },
+  {
+    "id": "DB64",
+    "name": "Freight Audit & Auto-reconciliation vs Rate Cards",
+    "description": "Automated freight invoice validation against contracted rates and accessorials",
+    "theme": "docs_billing",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C06", "expectedImpactRange": [-20, -40], "unit": "%" },
+      { "kpiId": "C07", "expectedImpactRange": [-2, -5], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "amber" },
+    "typicalROI": "20-40% overbilling recovery, improved budget accuracy"
+  },
+  {
+    "id": "DB65",
+    "name": "Automated Detention/Demurrage Computation",
+    "description": "Auto-calculate detention and demurrage charges based on timestamps",
+    "theme": "docs_billing",
+    "pillars": ["cost"],
+    "impactedKPIs": [
+      { "kpiId": "C06", "expectedImpactRange": [-15, -30], "unit": "%" },
+      { "kpiId": "E06", "expectedImpactRange": [-10, -25], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "15-30% accessorial cost reduction through visibility"
+  },
+  {
+    "id": "DB66",
+    "name": "Contract Repository & Rule Engine",
+    "description": "Digital contract repository with business rules engine for rate application",
+    "theme": "docs_billing",
+    "pillars": ["cost", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "C07", "expectedImpactRange": [-3, -8], "unit": "%" },
+      { "kpiId": "DA01", "expectedImpactRange": [10, 20], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "Improved rate governance, better compliance"
+  },
+  {
+    "id": "RC67",
+    "name": "Route Compliance & No-go Zone Enforcement",
+    "description": "Enforce approved routes and alert on deviations or no-go zone entry",
+    "theme": "risk_compliance",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["cpg", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "amber" },
+    "typicalROI": "30-50% reduction in route violations"
+  },
+  {
+    "id": "RC68",
+    "name": "Overload Prevention via Weighbridge Interlocks",
+    "description": "Gate interlock system preventing overloaded vehicles from departing",
+    "theme": "risk_compliance",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-70, -90], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "green", "technology": "amber" },
+    "typicalROI": "70-90% elimination of overload fines"
+  },
+  {
+    "id": "RC69",
+    "name": "DG/HAZMAT Routing & Permit Management",
+    "description": "Specialized routing for dangerous goods with permit tracking",
+    "theme": "risk_compliance",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-50, -80], "unit": "%" },
+      { "kpiId": "CP03", "expectedImpactRange": [10, 20], "unit": "%" }
+    ],
+    "industries": ["chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "50-80% reduction in HAZMAT violations"
+  },
+  {
+    "id": "RC70",
+    "name": "Driver HOS & Fatigue Monitoring",
+    "description": "Track driver hours-of-service and fatigue indicators for safety",
+    "theme": "risk_compliance",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP06", "expectedImpactRange": [-40, -70], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "red" },
+    "typicalROI": "40-70% reduction in HOS violations, improved safety"
+  },
+  {
+    "id": "RC71",
+    "name": "Temperature/Humidity Monitoring for Cold Chain",
+    "description": "Real-time monitoring of temp-sensitive cargo with alerts",
+    "theme": "risk_compliance",
+    "pillars": ["compliance", "service"],
+    "impactedKPIs": [
+      { "kpiId": "CP04", "expectedImpactRange": [-50, -80], "unit": "%" },
+      { "kpiId": "S06", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "red" },
+    "typicalROI": "50-80% cold chain claims reduction"
+  },
+  {
+    "id": "RC72",
+    "name": "Regulatory Document Completeness Checks",
+    "description": "Automated validation of required documents before dispatch",
+    "theme": "risk_compliance",
+    "pillars": ["compliance", "digital"],
+    "impactedKPIs": [
+      { "kpiId": "CP03", "expectedImpactRange": [15, 30], "unit": "%" },
+      { "kpiId": "CP06", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "chemicals", "cement"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "green", "technology": "green" },
+    "typicalROI": "95%+ document compliance, 30-50% fewer violations"
+  },
+  {
+    "id": "RC73",
+    "name": "Claims & Incident Analytics",
+    "description": "Analytics on claims and incidents to identify root causes and prevention",
+    "theme": "risk_compliance",
+    "pillars": ["compliance"],
+    "impactedKPIs": [
+      { "kpiId": "CP04", "expectedImpactRange": [-20, -40], "unit": "%" },
+      { "kpiId": "CP05", "expectedImpactRange": [-15, -35], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "20-40% claims reduction through root cause analysis"
+  },
+  {
+    "id": "SG74",
+    "name": "CO₂ Accounting per Lane/Mode/Vehicle",
+    "description": "Calculate and track carbon emissions at lane, mode, and vehicle level",
+    "theme": "sustainability",
+    "pillars": ["esg"],
+    "impactedKPIs": [
+      { "kpiId": "ESG01", "expectedImpactRange": [-5, -15], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl", "chemicals", "cement"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "green", "technology": "amber" },
+    "typicalROI": "Visibility-driven 5-15% emissions reduction"
+  },
+  {
+    "id": "SG75",
+    "name": "Green Carrier Preference Rules",
+    "description": "Auto-allocate loads to carriers with better emissions profiles",
+    "theme": "sustainability",
+    "pillars": ["esg"],
+    "impactedKPIs": [
+      { "kpiId": "ESG03", "expectedImpactRange": [15, 30], "unit": "%" },
+      { "kpiId": "ESG01", "expectedImpactRange": [-8, -15], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "green" },
+    "typicalROI": "15-30% green fleet share increase, 8-15% CO₂ reduction"
+  },
+  {
+    "id": "SG76",
+    "name": "Mode Shift for Emissions Reduction",
+    "description": "Identify and execute mode shifts (road→rail/sea) for sustainability",
+    "theme": "sustainability",
+    "pillars": ["esg", "cost"],
+    "impactedKPIs": [
+      { "kpiId": "ESG01", "expectedImpactRange": [-20, -35], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["steel", "cement", "chemicals"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "red", "technology": "amber" },
+    "benchmarkSource": "Mode shift to rail reduces emissions by 20-35% and costs by 10-20%",
+    "typicalROI": "20-35% CO₂ reduction, 10-20% cost savings"
+  },
+  {
+    "id": "SG77",
+    "name": "Empty-mile CO₂ Optimisation",
+    "description": "Reduce empty running through backhauls to cut emissions",
+    "theme": "sustainability",
+    "pillars": ["esg", "cost"],
+    "impactedKPIs": [
+      { "kpiId": "E07", "expectedImpactRange": [-25, -45], "unit": "%" },
+      { "kpiId": "ESG01", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["steel", "cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "25-45% empty km reduction, 10-20% emissions cut"
+  },
+  {
+    "id": "SG78",
+    "name": "Eco-driving / Fuel-efficiency Programs",
+    "description": "Driver training and monitoring for fuel-efficient driving practices",
+    "theme": "sustainability",
+    "pillars": ["esg", "cost"],
+    "impactedKPIs": [
+      { "kpiId": "ESG01", "expectedImpactRange": [-5, -12], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-3, -8], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "5-12% fuel and emissions savings"
+  },
+  {
+    "id": "OC79",
+    "name": "Delivery Calendar & Order-cutoff Policies",
+    "description": "Define delivery windows and order cutoff times for planning horizon",
+    "theme": "order_customer",
+    "pillars": ["service", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 10], "unit": "%" },
+      { "kpiId": "E01", "expectedImpactRange": [3, 8], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 1,
+    "readiness": { "data": "green", "process": "amber", "technology": "green" },
+    "typicalROI": "5-10% OTD improvement, better load consolidation"
+  },
+  {
+    "id": "OC80",
+    "name": "MOQ / FTL Incentives for Customers",
+    "description": "Pricing incentives for customers ordering in full truckload quantities",
+    "theme": "order_customer",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E04", "expectedImpactRange": [-20, -35], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "red", "technology": "green" },
+    "typicalROI": "20-35% LTL reduction, 5-10% cost savings"
+  },
+  {
+    "id": "OC81",
+    "name": "Promotional Load Planning & Pre-build",
+    "description": "Plan and pre-build loads for promotional events to smooth demand",
+    "theme": "order_customer",
+    "pillars": ["service", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "E01", "expectedImpactRange": [5, 12], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "10-20% promotional period OTD improvement"
+  },
+  {
+    "id": "OC82",
+    "name": "VMI Replenishment Trips",
+    "description": "Vendor-managed inventory replenishment with optimized trip planning",
+    "theme": "order_customer",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "E01", "expectedImpactRange": [10, 20], "unit": "%" },
+      { "kpiId": "S03", "expectedImpactRange": [5, 10], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "10-20% better utilization, 5-10% in-full improvement"
+  },
+  {
+    "id": "OC83",
+    "name": "Order Splitting & Multi-origin Fulfilment Rules",
+    "description": "Intelligent order splitting across DCs for optimal cost and service",
+    "theme": "order_customer",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-3, -8], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "red" },
+    "typicalROI": "5-12% OTD gain, 3-8% cost optimization"
+  },
+  {
+    "id": "OC84",
+    "name": "Service-tier-based Routing (Gold/Silver/Bronze)",
+    "description": "Differentiated routing and carrier assignment based on customer service tier",
+    "theme": "order_customer",
+    "pillars": ["service", "cost"],
+    "impactedKPIs": [
+      { "kpiId": "S01", "expectedImpactRange": [8, 15], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-3, -7], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 2,
+    "readiness": { "data": "green", "process": "amber", "technology": "amber" },
+    "typicalROI": "8-15% OTD for premium tiers, optimized cost for standard"
+  },
+  {
+    "id": "OC85",
+    "name": "Stock-transfer vs Direct-ship Routing Rules",
+    "description": "Logic to decide when to ship direct vs via DC for multi-echelon networks",
+    "theme": "order_customer",
+    "pillars": ["cost", "service"],
+    "impactedKPIs": [
+      { "kpiId": "C02", "expectedImpactRange": [-5, -10], "unit": "%" },
+      { "kpiId": "S05", "expectedImpactRange": [-10, -20], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "red", "technology": "amber" },
+    "typicalROI": "5-10% cost reduction, 10-20% transit time cut"
+  },
+  {
+    "id": "OC86",
+    "name": "Reverse Logistics Load Optimisation",
+    "description": "Optimize returns and reverse logistics trips with forward loads",
+    "theme": "order_customer",
+    "pillars": ["cost", "efficiency"],
+    "impactedKPIs": [
+      { "kpiId": "E07", "expectedImpactRange": [-20, -40], "unit": "%" },
+      { "kpiId": "C02", "expectedImpactRange": [-5, -12], "unit": "%" }
+    ],
+    "industries": ["cpg", "3pl"],
+    "maturityLevel": 3,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "20-40% empty km reduction on reverse trips, 5-12% cost savings"
+  },
+  {
+    "id": "OC87",
+    "name": "Shelf-life / Freshness Service Policies & KPIs",
+    "description": "Service policies linked to remaining shelf life with FEFO routing",
+    "theme": "order_customer",
+    "pillars": ["service"],
+    "impactedKPIs": [
+      { "kpiId": "S06", "expectedImpactRange": [5, 12], "unit": "%" },
+      { "kpiId": "CP04", "expectedImpactRange": [-30, -50], "unit": "%" }
+    ],
+    "industries": ["cpg"],
+    "maturityLevel": 2,
+    "readiness": { "data": "amber", "process": "amber", "technology": "amber" },
+    "typicalROI": "30-50% reduction in freshness claims, better customer satisfaction"
+  }
+]

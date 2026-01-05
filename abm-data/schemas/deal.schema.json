@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://fretron.com/abm/schemas/deal.json",
+  "title": "ABM Deal",
+  "description": "Canonical deal record for pipeline tracking",
+  "type": "object",
+  "required": ["id", "name", "source", "stage", "pipeline"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["hubspot", "manual", "import"]
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+
+    "pipeline": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": {
+          "type": "string",
+          "description": "Pipeline name"
+        }
+      }
+    },
+
+    "stage": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "stageNormalized": {
+          "type": ["string", "null"],
+          "enum": [
+            "new_lead",
+            "problem_identification",
+            "problem_validation",
+            "exec_sponsor_securing",
+            "approach_confirmation",
+            "vendor_confirmation",
+            "timeline_on_track",
+            "negotiation",
+            "closed_won",
+            "closed_lost",
+            "future_pipeline",
+            "other",
+            null
+          ]
+        },
+        "isClosed": { "type": "boolean", "default": false },
+        "isWon": { "type": "boolean", "default": false }
+      }
+    },
+
+    "value": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": ["number", "null"],
+          "description": "Deal value in INR"
+        },
+        "amountFormatted": {
+          "type": ["string", "null"],
+          "description": "Formatted value (e.g., '₹25L', '₹1.5Cr')"
+        },
+        "dealSizeCategory": {
+          "type": ["string", "null"],
+          "enum": ["<10L", "10-25L", "25-50L", "50L-1Cr", "1-2Cr", ">2Cr", null],
+          "description": "Jen Abel deal truncation categories"
+        },
+        "isLandDeal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Land deal (₹25-50L sweet spot)"
+        },
+        "isExpandDeal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Expand deal (₹1-2Cr)"
+        }
+      }
+    },
+
+    "timing": {
+      "type": "object",
+      "properties": {
+        "createDate": { "type": "string", "format": "date-time" },
+        "closeDate": { "type": ["string", "null"], "format": "date-time" },
+        "expectedCloseDate": { "type": ["string", "null"], "format": "date-time" },
+        "daysInPipeline": { "type": ["integer", "null"] },
+        "daysInCurrentStage": { "type": ["integer", "null"] },
+        "salesCycleHealth": {
+          "type": ["string", "null"],
+          "enum": ["healthy", "at_risk", "stalled", null],
+          "description": "Jen Abel: 3-6 months normal, 9+ is self-inflicted"
+        }
+      }
+    },
+
+    "associations": {
+      "type": "object",
+      "properties": {
+        "accountId": { "type": ["string", "null"] },
+        "accountName": { "type": ["string", "null"] },
+        "contactIds": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "championId": { "type": ["string", "null"] },
+        "economicBuyerId": { "type": ["string", "null"] }
+      }
+    },
+
+    "qualification": {
+      "type": "object",
+      "description": "Jen Abel 4 must-haves",
+      "properties": {
+        "hasNOrN1Contact": {
+          "type": "boolean",
+          "default": false
+        },
+        "hasCellPhoneAccess": {
+          "type": "boolean",
+          "default": false
+        },
+        "hasCompellingEvent": {
+          "type": "boolean",
+          "default": false
+        },
+        "hasTruncatedScope": {
+          "type": "boolean",
+          "default": false,
+          "description": "₹25-50L scope (not too small, not too big)"
+        },
+        "qualificationScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4,
+          "description": "Count of must-haves met (0-4)"
+        },
+        "isFullyQualified": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+
+    "dealType": {
+      "type": ["string", "null"],
+      "description": "Type of deal (new_business, expansion, renewal, upsell, etc.)"
+    },
+
+    "industry": {
+      "type": ["string", "null"]
+    },
+
+    "businessUseCase": {
+      "type": ["string", "null"],
+      "description": "Primary use case being solved"
+    },
+
+    "lossReason": {
+      "type": ["string", "null"],
+      "description": "If closed lost, why"
+    },
+
+    "competitorPresent": {
+      "type": ["string", "null"],
+      "description": "Competing vendor if known"
+    },
+
+    "notes": {
+      "type": ["string", "null"]
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "lastSyncedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  }
+}

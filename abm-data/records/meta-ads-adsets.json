@@ -1,0 +1,287 @@
+{
+  "meta": {
+    "count": 8,
+    "syncedAt": "2026-01-03T15:43:06.159Z",
+    "source": "meta-marketing-api"
+  },
+  "records": [
+    {
+      "id": "meta_adset_120238640613410564",
+      "sourceId": "120238640613410564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238639819780564",
+      "name": "Enterprise 2",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-15T20:51:00-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238639819770564",
+      "sourceId": "120238639819770564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238639819780564",
+      "name": "Enterprise 1",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-15T22:27:00-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238584912050564",
+      "sourceId": "120238584912050564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "name": "Manufacturing Result Specific new",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-14T11:06:29-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238418208180564",
+      "sourceId": "120238418208180564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "name": "Manufacturing - Result Specific",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-11T07:52:52-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65,
+        "genders": [
+          1
+        ]
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238417134910564",
+      "sourceId": "120238417134910564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "name": "Plant Automation",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-11T07:34:23-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65,
+        "genders": [
+          1
+        ]
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238315725720564",
+      "sourceId": "120238315725720564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "name": "Enterprise Manufacturing -1",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-11T07:18:08-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65,
+        "customAudiences": [
+          {
+            "id": "120238315966740564",
+            "name": "Website Visitors | 90 Days"
+          }
+        ]
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120238155710340564",
+      "sourceId": "120238155710340564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238155710330564",
+      "name": "TMS- Adset1",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-12-06T20:30:00-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 24,
+        "ageMax": 65
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    },
+    {
+      "id": "meta_adset_120237068693480564",
+      "sourceId": "120237068693480564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120236383722060564",
+      "name": "ABM CAMPAIGNS - BANNER ADS – Copy",
+      "status": "ACTIVE",
+      "optimizationGoal": "OFFSITE_CONVERSIONS",
+      "budget": {
+        "daily": null,
+        "lifetime": null
+      },
+      "schedule": {
+        "startTime": "2025-11-16T21:12:28-0800"
+      },
+      "targeting": {
+        "geoLocations": {
+          "countries": [
+            "IN"
+          ],
+          "location_types": [
+            "home",
+            "recent"
+          ]
+        },
+        "ageMin": 25,
+        "ageMax": 65,
+        "customAudiences": [
+          {
+            "id": "120236442120410564",
+            "name": "All Web Visitors | 90D"
+          },
+          {
+            "id": "120236780145970564",
+            "name": "Web Lead Form Submits | 180D"
+          }
+        ]
+      },
+      "metadata": {
+        "lastSyncedAt": "2026-01-03T15:43:04.885Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "count": 8,
+    "syncedAt": "2026-01-03T15:43:06.160Z",
+    "source": "meta-marketing-api"
+  },
+  "records": [
+    {
+      "id": "meta_ad_120238640613420564",
+      "sourceId": "120238640613420564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238639819780564",
+      "adsetId": "meta_adset_120238640613410564",
+      "name": "Enterprise 2 ad",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-15T11:00:03-0800",
+        "updatedAt": "2025-12-15T11:03:14-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238639819760564",
+      "sourceId": "120238639819760564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238639819780564",
+      "adsetId": "meta_adset_120238639819770564",
+      "name": "Enterprise 1 Leads ad",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-15T10:50:04-0800",
+        "updatedAt": "2025-12-15T10:54:44-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238584912040564",
+      "sourceId": "120238584912040564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "adsetId": "meta_adset_120238584912050564",
+      "name": "Manufacturing-Result-Specific new",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-14T11:14:20-0800",
+        "updatedAt": "2025-12-14T11:19:08-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238418280800564",
+      "sourceId": "120238418280800564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "adsetId": "meta_adset_120238418208180564",
+      "name": "Manufacturing-Result-Specific",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-11T08:09:50-0800",
+        "updatedAt": "2025-12-12T02:29:02-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238315725710564",
+      "sourceId": "120238315725710564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "adsetId": "meta_adset_120238315725720564",
+      "name": "Website Visitors ad",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-11T07:18:09-0800",
+        "updatedAt": "2025-12-12T02:26:10-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238417134900564",
+      "sourceId": "120238417134900564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238315725700564",
+      "adsetId": "meta_adset_120238417134910564",
+      "name": "Plant Automation Ad",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-11T07:46:18-0800",
+        "updatedAt": "2025-12-12T02:19:13-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238116738150564",
+      "sourceId": "120238116738150564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120236383722060564",
+      "adsetId": "meta_adset_120237068693480564",
+      "name": "Single Image ad",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-05T07:01:00-0800",
+        "updatedAt": "2025-12-09T01:20:54-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    },
+    {
+      "id": "meta_ad_120238155710350564",
+      "sourceId": "120238155710350564",
+      "source": "meta_ads",
+      "campaignId": "meta_campaign_120238155710330564",
+      "adsetId": "meta_adset_120238155710340564",
+      "name": "TMS|Ads|1",
+      "status": "ACTIVE",
+      "metadata": {
+        "createdAt": "2025-12-06T03:19:33-0800",
+        "updatedAt": "2025-12-09T00:54:30-0800",
+        "lastSyncedAt": "2026-01-03T15:43:05.525Z"
+      }
+    }
+  ]
+}

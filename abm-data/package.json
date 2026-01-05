@@ -1,0 +1,32 @@
+{
+  "name": "fretron-abm-data",
+  "version": "1.0.0",
+  "description": "Canonical ABM data model for Fretron marketing operations",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-hubspot-incremental.js",
+    "sync:full": "node scripts/sync-hubspot-incremental.js --full",
+    "sync:companies": "node scripts/sync-hubspot-incremental.js --companies",
+    "sync:contacts": "node scripts/sync-hubspot-incremental.js --contacts",
+    "sync:deals": "node scripts/sync-hubspot-incremental.js --deals",
+    "sync:activities": "node scripts/sync-hubspot-incremental.js --activities",
+    "sync:emails": "node scripts/sync-hubspot-incremental.js --emails",
+    "sync:calls": "node scripts/sync-hubspot-incremental.js --calls",
+    "sync:meetings": "node scripts/sync-hubspot-incremental.js --meetings",
+    "sync:notes": "node scripts/sync-hubspot-incremental.js --notes",
+    "sync:tasks": "node scripts/sync-hubspot-incremental.js --tasks",
+    "sync:smartlead": "node scripts/sync-smartlead.js",
+    "sync:meta": "node scripts/sync-meta-ads.js",
+    "sync:google": "node scripts/sync-google-ads.js",
+    "import": "node scripts/import-from-raw.js",
+    "import:cache": "node scripts/import-hubspot.js",
+    "validate": "node scripts/validate-schemas.js",
+    "refresh": "npm run sync && npm run import && npm run validate"
+  },
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "dotenv": "^16.3.1",
+    "xlsx": "^0.18.5"
+  }
+}

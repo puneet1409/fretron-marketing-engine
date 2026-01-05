@@ -1,0 +1,545 @@
+{
+  "version": "1.0",
+  "totalQuestions": 20,
+  "description": "Readiness assessment to determine organizational capability to implement value levers",
+  "dimensions": {
+    "data": {
+      "name": "Data Readiness",
+      "description": "Availability, quality, and accessibility of required data",
+      "questions": [
+        {
+          "id": "data_q01",
+          "question": "Do you have digital records of all shipment transactions?",
+          "helpText": "Digital shipment history is essential for most optimization levers",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Primarily paper-based or no records",
+              "value": 0,
+              "score": "red",
+              "description": "Significant data capture work required"
+            },
+            {
+              "label": "Partial - Some shipments digitized",
+              "value": 1,
+              "score": "amber",
+              "description": "Data capture in progress"
+            },
+            {
+              "label": "Yes - All shipments digitally recorded",
+              "value": 2,
+              "score": "green",
+              "description": "Data foundation ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q02",
+          "question": "Is your shipment data available in real-time or near real-time?",
+          "helpText": "Real-time data enables dynamic optimization and live tracking",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Data updated weekly or monthly",
+              "value": 0,
+              "score": "red",
+              "description": "Real-time integration needed"
+            },
+            {
+              "label": "Partial - Daily updates available",
+              "value": 1,
+              "score": "amber",
+              "description": "Some latency acceptable"
+            },
+            {
+              "label": "Yes - Real-time or hourly updates",
+              "value": 2,
+              "score": "green",
+              "description": "Real-time ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q03",
+          "question": "Do you have structured rate card data from your transporters?",
+          "helpText": "Rate card data is critical for cost optimization levers",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Rates negotiated ad-hoc",
+              "value": 0,
+              "score": "red",
+              "description": "Rate digitization required"
+            },
+            {
+              "label": "Partial - Some rate cards available",
+              "value": 1,
+              "score": "amber",
+              "description": "Rate consolidation needed"
+            },
+            {
+              "label": "Yes - All rate cards digitized",
+              "value": 2,
+              "score": "green",
+              "description": "Rate data ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q04",
+          "question": "Do you track vehicle location data (GPS/tracking)?",
+          "helpText": "Location data enables service improvement and efficiency levers",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - No tracking capability",
+              "value": 0,
+              "score": "red",
+              "description": "GPS integration required"
+            },
+            {
+              "label": "Partial - Some vehicles tracked",
+              "value": 1,
+              "score": "amber",
+              "description": "Expand tracking coverage"
+            },
+            {
+              "label": "Yes - All vehicles tracked",
+              "value": 2,
+              "score": "green",
+              "description": "Tracking ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q05",
+          "question": "Do you have historical data for at least 6 months of shipments?",
+          "helpText": "Historical data enables pattern analysis and baseline establishment",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Less than 3 months",
+              "value": 0,
+              "score": "red",
+              "description": "Build data history first"
+            },
+            {
+              "label": "Partial - 3-6 months available",
+              "value": 1,
+              "score": "amber",
+              "description": "Limited baseline available"
+            },
+            {
+              "label": "Yes - 6+ months of clean data",
+              "value": 2,
+              "score": "green",
+              "description": "Historical data ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q06",
+          "question": "Is your shipment data quality high (< 5% errors)?",
+          "helpText": "Clean data is essential for accurate optimization",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Frequent errors and gaps",
+              "value": 0,
+              "score": "red",
+              "description": "Data cleansing required"
+            },
+            {
+              "label": "Partial - Some errors present",
+              "value": 1,
+              "score": "amber",
+              "description": "Data quality improvement needed"
+            },
+            {
+              "label": "Yes - High quality data",
+              "value": 2,
+              "score": "green",
+              "description": "Data quality ready"
+            }
+          ]
+        },
+        {
+          "id": "data_q07",
+          "question": "Do you track detention and turnaround times at plants?",
+          "helpText": "Detention data is critical for efficiency optimization",
+          "dimension": "data",
+          "options": [
+            {
+              "label": "No - Not tracked",
+              "value": 0,
+              "score": "red",
+              "description": "Detention tracking needed"
+            },
+            {
+              "label": "Partial - Manually recorded sometimes",
+              "value": 1,
+              "score": "amber",
+              "description": "Automate detention tracking"
+            },
+            {
+              "label": "Yes - Digitally tracked for all",
+              "value": 2,
+              "score": "green",
+              "description": "Detention data ready"
+            }
+          ]
+        }
+      ]
+    },
+    "process": {
+      "name": "Process Readiness",
+      "description": "Standardization and maturity of operational processes",
+      "questions": [
+        {
+          "id": "process_q01",
+          "question": "Are your freight planning processes standardized?",
+          "helpText": "Standardized processes enable systematic optimization",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - Ad-hoc and varies by person",
+              "value": 0,
+              "score": "red",
+              "description": "Process standardization required"
+            },
+            {
+              "label": "Partial - Some standards in place",
+              "value": 1,
+              "score": "amber",
+              "description": "Strengthen process standards"
+            },
+            {
+              "label": "Yes - Fully standardized",
+              "value": 2,
+              "score": "green",
+              "description": "Process ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q02",
+          "question": "Do you have clear SLAs with your transporter partners?",
+          "helpText": "SLAs enable accountability and service optimization",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - Informal arrangements",
+              "value": 0,
+              "score": "red",
+              "description": "SLA creation required"
+            },
+            {
+              "label": "Partial - SLAs with key partners",
+              "value": 1,
+              "score": "amber",
+              "description": "Expand SLA coverage"
+            },
+            {
+              "label": "Yes - SLAs with all partners",
+              "value": 2,
+              "score": "green",
+              "description": "SLA framework ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q03",
+          "question": "Is there a formal process for transporter onboarding?",
+          "helpText": "Structured onboarding enables network optimization",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - Informal onboarding",
+              "value": 0,
+              "score": "red",
+              "description": "Onboarding process needed"
+            },
+            {
+              "label": "Partial - Basic checklist exists",
+              "value": 1,
+              "score": "amber",
+              "description": "Enhance onboarding process"
+            },
+            {
+              "label": "Yes - Comprehensive onboarding",
+              "value": 2,
+              "score": "green",
+              "description": "Onboarding ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q04",
+          "question": "Do you conduct regular transporter performance reviews?",
+          "helpText": "Performance reviews enable continuous improvement",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - No formal reviews",
+              "value": 0,
+              "score": "red",
+              "description": "Review process needed"
+            },
+            {
+              "label": "Partial - Quarterly reviews",
+              "value": 1,
+              "score": "amber",
+              "description": "Increase review frequency"
+            },
+            {
+              "label": "Yes - Monthly performance reviews",
+              "value": 2,
+              "score": "green",
+              "description": "Review process ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q05",
+          "question": "Is there a documented escalation process for exceptions?",
+          "helpText": "Exception handling enables service improvement",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - Handled ad-hoc",
+              "value": 0,
+              "score": "red",
+              "description": "Escalation process needed"
+            },
+            {
+              "label": "Partial - Informal guidelines",
+              "value": 1,
+              "score": "amber",
+              "description": "Formalize escalation process"
+            },
+            {
+              "label": "Yes - Documented and followed",
+              "value": 2,
+              "score": "green",
+              "description": "Escalation ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q06",
+          "question": "Do you have a formal budgeting and forecasting process for freight?",
+          "helpText": "Budgeting enables cost optimization and planning",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - No formal budget",
+              "value": 0,
+              "score": "red",
+              "description": "Budget process needed"
+            },
+            {
+              "label": "Partial - Annual budget only",
+              "value": 1,
+              "score": "amber",
+              "description": "Add rolling forecasts"
+            },
+            {
+              "label": "Yes - Budget with monthly rolling forecast",
+              "value": 2,
+              "score": "green",
+              "description": "Budgeting ready"
+            }
+          ]
+        },
+        {
+          "id": "process_q07",
+          "question": "Are your teams trained on logistics best practices?",
+          "helpText": "Trained teams enable successful lever implementation",
+          "dimension": "process",
+          "options": [
+            {
+              "label": "No - Minimal training",
+              "value": 0,
+              "score": "red",
+              "description": "Training program needed"
+            },
+            {
+              "label": "Partial - Occasional training",
+              "value": 1,
+              "score": "amber",
+              "description": "Regular training needed"
+            },
+            {
+              "label": "Yes - Ongoing training program",
+              "value": 2,
+              "score": "green",
+              "description": "Training ready"
+            }
+          ]
+        }
+      ]
+    },
+    "technology": {
+      "name": "Technology Readiness",
+      "description": "Systems, tools, and technical capabilities",
+      "questions": [
+        {
+          "id": "tech_q01",
+          "question": "Do you have a Transportation Management System (TMS)?",
+          "helpText": "TMS is the foundation for most automation levers",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Excel/manual processes",
+              "value": 0,
+              "score": "red",
+              "description": "TMS implementation required"
+            },
+            {
+              "label": "Partial - Basic TMS for some lanes",
+              "value": 1,
+              "score": "amber",
+              "description": "Expand TMS coverage"
+            },
+            {
+              "label": "Yes - Comprehensive TMS deployed",
+              "value": 2,
+              "score": "green",
+              "description": "TMS ready"
+            }
+          ]
+        },
+        {
+          "id": "tech_q02",
+          "question": "Does your TMS support API integrations?",
+          "helpText": "APIs enable integration with external systems and automation",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Standalone system",
+              "value": 0,
+              "score": "red",
+              "description": "API capability needed"
+            },
+            {
+              "label": "Partial - Limited API capability",
+              "value": 1,
+              "score": "amber",
+              "description": "Expand API coverage"
+            },
+            {
+              "label": "Yes - Full API support",
+              "value": 2,
+              "score": "green",
+              "description": "Integration ready"
+            }
+          ]
+        },
+        {
+          "id": "tech_q03",
+          "question": "Do you have analytics/BI tools for logistics data?",
+          "helpText": "Analytics enable data-driven decision making",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Manual reports only",
+              "value": 0,
+              "score": "red",
+              "description": "BI tool needed"
+            },
+            {
+              "label": "Partial - Basic dashboards",
+              "value": 1,
+              "score": "amber",
+              "description": "Enhance analytics capability"
+            },
+            {
+              "label": "Yes - Advanced analytics/BI",
+              "value": 2,
+              "score": "green",
+              "description": "Analytics ready"
+            }
+          ]
+        },
+        {
+          "id": "tech_q04",
+          "question": "Is your TMS integrated with your ERP/planning systems?",
+          "helpText": "ERP integration enables end-to-end visibility",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Systems disconnected",
+              "value": 0,
+              "score": "red",
+              "description": "Integration work required"
+            },
+            {
+              "label": "Partial - Manual data transfer",
+              "value": 1,
+              "score": "amber",
+              "description": "Automate integration"
+            },
+            {
+              "label": "Yes - Fully integrated",
+              "value": 2,
+              "score": "green",
+              "description": "Integration ready"
+            }
+          ]
+        },
+        {
+          "id": "tech_q05",
+          "question": "Do you have mobile apps for transporter/driver communication?",
+          "helpText": "Mobile tools enable real-time updates and efficiency",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Phone calls only",
+              "value": 0,
+              "score": "red",
+              "description": "Mobile app needed"
+            },
+            {
+              "label": "Partial - WhatsApp or basic app",
+              "value": 1,
+              "score": "amber",
+              "description": "Professional app needed"
+            },
+            {
+              "label": "Yes - Dedicated mobile apps",
+              "value": 2,
+              "score": "green",
+              "description": "Mobile ready"
+            }
+          ]
+        },
+        {
+          "id": "tech_q06",
+          "question": "Do you have automated alert/notification capabilities?",
+          "helpText": "Alerts enable proactive exception management",
+          "dimension": "technology",
+          "options": [
+            {
+              "label": "No - Manual monitoring",
+              "value": 0,
+              "score": "red",
+              "description": "Alerting system needed"
+            },
+            {
+              "label": "Partial - Email alerts only",
+              "value": 1,
+              "score": "amber",
+              "description": "Multi-channel alerts needed"
+            },
+            {
+              "label": "Yes - Multi-channel automated alerts",
+              "value": 2,
+              "score": "green",
+              "description": "Alerting ready"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

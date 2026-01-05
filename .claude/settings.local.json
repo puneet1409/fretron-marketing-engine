@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "Write(**)",
+      "Bash(npm:*)",
+      "Bash(node:*)",
+      "Bash(npx:*)",
+      "Bash(git:*)",
+      "Bash(dir:*)",
+      "Bash(type:*)",
+      "Bash(claude:*)",
+      "WebFetch(domain:*)",
+      "WebSearch",
+      "Skill(*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command \"Expand-Archive -Path ''C:\\\\Users\\\\punee\\\\Downloads\\\\test_scripts_smartlead_meta.zip'' -DestinationPath ''C:\\\\Users\\\\punee\\\\Downloads\\\\test_scripts_smartlead_meta'' -Force; Get-ChildItem -Recurse ''C:\\\\Users\\\\punee\\\\Downloads\\\\test_scripts_smartlead_meta''\")",
+      "Bash(tar:*)",
+      "Bash(unzip:*)",
+      "Bash(start \"\" \"https://accounts.google.com/o/oauth2/auth?client_id=597094321798-15ganhrnheoh540tf5shc2hliu5bdb0u.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8080&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fadwords&response_type=code&access_type=offline&prompt=consent\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\punee\\\\Dev\\\\fretron-marketing-engine\\\\google-ads-api-application.html\")",
+      "Bash(copy \"C:\\\\Users\\\\punee\\\\Dev\\\\fretron-marketing-engine\\\\abm-data\\\\reports\\\\marketing-channel-analysis-jan2026.md\" \"I:\\\\.shortcut-targets-by-id\\\\1UvFCVUbCCdqouipkYoIAFE2LfDSxHdXx\\\\FRETRON MARKETING_Vikas\\\\marketing-channel-analysis-jan2026.md\")",
+      "Skill(writing-cold-outreach-sequences)",
+      "Skill(skill-builder)",
+      "WebFetch(domain:bitscale.ai)",
+      "WebFetch(domain:docs.bitscale.ai)",
+      "Bash(move:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebFetch(domain:www.leadgenius.com)",
+      "Bash(gh auth status:*)",
+      "Bash(gh repo create:*)"
+    ],
+    "deny": [],
+    "additionalDirectories": [
+      "../"
+    ]
+  }
+}

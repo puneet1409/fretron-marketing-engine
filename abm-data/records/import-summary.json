@@ -1,0 +1,46 @@
+{
+  "importedAt": "2025-12-28T09:41:56.535Z",
+  "source": "hubspot-cache",
+  "sourceDir": "C:/Users/punee/Dev/fretron-sales-playbook/integrations/hubspot/cache",
+  "counts": {
+    "accounts": 10847,
+    "contacts": 471,
+    "deals": 1052
+  },
+  "distributions": {
+    "accountTiers": {
+      "tier1": 5,
+      "tier2": 841,
+      "tier3": 3359,
+      "unclassified": 6642
+    },
+    "contactNLevels": {
+      "N": 16,
+      "N-1": 77,
+      "N-2": 65,
+      "N-3": 39,
+      "null": 274
+    },
+    "dealStages": {
+      "closed_lost": 742,
+      "other": 115,
+      "closed_won": 12,
+      "future_pipeline": 98,
+      "problem_validation": 12,
+      "exec_sponsor_securing": 10,
+      "problem_identification": 11,
+      "approach_confirmation": 6,
+      "new_lead": 35,
+      "negotiation": 7,
+      "vendor_confirmation": 2,
+      "timeline_on_track": 2
+    }
+  },
+  "abmInsights": {
+    "tier1Accounts": 5,
+    "qualifiedContacts": 93,
+    "landDeals": 32,
+    "healthyDeals": 0,
+    "stalledDeals": 155
+  }
+}

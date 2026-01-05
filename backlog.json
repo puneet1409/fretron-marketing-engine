@@ -1,0 +1,1611 @@
+{
+  "meta": {
+    "project": "Fretron GTM & Demand Generation",
+    "created": "2024-12-28",
+    "lastUpdated": "2024-12-28",
+    "owner": "Puneet",
+    "planModeInstructions": "Use /plan or EnterPlanMode for detailed implementation planning of any feature",
+    "implementationApproach": {
+      "philosophy": "Each feature is an EXPERIMENT with measurable outcomes",
+      "structure": {
+        "hypothesis": "What we believe will happen",
+        "goal": "Clearly defined in terms of KPIs to move",
+        "baseline": "Current state of KPIs before experiment",
+        "target": "Target state of KPIs after experiment",
+        "tracking": "KPIs tracked in MIS dashboard (F011)",
+        "timeline": "Experiment duration",
+        "learnCriteria": "What constitutes success/failure/learning"
+      },
+      "workflow": [
+        "1. Define experiment hypothesis and KPIs",
+        "2. Establish baseline from MIS",
+        "3. Create ClickUp project with tasks",
+        "4. Execute experiment",
+        "5. Track progress in ClickUp, sync status here",
+        "6. Measure KPIs in MIS",
+        "7. Document learnings, iterate or pivot"
+      ]
+    },
+    "projectManagement": {
+      "tool": "ClickUp",
+      "integration": {
+        "mcpServer": "@nazruden/clickup-server via MCP",
+        "status": "installed",
+        "capabilities": [
+          "Create tasks and projects from Claude",
+          "Track task status",
+          "Sync project progress",
+          "Query workspace data",
+          "Log time entries"
+        ]
+      },
+      "syncApproach": {
+        "featureToProject": "Each backlog feature = ClickUp List/Project",
+        "scopeToTasks": "Each scope item = ClickUp Task",
+        "statusSync": "ClickUp status syncs to backlog.json status",
+        "kpiTracking": "KPIs linked between feature and MIS dashboard"
+      }
+    },
+    "misIntegration": {
+      "description": "All experiment KPIs flow into Marketing MIS (F011)",
+      "dataFlow": [
+        "Experiment baseline → MIS historical data",
+        "Experiment progress → MIS real-time tracking",
+        "Experiment results → MIS outcome attribution"
+      ],
+      "automationNeeded": [
+        "HubSpot MCP (installed) → Lead/pipeline data",
+        "ClickUp MCP (pending) → Project status",
+        "Google Ads API → Campaign metrics",
+        "LinkedIn API → Organic + paid metrics",
+        "Website analytics → Traffic/conversion data"
+      ],
+      "mcpStatus": {
+        "installed": ["HubSpot", "ClickUp"],
+        "pending": ["Google Ads"],
+        "future": ["LinkedIn", "Google Analytics", "Factors AI"]
+      }
+    }
+  },
+  "features": [
+    {
+      "id": "F001",
+      "name": "Google Ads BoFU Campaigns",
+      "slug": "google-ads-bofu",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Setup, performance review, and calibration of bottom-of-funnel Google Ads campaigns targeting high-intent keywords",
+      "scope": [
+        "Campaign structure design (competitor, category, solution keywords)",
+        "Ad copy creation aligned with positioning",
+        "Landing page optimization",
+        "Conversion tracking setup",
+        "Performance review cadence",
+        "Bid strategy calibration",
+        "Budget allocation optimization"
+      ],
+      "relatedSkills": [
+        "running-bofu-google-ads",
+        "writing-direct-response-copy",
+        "discovering-positioning-angles"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "medium",
+      "notes": "Need Google Ads API/MCP for automation. Currently have HubSpot MCP installed."
+    },
+    {
+      "id": "F002",
+      "name": "Demand Capture & Multi-Channel Attribution",
+      "slug": "demand-capture-attribution",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Website visitor tracking, identification, and multi-channel attribution across all campaigns",
+      "scope": [
+        "B2B visitor identification (Factors AI integration)",
+        "Website visitor tracking implementation",
+        "Multi-touch attribution model design",
+        "Cross-campaign attribution (Google Ads, LinkedIn, Podcast, etc.)",
+        "Remarketing audience setup",
+        "Lead source tracking in HubSpot",
+        "Dashboard for attribution insights",
+        "Outreach triggers based on visitor behavior"
+      ],
+      "relatedSkills": [
+        "warming-up-abm-accounts",
+        "qualifying-inbound-leads",
+        "orchestrating-abm-campaigns"
+      ],
+      "dependencies": ["F001"],
+      "estimatedEffort": "large",
+      "notes": "Core infrastructure for understanding 'What campaigns does a prospect engage with before converting?'"
+    },
+    {
+      "id": "F003",
+      "name": "LinkedIn Demand Generation",
+      "slug": "linkedin-demand-gen",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Regular posting of high-quality content for organic LinkedIn demand generation",
+      "scope": [
+        "Content calendar creation",
+        "Content pillar definition",
+        "Post format templates (text, carousel, video)",
+        "Founder/team posting strategy",
+        "Employee advocacy program",
+        "Engagement playbook",
+        "LinkedIn analytics tracking",
+        "Integration with ABM account warmup"
+      ],
+      "relatedSkills": [
+        "amplifying-linkedin-presence",
+        "atomizing-content",
+        "warming-up-abm-accounts",
+        "codifying-brand-voice"
+      ],
+      "dependencies": ["F006"],
+      "estimatedEffort": "medium",
+      "notes": "Should align with Full Funnel ABM methodology - LinkedIn-first warmup for Tier 1 accounts"
+    },
+    {
+      "id": "F004",
+      "name": "Podcast-Based Demand Generation",
+      "slug": "podcast-demand-gen",
+      "status": "backlog",
+      "priority": "medium",
+      "description": "Launch and operationalize podcast for demand generation and thought leadership",
+      "scope": [
+        "Podcast concept and positioning",
+        "Guest identification strategy (target account leaders)",
+        "Episode format and structure",
+        "Production workflow",
+        "Distribution channels",
+        "Content atomization (clips, quotes, articles)",
+        "Guest-to-pipeline conversion tracking",
+        "Integration with ABM (invite target accounts as guests)"
+      ],
+      "relatedSkills": [
+        "leveraging-events-conferences",
+        "atomizing-content",
+        "warming-up-abm-accounts",
+        "building-trust-progressively"
+      ],
+      "dependencies": ["F006"],
+      "estimatedEffort": "large",
+      "notes": "Podcast guests = ABM warmup. Invite logistics leaders from target accounts."
+    },
+    {
+      "id": "F005",
+      "name": "Small Roundtables",
+      "slug": "roundtables",
+      "status": "backlog",
+      "priority": "medium",
+      "description": "Intimate executive roundtables for relationship building and thought leadership",
+      "scope": [
+        "Roundtable format and agenda design",
+        "Attendee selection criteria (target accounts)",
+        "Invitation strategy",
+        "Venue/virtual platform selection",
+        "Facilitation guide",
+        "Follow-up sequence",
+        "Content capture and repurposing",
+        "Pipeline attribution"
+      ],
+      "relatedSkills": [
+        "leveraging-events-conferences",
+        "enabling-champions",
+        "warming-up-abm-accounts"
+      ],
+      "dependencies": ["F006"],
+      "estimatedEffort": "medium",
+      "notes": "Full Funnel Market Research Warmup technique - roundtables as research, then activation"
+    },
+    {
+      "id": "F006",
+      "name": "Target Account Database & ABM Infrastructure",
+      "slug": "abm-infrastructure",
+      "status": "backlog",
+      "priority": "critical",
+      "description": "Canonical database of target accounts with scoring, enrichment, and tracking",
+      "scope": [
+        "Account selection criteria definition",
+        "Account scoring model",
+        "Universe of target accounts (initial list)",
+        "Data sources integration",
+        "Past engagement data import",
+        "Current customer intelligence",
+        "CJ Darcl customer intelligence",
+        "Public signal monitoring",
+        "Account enrichment workflow",
+        "Personalized outreach triggers",
+        "Account-level tracking across channels",
+        "Tier assignment (T1/T2/T3)"
+      ],
+      "dataSources": [
+        "Past CRM engagement",
+        "Current customer knowledge",
+        "Current customer active usage patterns",
+        "CJ Darcl customer base",
+        "Public signals (LinkedIn, news, job postings)",
+        "Industry directories",
+        "Intent data providers"
+      ],
+      "relatedSkills": [
+        "selecting-target-accounts",
+        "warming-up-abm-accounts",
+        "orchestrating-abm-campaigns",
+        "jen-abel-enterprise-sales"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "large",
+      "notes": "CRITICAL FOUNDATION. All other ABM campaigns depend on this. Jen Abel: Tier 1 logos ARE early adopters."
+    },
+    {
+      "id": "F007",
+      "name": "Move-as-One Discovery & Sales Process",
+      "slug": "move-as-one-sales-process",
+      "status": "in_progress",
+      "priority": "high",
+      "description": "Complete discovery-to-business-case sales methodology: discovery call → diagnostic → roadmapping → business case co-creation",
+      "stages": {
+        "1_discovery_call": {
+          "name": "Discovery Call",
+          "description": "Structured discovery conversation to understand current state, pain points, and priorities",
+          "status": "pending",
+          "scope": [
+            "Discovery call script/framework",
+            "Fluint-aligned discovery questions",
+            "N/N-1 qualification check",
+            "Trigger identification",
+            "Champion identification signals"
+          ]
+        },
+        "2_diagnostic": {
+          "name": "Diagnostic Assessment",
+          "description": "Interactive diagnostic tool to assess maturity and identify value levers",
+          "status": "done",
+          "scope": [
+            "Diagnostic questions (DONE)",
+            "Maturity radar charts (DONE)",
+            "Value lever identification (DONE)",
+            "Readiness assessment (DONE)"
+          ],
+          "implementation": "Vibecoded Next.js app"
+        },
+        "3_roadmapping": {
+          "name": "Transformation Roadmap",
+          "description": "Prioritized implementation roadmap based on diagnostic results",
+          "status": "done",
+          "scope": [
+            "Lever prioritization engine (DONE)",
+            "Ladder view for sequencing (DONE)",
+            "Simulation engine for projections (DONE)",
+            "Quick wins identification"
+          ],
+          "implementation": "Vibecoded Next.js app"
+        },
+        "4_business_case": {
+          "name": "Business Case Co-Creation",
+          "description": "Fluint-style 1-page business case prepared with champion",
+          "status": "pending",
+          "scope": [
+            "Business case template integration",
+            "Auto-populate from diagnostic data",
+            "ROI calculations from simulation",
+            "Champion presentation materials",
+            "Stakeholder-specific talking points"
+          ]
+        }
+      },
+      "currentState": {
+        "implemented": [
+          "Value lever library (87 levers)",
+          "Maturity radar charts",
+          "Diagnostic questions",
+          "Readiness questions",
+          "Simulation engine",
+          "Ladder view for roadmapping",
+          "Run mode KPI dashboard",
+          "Design mode value studio"
+        ],
+        "pending": [
+          "Discovery call framework",
+          "Business case auto-generation",
+          "Lead capture flow",
+          "Math Academy-aligned learning module",
+          "Champion co-pilot packaging",
+          "Nurture sequence post-diagnostic",
+          "Distribution strategy"
+        ]
+      },
+      "relatedSkills": [
+        "enabling-champions",
+        "generating-lead-magnets",
+        "accelerating-time-to-value",
+        "designing-email-sequences",
+        "mapping-buyer-triggers"
+      ],
+      "fluintIntegration": {
+        "discoveryStages": "Align discovery call to Fluint's 7 stages",
+        "businessCase": "Use 1-page business case format from enabling-champions",
+        "championEnablement": "Diagnostic outputs = champion's internal selling materials"
+      },
+      "dependencies": [],
+      "estimatedEffort": "medium",
+      "notes": "Core sales methodology. Diagnostic tool vibecoded in Next.js. Connects Fluint business case framework to automated diagnostic outputs."
+    },
+    {
+      "id": "F008",
+      "name": "AI-First SEO & Content Strategy",
+      "slug": "ai-seo-content",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Full-funnel SEO and AEO (Answer Engine Optimization) strategy for organic discovery via Google and AI assistants",
+      "funnelStages": {
+        "tofu": {
+          "name": "Top of Funnel (Awareness)",
+          "intent": "Problem-aware, exploring options",
+          "status": "pending",
+          "contentTypes": [
+            "Industry trend articles",
+            "Educational guides",
+            "Benchmark reports",
+            "Problem-focused blog posts"
+          ],
+          "keywordThemes": [
+            "freight cost reduction strategies",
+            "logistics challenges in manufacturing",
+            "supply chain visibility solutions",
+            "OTIF improvement tips",
+            "transportation management best practices"
+          ],
+          "aeoFocus": "Entity establishment, Q&A content for AI discovery"
+        },
+        "mofu": {
+          "name": "Middle of Funnel (Consideration)",
+          "intent": "Solution-aware, evaluating options",
+          "status": "pending",
+          "contentTypes": [
+            "Comparison guides",
+            "Buyer's guides",
+            "Case studies",
+            "ROI calculators",
+            "How-to implementation guides"
+          ],
+          "keywordThemes": [
+            "TMS software comparison India",
+            "how to choose a TMS",
+            "TMS implementation guide",
+            "freight management software features",
+            "logistics automation solutions"
+          ],
+          "aeoFocus": "Comparison content, use case documentation for AI recommendations"
+        },
+        "bofu": {
+          "name": "Bottom of Funnel (Decision)",
+          "intent": "Vendor-aware, ready to decide",
+          "status": "pending",
+          "contentTypes": [
+            "Competitor comparison pages",
+            "Pricing pages",
+            "Demo/trial pages",
+            "Customer testimonials",
+            "Integration documentation"
+          ],
+          "keywordThemes": [
+            "Fretron vs SAP TM",
+            "Fretron vs Oracle TMS",
+            "Fretron pricing",
+            "Fretron demo",
+            "best TMS for Indian manufacturing",
+            "TMS for steel industry",
+            "TMS for cement companies"
+          ],
+          "aeoFocus": "JSON-LD schema, factual product statements for AI citation"
+        }
+      },
+      "scope": [
+        "Keyword research across funnel stages",
+        "Content calendar by funnel stage",
+        "AEO optimization (JSON-LD, entity content)",
+        "Competitor keyword gap analysis",
+        "Content brief templates",
+        "SEO content production workflow",
+        "Performance tracking dashboard",
+        "AI discovery monitoring (ChatGPT, Perplexity mentions)"
+      ],
+      "technicalSeo": [
+        "JSON-LD schema implementation",
+        "FAQ schema for key pages",
+        "Organization and Product schema",
+        "Site structure optimization",
+        "Internal linking strategy"
+      ],
+      "relatedSkills": [
+        "optimizing-for-ai-discovery",
+        "writing-seo-content",
+        "creating-comparison-pages",
+        "researching-keywords"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "large",
+      "notes": "AI-sourced leads up 429% YoY. 12.7% of high-intent leads now come via AI discovery. Need both traditional SEO and AEO."
+    },
+    {
+      "id": "F009",
+      "name": "Lead & Account Nurturing Engine",
+      "slug": "nurturing-engine",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Active nurturing to keep leads engaged and move engaged accounts into buying conversations",
+      "nurtureStreams": {
+        "lead_nurture": {
+          "name": "Lead Nurturing",
+          "description": "Keep individual leads warm and engaged until ready to buy",
+          "status": "pending",
+          "triggers": [
+            "Lead magnet download",
+            "Website form submission",
+            "Webinar registration",
+            "Content engagement"
+          ],
+          "sequences": [
+            "Post-download nurture (7-touch)",
+            "Educational drip sequence",
+            "Re-engagement for cold leads",
+            "Event follow-up sequence"
+          ]
+        },
+        "account_nurture": {
+          "name": "Engaged Account Nurturing",
+          "description": "Multi-threaded nurturing of accounts showing engagement signals",
+          "status": "pending",
+          "triggers": [
+            "Multiple contacts from same account engaged",
+            "Website visits from target account",
+            "Content consumption pattern",
+            "Intent signals detected"
+          ],
+          "tactics": [
+            "Multi-contact email sequences",
+            "LinkedIn touchpoints across buying committee",
+            "Personalized content recommendations",
+            "Executive outreach triggers",
+            "Sales handoff when buying signals appear"
+          ]
+        },
+        "buying_conversation": {
+          "name": "Buying Conversation Activation",
+          "description": "Convert engaged accounts into active sales conversations",
+          "status": "pending",
+          "triggers": [
+            "High engagement score threshold",
+            "Multiple stakeholders engaged",
+            "Pricing page visits",
+            "Competitor comparison page visits",
+            "Direct response to outreach"
+          ],
+          "activation": [
+            "Sales alert for hot accounts",
+            "Personalized outreach from AE",
+            "Offer: Dispatch Value Audit",
+            "Offer: Move-as-One Diagnostic",
+            "Champion identification and enablement"
+          ]
+        }
+      },
+      "scope": [
+        "Lead scoring model refinement",
+        "Account engagement scoring",
+        "Email nurture sequence design",
+        "HubSpot workflow automation",
+        "Behavioral trigger setup",
+        "Content mapping to nurture stages",
+        "Sales handoff criteria",
+        "Re-engagement campaigns",
+        "Lifecycle stage definitions",
+        "Nurture performance dashboards"
+      ],
+      "engagementSignals": [
+        "Email opens/clicks",
+        "Website visits (pages, frequency)",
+        "Content downloads",
+        "Webinar attendance",
+        "LinkedIn engagement",
+        "Form submissions",
+        "Pricing/demo page visits",
+        "Return visits"
+      ],
+      "buyingSignals": [
+        "Multiple stakeholders from account",
+        "Executive engagement",
+        "Competitor comparison research",
+        "Pricing page visits",
+        "Demo request or trial signup",
+        "Direct reply to nurture email",
+        "Sales contact initiated"
+      ],
+      "relatedSkills": [
+        "designing-email-sequences",
+        "orchestrating-lifecycle-emails",
+        "building-trust-progressively",
+        "matching-ask-to-trust",
+        "enabling-champions",
+        "qualifying-inbound-leads"
+      ],
+      "hubspotIntegration": {
+        "workflows": "Automated nurture sequences",
+        "lists": "Segmented nurture audiences",
+        "scoring": "Lead and account scoring",
+        "sequences": "Sales outreach sequences",
+        "dashboards": "Nurture performance tracking"
+      },
+      "dependencies": ["F002", "F006"],
+      "estimatedEffort": "large",
+      "notes": "Connects demand capture (F002) with ABM infrastructure (F006). Trust philosophy: nurture builds trust progressively until ask matches trust level."
+    },
+    {
+      "id": "F010",
+      "name": "ABM Warmup & Multi-Channel Outreach",
+      "slug": "abm-warmup-multichannel",
+      "status": "backlog",
+      "priority": "critical",
+      "description": "Trust-first multi-channel warmup campaign: add value before asking anything. LinkedIn audience building + coordinated outreach across channels following trust ladder progression.",
+      "corePhilosophy": {
+        "principle": "ADD VALUE BEFORE YOU ASK",
+        "trustLadder": {
+          "description": "Every interaction must match the current trust level. Never ask more than you've earned.",
+          "levels": [
+            {
+              "level": 1,
+              "name": "Stranger",
+              "trust": "Zero",
+              "appropriateAsk": "Nothing - only give value",
+              "actions": ["Follow", "Like their content", "Share relevant insights"]
+            },
+            {
+              "level": 2,
+              "name": "Familiar",
+              "trust": "They recognize you",
+              "appropriateAsk": "Connection request",
+              "actions": ["Comment thoughtfully", "Share content they'd value", "Engage consistently"]
+            },
+            {
+              "level": 3,
+              "name": "Connected",
+              "trust": "1st degree connection",
+              "appropriateAsk": "Share ungated resource",
+              "actions": ["DM with genuine value", "Invite to ungated webinar", "Share benchmark/insight"]
+            },
+            {
+              "level": 4,
+              "name": "Engaged",
+              "trust": "They've consumed your content",
+              "appropriateAsk": "Gated content, low-commitment offer",
+              "actions": ["Invite to roundtable", "Offer diagnostic", "Share case study"]
+            },
+            {
+              "level": 5,
+              "name": "Interested",
+              "trust": "They've responded/replied",
+              "appropriateAsk": "Conversation, light discovery",
+              "actions": ["Suggest a quick call", "Offer personalized insight", "Ask discovery questions"]
+            },
+            {
+              "level": 6,
+              "name": "Qualified",
+              "trust": "They have need + authority",
+              "appropriateAsk": "Demo, detailed discovery",
+              "actions": ["Propose demo", "Offer Dispatch Value Audit", "Begin sales process"]
+            }
+          ]
+        },
+        "antiPatterns": [
+          "Pitch on connection request (Level 1 → Level 6 jump)",
+          "Demo request before any value given",
+          "Cold email asking for meeting with no context",
+          "Generic outreach without personalization",
+          "Asking for referral before relationship exists"
+        ]
+      },
+      "multiChannelOrchestration": {
+        "channels": ["LinkedIn", "Email", "Content/Ads", "Events", "Direct Mail"],
+        "coordinationPrinciple": "Surround target accounts with consistent presence across channels, each touchpoint adding value",
+        "90DayCampaign": {
+          "phase1_visibility": {
+            "days": "1-30",
+            "goal": "Get on their radar without asking anything",
+            "linkedin": [
+              "Follow target contacts",
+              "Like and comment on their posts (genuine insights)",
+              "Share content relevant to their industry"
+            ],
+            "email": "None - too early",
+            "content": [
+              "Targeted ads (awareness only, no CTA)",
+              "Thought leadership in their feed"
+            ],
+            "trustLevel": "Building from Stranger → Familiar"
+          },
+          "phase2_familiarity": {
+            "days": "31-60",
+            "goal": "They recognize Fretron as relevant",
+            "linkedin": [
+              "Send connection requests with context",
+              "DM with ungated valuable resource",
+              "Engage in groups they're active in"
+            ],
+            "email": [
+              "First email: Industry insight, NO ASK",
+              "Second email: Benchmark data, still no ask"
+            ],
+            "content": [
+              "Retargeting with case studies",
+              "Invite to ungated webinar"
+            ],
+            "trustLevel": "Familiar → Connected → Engaged"
+          },
+          "phase3_interest": {
+            "days": "61-90",
+            "goal": "Generate active interest, identify champions",
+            "linkedin": [
+              "Direct message with personalized value",
+              "Share specific resource based on engagement",
+              "Soft ask for conversation"
+            ],
+            "email": [
+              "Third email: Peer example",
+              "Fourth email: Question about their approach",
+              "Fifth email: Soft meeting ask"
+            ],
+            "content": [
+              "Conversion-focused retargeting",
+              "Personalized landing pages"
+            ],
+            "trustLevel": "Engaged → Interested → Qualified"
+          }
+        }
+      },
+      "audienceSources": {
+        "competitor_followers": {
+          "name": "Competitor Follower Capture",
+          "description": "Identify and connect with followers of competitor companies",
+          "status": "pending",
+          "competitors": [
+            "SAP TM followers",
+            "Oracle TMS followers",
+            "Ramco Logistics followers",
+            "Locus followers",
+            "FarEye followers"
+          ],
+          "tactics": [
+            "Extract competitor company followers",
+            "Filter for ICP match (industry, role, geography)",
+            "Engage with their content BEFORE connecting",
+            "Systematic value-first connection requests",
+            "Targeted content to appear in their feed"
+          ]
+        },
+        "influencer_followers": {
+          "name": "Influencer Audience Capture",
+          "description": "Connect with followers of relevant logistics/supply chain influencers",
+          "status": "pending",
+          "influencerCategories": [
+            "Supply chain thought leaders",
+            "Logistics consultants",
+            "Manufacturing operations experts",
+            "CFOs/COOs of target companies",
+            "Industry analysts"
+          ],
+          "tactics": [
+            "Identify top 50 relevant influencers",
+            "Map their engaged followers",
+            "Strategic engagement on influencer content",
+            "Build relationships with influencers directly",
+            "Guest appearances on their content"
+          ]
+        },
+        "target_account_employees": {
+          "name": "Target Account Employee Connections",
+          "description": "Systematic connection building with employees at target accounts",
+          "status": "pending",
+          "approach": [
+            "Map buying committee at Tier 1 accounts",
+            "Connect with peripheral influencers first",
+            "Multi-thread across departments",
+            "Track connection acceptance rates",
+            "Coordinate warmup across channels"
+          ]
+        }
+      },
+      "valueDeliveryAssets": {
+        "description": "Content and resources to ADD VALUE at each trust level",
+        "level1_2": [
+          "Thoughtful comments on their posts",
+          "Industry trend shares",
+          "Relevant article shares"
+        ],
+        "level3": [
+          "Ungated benchmark reports",
+          "Industry insight PDFs",
+          "Useful tools/calculators"
+        ],
+        "level4": [
+          "Webinar invitations",
+          "Roundtable invitations",
+          "Case study access",
+          "ROI templates"
+        ],
+        "level5": [
+          "Personalized insights for their company",
+          "Mini-audit findings",
+          "Peer introduction offers"
+        ],
+        "level6": [
+          "Dispatch Value Audit",
+          "Move-as-One Diagnostic",
+          "Custom demo"
+        ]
+      },
+      "scope": [
+        "Trust ladder framework implementation in HubSpot",
+        "Competitor follower list extraction",
+        "Influencer identification and mapping",
+        "Multi-channel campaign orchestration",
+        "Connection request templates (value-first)",
+        "Engagement playbook by trust level",
+        "Content calendar aligned to warmup phases",
+        "Follower growth tracking",
+        "Trust level tracking per contact",
+        "Warmth score automation"
+      ],
+      "tools": [
+        "LinkedIn Sales Navigator",
+        "Phantombuster or similar for extraction",
+        "Clay for enrichment",
+        "HubSpot for tracking and automation",
+        "Shield for LinkedIn analytics"
+      ],
+      "relatedSkills": [
+        "matching-ask-to-trust",
+        "building-trust-progressively",
+        "warming-up-abm-accounts",
+        "amplifying-linkedin-presence",
+        "selecting-target-accounts",
+        "writing-cold-outreach-sequences"
+      ],
+      "dependencies": ["F006"],
+      "estimatedEffort": "large",
+      "notes": "CRITICAL FEATURE. Trust-first approach differentiates us. Goal: earn the right to a conversation by adding value first. Every touchpoint must match trust level. This is the execution layer for Full Funnel ABM methodology."
+    },
+    {
+      "id": "F011",
+      "name": "Marketing MIS & Attribution Dashboard",
+      "slug": "marketing-mis-dashboard",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Comprehensive marketing reporting system with campaign KPIs, multi-touch attribution, and funnel tracking",
+      "dashboardModules": {
+        "campaign_performance": {
+          "name": "Campaign-wise Performance",
+          "description": "Weekly input and output KPIs per campaign",
+          "status": "pending",
+          "inputKpis": [
+            "Budget spent",
+            "Impressions",
+            "Clicks/Engagements",
+            "Content pieces published",
+            "Emails sent",
+            "Connections made"
+          ],
+          "outputKpis": [
+            "Leads generated",
+            "MQLs",
+            "SQLs",
+            "Opportunities created",
+            "Pipeline value",
+            "Deals won",
+            "Revenue attributed"
+          ],
+          "campaigns": [
+            "Google Ads BoFU",
+            "LinkedIn Organic",
+            "LinkedIn Ads",
+            "SEO/Content",
+            "Podcast",
+            "Roundtables",
+            "Email Nurture",
+            "ABM Warmup"
+          ]
+        },
+        "multi_touch_attribution": {
+          "name": "Multi-Touch Attribution",
+          "description": "Sophisticated attribution across all touchpoints",
+          "status": "pending",
+          "models": [
+            "First touch attribution",
+            "Last touch attribution",
+            "Linear (equal weight)",
+            "Time decay",
+            "Position-based (U-shaped)",
+            "Custom weighted model"
+          ],
+          "trackingPoints": [
+            "First website visit",
+            "Content downloads",
+            "Email engagements",
+            "LinkedIn touchpoints",
+            "Event attendance",
+            "Demo request",
+            "Sales touches",
+            "Closed won"
+          ]
+        },
+        "dual_level_funnel_tracking": {
+          "name": "Dual-Level Funnel Tracking",
+          "description": "Separate lifecycle tracking for Accounts AND Contacts with interplay rules",
+          "status": "pending",
+          "accountLevelFunnel": {
+            "name": "Account Lifecycle",
+            "description": "Company-level funnel progression",
+            "stages": [
+              {
+                "stage": "Target Account",
+                "definition": "Account identified and added to target list",
+                "criteria": "Matches ICP, added to Tier 1/2/3"
+              },
+              {
+                "stage": "Target Account Engaged",
+                "definition": "Account showing engagement signals",
+                "criteria": "Any contact engaged (content, website, email, LinkedIn)"
+              },
+              {
+                "stage": "Target Account - SAL",
+                "definition": "Sales Accepted Lead - buying signals present",
+                "criteria": "Multiple contacts engaged OR executive engaged OR pricing page OR demo request"
+              },
+              {
+                "stage": "Target Account - Opportunity",
+                "definition": "Active sales opportunity",
+                "criteria": "Discovery call completed, qualified"
+              },
+              {
+                "stage": "Target Account - Proposal",
+                "definition": "Commercial discussion",
+                "criteria": "Proposal sent, pricing discussed"
+              },
+              {
+                "stage": "Target Account - Won/Lost",
+                "definition": "Deal closed",
+                "criteria": "Contract signed or lost reason documented"
+              }
+            ],
+            "engagementScoring": {
+              "website_visit": 5,
+              "content_download": 10,
+              "email_click": 5,
+              "linkedin_connection": 10,
+              "linkedin_engagement": 5,
+              "webinar_registration": 15,
+              "webinar_attendance": 20,
+              "pricing_page_visit": 25,
+              "demo_request": 50,
+              "multiple_contacts_engaged": 30
+            }
+          },
+          "contactLevelFunnel": {
+            "name": "Contact Lifecycle",
+            "description": "Individual contact funnel progression",
+            "stages": [
+              {
+                "stage": "Subscriber",
+                "definition": "Email captured, minimal engagement"
+              },
+              {
+                "stage": "Lead",
+                "definition": "Known contact with some engagement"
+              },
+              {
+                "stage": "MQL",
+                "definition": "Marketing Qualified - engagement threshold met"
+              },
+              {
+                "stage": "SQL",
+                "definition": "Sales Qualified - sales accepted"
+              },
+              {
+                "stage": "Opportunity Contact",
+                "definition": "Part of active opportunity"
+              },
+              {
+                "stage": "Customer",
+                "definition": "Deal closed won"
+              },
+              {
+                "stage": "Evangelist",
+                "definition": "Active advocate/referrer"
+              }
+            ]
+          },
+          "interplayRules": {
+            "description": "How Contact and Account lifecycles interact",
+            "contactToAccountRules": [
+              {
+                "rule": "First Contact Engagement",
+                "trigger": "Any contact from Target Account engages",
+                "action": "Move Account from 'Target Account' → 'Target Account Engaged'"
+              },
+              {
+                "rule": "Multi-Contact Engagement",
+                "trigger": "2+ contacts from same account engaged",
+                "action": "Boost Account engagement score by 30 points"
+              },
+              {
+                "rule": "Executive Engagement",
+                "trigger": "N or N-1 level contact engages",
+                "action": "Move Account to 'Target Account - SAL' if engagement score > threshold"
+              },
+              {
+                "rule": "Champion Identified",
+                "trigger": "Contact marked as Champion",
+                "action": "Account gets priority flag, alert sales"
+              },
+              {
+                "rule": "Demo Request",
+                "trigger": "Any contact requests demo",
+                "action": "Move Account to 'Target Account - SAL', alert sales immediately"
+              }
+            ],
+            "accountToContactRules": [
+              {
+                "rule": "Account Becomes Opportunity",
+                "trigger": "Account moves to Opportunity stage",
+                "action": "All engaged contacts move to 'Opportunity Contact'"
+              },
+              {
+                "rule": "Account Won",
+                "trigger": "Account marked as Won",
+                "action": "All contacts move to 'Customer' lifecycle stage"
+              },
+              {
+                "rule": "Account Priority Change",
+                "trigger": "Account tier upgraded (T2 → T1)",
+                "action": "Increase nurture priority for all contacts"
+              }
+            ]
+          },
+          "hubspotAutomation": {
+            "description": "Automated workflows to maintain dual lifecycles",
+            "workflows": [
+              "Contact engagement → Update account engagement score",
+              "Account score threshold → Change account lifecycle stage",
+              "Account stage change → Update associated contacts",
+              "Multi-contact detection → Alert and score boost",
+              "Executive engagement detection → SAL automation",
+              "Weekly lifecycle stage sync and validation"
+            ],
+            "properties": {
+              "accountLevel": [
+                "Account Lifecycle Stage (custom)",
+                "Account Engagement Score",
+                "Account Tier",
+                "Engaged Contact Count",
+                "Last Engagement Date",
+                "Days in Current Stage"
+              ],
+              "contactLevel": [
+                "Contact Lifecycle Stage",
+                "Contact Engagement Score",
+                "Role/Seniority",
+                "Champion Flag",
+                "Associated Account Tier"
+              ]
+            }
+          }
+        },
+        "overall_marketing_kpis": {
+          "name": "Overall Marketing KPIs",
+          "description": "Aggregate marketing performance metrics",
+          "status": "pending",
+          "kpis": [
+            "Total pipeline generated",
+            "Marketing-sourced revenue",
+            "Marketing-influenced revenue",
+            "CAC (Customer Acquisition Cost)",
+            "CAC payback period",
+            "Marketing ROI",
+            "Lead-to-customer rate",
+            "Average deal size",
+            "Sales cycle length"
+          ]
+        }
+      },
+      "scope": [
+        "Data integration layer (HubSpot, Google Ads, LinkedIn, website)",
+        "Attribution model implementation",
+        "Campaign tagging/UTM strategy",
+        "Weekly automated reporting",
+        "Dashboard design and build",
+        "Alert system for anomalies",
+        "Historical trend analysis",
+        "Forecasting module"
+      ],
+      "dataSources": [
+        "HubSpot CRM",
+        "Google Ads",
+        "Google Analytics",
+        "LinkedIn Ads",
+        "LinkedIn organic (Shield/similar)",
+        "Website analytics (Factors AI)",
+        "Email platform",
+        "Sales data"
+      ],
+      "techStack": {
+        "options": [
+          "HubSpot native dashboards",
+          "Looker Studio + data connectors",
+          "Custom Next.js dashboard",
+          "Metabase + data warehouse"
+        ]
+      },
+      "relatedSkills": [
+        "orchestrating-abm-campaigns",
+        "qualifying-inbound-leads"
+      ],
+      "dependencies": ["F002"],
+      "estimatedEffort": "large",
+      "notes": "Single source of truth for marketing performance. Weekly review cadence. Essential for optimizing spend and proving ROI."
+    },
+    {
+      "id": "F012",
+      "name": "Partner Program - SAP System Integrators",
+      "slug": "partners-sap-si",
+      "status": "backlog",
+      "priority": "medium",
+      "description": "MVE for partnerships with SAP System Integrators who implement SAP TM but need complementary TMS for mid-market",
+      "partnerType": "Implementation Partners - SAP SIs",
+      "rationale": "SAP SIs often encounter mid-market clients where SAP TM is overkill. Fretron can be their go-to recommendation.",
+      "targetPartners": [
+        "Accenture (SAP practice)",
+        "Deloitte (SAP practice)",
+        "IBM (SAP practice)",
+        "Infosys (SAP practice)",
+        "TCS (SAP practice)",
+        "Wipro (SAP practice)",
+        "Tech Mahindra",
+        "HCL Technologies",
+        "Capgemini",
+        "Regional SAP boutiques"
+      ],
+      "mveScope": {
+        "phase1_identify": [
+          "Research SAP SI landscape in India",
+          "Identify supply chain/logistics practice leads",
+          "Map decision makers for partnership",
+          "Understand their client profile"
+        ],
+        "phase2_outreach": [
+          "Craft partnership value proposition",
+          "Reach out to 5-10 SIs",
+          "Offer co-sell incentives",
+          "Propose joint case study opportunity"
+        ],
+        "phase3_pilot": [
+          "Sign 1-2 pilot partnerships",
+          "Co-pitch to their mid-market clients",
+          "Create SI-specific sales materials",
+          "Measure referral quality"
+        ]
+      },
+      "valueProposition": {
+        "forPartner": [
+          "Expand addressable market (mid-market)",
+          "Offer alternative when SAP TM doesn't fit",
+          "Faster implementation = faster revenue recognition",
+          "Recurring referral revenue"
+        ],
+        "forFretron": [
+          "Access to enterprise client relationships",
+          "Credibility by association",
+          "Warm introductions to target accounts",
+          "Implementation support if needed"
+        ]
+      },
+      "partnerEnablement": [
+        "Partner pitch deck",
+        "Joint value proposition",
+        "Referral tracking system",
+        "Commission structure",
+        "Co-branded materials"
+      ],
+      "relatedSkills": [
+        "running-partner-programs",
+        "enabling-champions"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "medium",
+      "notes": "MVE approach: Start with 2-3 SIs, prove model, then scale. Focus on logistics/supply chain practice leads."
+    },
+    {
+      "id": "F013",
+      "name": "Partner Program - Business Consulting Firms",
+      "slug": "partners-consulting",
+      "status": "backlog",
+      "priority": "medium",
+      "description": "MVE for partnerships with management consulting and business advisory firms doing supply chain transformation",
+      "partnerType": "Business Consulting Partners",
+      "rationale": "Consulting firms advise on supply chain strategy but need implementation partners. Fretron can be their recommended TMS.",
+      "targetPartners": [
+        "McKinsey (Operations practice)",
+        "BCG (Operations practice)",
+        "Bain (Performance Improvement)",
+        "Kearney (Supply Chain)",
+        "Roland Berger",
+        "Strategy& (PwC)",
+        "EY-Parthenon",
+        "KPMG Advisory",
+        "Boutique supply chain consultancies",
+        "Industry-specific advisors (Steel, Cement, FMCG)"
+      ],
+      "mveScope": {
+        "phase1_identify": [
+          "Map supply chain/operations practices",
+          "Identify partners and principals",
+          "Research their recent engagements",
+          "Find mutual connections for warm intro"
+        ],
+        "phase2_outreach": [
+          "Position as implementation partner for their recommendations",
+          "Offer thought leadership collaboration",
+          "Propose joint industry research",
+          "Provide case studies they can reference"
+        ],
+        "phase3_pilot": [
+          "Get included in 1-2 consulting recommendations",
+          "Co-present at client workshops",
+          "Joint content creation",
+          "Measure recommendation-to-pipeline"
+        ]
+      },
+      "valueProposition": {
+        "forPartner": [
+          "Implementation partner for their strategy work",
+          "Extend engagement with technology phase",
+          "Prove their recommendations work",
+          "Access to Fretron customer insights"
+        ],
+        "forFretron": [
+          "C-suite credibility via consulting recommendation",
+          "Access to strategic transformation budgets",
+          "Earlier involvement in buying process",
+          "Thought leadership amplification"
+        ]
+      },
+      "partnerEnablement": [
+        "Consultant-friendly materials (no vendor fluff)",
+        "ROI models and frameworks",
+        "Implementation methodology documentation",
+        "Case studies with metrics",
+        "Joint workshop formats"
+      ],
+      "relatedSkills": [
+        "running-partner-programs",
+        "enabling-champions",
+        "building-trust-progressively"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "medium",
+      "notes": "MVE approach: Target boutique/mid-tier consultancies first (easier access), then work up to MBB. Focus on supply chain transformation projects."
+    },
+    {
+      "id": "F014",
+      "name": "Partner Program - Cloud Providers",
+      "slug": "partners-cloud",
+      "status": "backlog",
+      "priority": "medium",
+      "description": "MVE for partnerships with hyperscaler cloud providers (AWS, Google Cloud, Microsoft Azure) partner programs",
+      "partnerType": "Cloud Provider Partners",
+      "rationale": "Cloud providers have partner programs, marketplace listings, and co-sell motions that can drive enterprise deals.",
+      "targetPartners": [
+        {
+          "provider": "AWS",
+          "programs": ["AWS Partner Network", "AWS Marketplace", "AWS ISV Accelerate"],
+          "focus": "Manufacturing and supply chain customers"
+        },
+        {
+          "provider": "Google Cloud",
+          "programs": ["Google Cloud Partner Advantage", "Google Cloud Marketplace"],
+          "focus": "Data/analytics customers, AI/ML use cases"
+        },
+        {
+          "provider": "Microsoft Azure",
+          "programs": ["Microsoft Partner Network", "Azure Marketplace", "Co-sell Ready"],
+          "focus": "Enterprise customers with Microsoft stack"
+        }
+      ],
+      "mveScope": {
+        "phase1_apply": [
+          "Apply to partner programs (all 3)",
+          "Complete technical requirements",
+          "Get listed on marketplaces",
+          "Identify partner development managers"
+        ],
+        "phase2_activate": [
+          "Build relationship with PDMs",
+          "Get added to partner solution directories",
+          "Create cloud-specific landing pages",
+          "Attend partner events/webinars"
+        ],
+        "phase3_cosell": [
+          "Get co-sell referrals from cloud reps",
+          "Joint customer meetings",
+          "Leverage cloud credits/incentives",
+          "Measure cloud-sourced pipeline"
+        ]
+      },
+      "valueProposition": {
+        "forCloudPartner": [
+          "Drive cloud consumption (Fretron runs on their cloud)",
+          "Win manufacturing/logistics workloads",
+          "Customer success story potential",
+          "Expand industry vertical presence"
+        ],
+        "forFretron": [
+          "Access to cloud sales team relationships",
+          "Marketplace visibility",
+          "Cloud credits for customers",
+          "Enterprise credibility",
+          "Co-marketing opportunities"
+        ]
+      },
+      "technicalRequirements": [
+        "Cloud architecture documentation",
+        "Security/compliance certifications",
+        "Marketplace listing setup",
+        "Integration documentation",
+        "Demo environment on each cloud"
+      ],
+      "relatedSkills": [
+        "running-partner-programs"
+      ],
+      "dependencies": [],
+      "estimatedEffort": "medium",
+      "notes": "MVE approach: Start with one cloud (likely AWS given India presence), prove model, expand. Marketplace listing is table stakes."
+    },
+    {
+      "id": "F015",
+      "name": "Paid Social & Retargeting Campaigns",
+      "slug": "paid-social-retargeting",
+      "status": "backlog",
+      "priority": "high",
+      "description": "LinkedIn paid ads (BoFU + ICP targeting) and multi-platform retargeting (LinkedIn, Meta, Google)",
+      "campaigns": {
+        "linkedin_bofu": {
+          "name": "LinkedIn Ads - BoFU Keywords",
+          "description": "Bottom-of-funnel LinkedIn ads targeting high-intent audiences",
+          "status": "pending",
+          "targeting": [
+            "TMS-related keyword targeting",
+            "Competitor audience targeting",
+            "Job title targeting (VP Ops, Logistics Head, CFO)",
+            "Industry targeting (Manufacturing, Steel, Cement, FMCG)"
+          ],
+          "adFormats": [
+            "Sponsored Content (single image)",
+            "Carousel ads (feature showcase)",
+            "Video ads (customer testimonials)",
+            "Message ads (for warm audiences)"
+          ],
+          "offers": [
+            "Demo request",
+            "Dispatch Value Audit",
+            "Consultation call",
+            "Case study download"
+          ]
+        },
+        "linkedin_icp": {
+          "name": "LinkedIn Ads - ICP Targeting",
+          "description": "Awareness and consideration ads targeting ideal customer profile",
+          "status": "pending",
+          "targeting": [
+            "Company size (₹100-2000 Cr)",
+            "Industry (Manufacturing, Steel, Cement, Chemicals, FMCG)",
+            "Job functions (Operations, Supply Chain, Logistics, Finance)",
+            "Seniority (Director, VP, C-Suite)",
+            "Geography (India)"
+          ],
+          "campaignTypes": [
+            "Awareness (thought leadership content)",
+            "Consideration (guides, benchmarks, webinars)",
+            "Conversion (demo, audit offers)"
+          ],
+          "abmIntegration": [
+            "Upload target account list for account-based targeting",
+            "Matched audiences from CRM",
+            "Lookalike audiences from customers"
+          ]
+        },
+        "linkedin_retargeting": {
+          "name": "LinkedIn Retargeting",
+          "description": "Retarget website visitors and engaged contacts on LinkedIn",
+          "status": "pending",
+          "audiences": [
+            "Website visitors (all pages)",
+            "Website visitors (high-intent pages: pricing, demo, features)",
+            "Video viewers (50%+, 75%+, 100%)",
+            "Lead gen form openers (didn't submit)",
+            "Page followers",
+            "Event registrants"
+          ],
+          "sequences": [
+            "Day 1-7: Soft retarget with content",
+            "Day 8-14: Case study / social proof",
+            "Day 15-30: Direct offer (demo/audit)"
+          ]
+        },
+        "meta_retargeting": {
+          "name": "Meta (Facebook/Instagram) Retargeting",
+          "description": "Retarget website visitors on Facebook and Instagram",
+          "status": "pending",
+          "audiences": [
+            "Website visitors (180 days)",
+            "High-intent page visitors (pricing, demo)",
+            "Content engagers",
+            "Video viewers",
+            "Custom audiences from CRM"
+          ],
+          "adFormats": [
+            "Image ads",
+            "Carousel (feature highlights)",
+            "Video (testimonials, product demo)",
+            "Lead forms"
+          ],
+          "notes": "B2B on Meta works for retargeting (they're already aware). Not for cold prospecting."
+        },
+        "google_retargeting": {
+          "name": "Google Display & YouTube Retargeting",
+          "description": "Retarget across Google Display Network and YouTube",
+          "status": "pending",
+          "audiences": [
+            "Website visitors (all)",
+            "Website visitors (specific pages)",
+            "YouTube channel viewers",
+            "Customer match (email lists)"
+          ],
+          "placements": [
+            "Google Display Network",
+            "YouTube in-stream ads",
+            "YouTube discovery ads",
+            "Gmail ads"
+          ],
+          "frequencyCapping": "3-5 impressions per day per user"
+        }
+      },
+      "scope": [
+        "LinkedIn Campaign Manager setup",
+        "LinkedIn Insight Tag installation",
+        "Meta Pixel installation",
+        "Google Ads remarketing tag setup",
+        "Audience segmentation strategy",
+        "Creative development (ads, videos)",
+        "Landing page optimization",
+        "A/B testing framework",
+        "Budget allocation across platforms",
+        "Performance tracking and optimization"
+      ],
+      "audienceStrategy": {
+        "cold": {
+          "platforms": ["LinkedIn (ICP targeting)"],
+          "goal": "Awareness, content engagement"
+        },
+        "warm": {
+          "platforms": ["LinkedIn", "Meta", "Google Display"],
+          "goal": "Consideration, content consumption"
+        },
+        "hot": {
+          "platforms": ["LinkedIn", "Meta", "Google"],
+          "goal": "Conversion, demo/audit request"
+        }
+      },
+      "budgetAllocation": {
+        "suggestion": {
+          "linkedin_bofu": "40%",
+          "linkedin_icp": "25%",
+          "linkedin_retargeting": "15%",
+          "meta_retargeting": "10%",
+          "google_retargeting": "10%"
+        }
+      },
+      "relatedSkills": [
+        "running-bofu-google-ads",
+        "warming-up-abm-accounts",
+        "writing-direct-response-copy"
+      ],
+      "dependencies": ["F002"],
+      "estimatedEffort": "medium",
+      "notes": "Retargeting is highest ROI paid activity. LinkedIn for cold ICP prospecting, all platforms for retargeting warm audiences."
+    },
+    {
+      "id": "F016",
+      "name": "Programmatic SEO",
+      "slug": "programmatic-seo",
+      "status": "backlog",
+      "priority": "high",
+      "description": "Scalable, template-driven SEO pages targeting long-tail keywords programmatically",
+      "pageTypes": {
+        "industry_pages": {
+          "name": "Industry-Specific TMS Pages",
+          "template": "TMS for [Industry]",
+          "examples": [
+            "TMS for Steel Industry",
+            "TMS for Cement Industry",
+            "TMS for FMCG Companies",
+            "TMS for Chemical Manufacturing",
+            "TMS for Auto Parts Industry",
+            "TMS for Pharma Logistics"
+          ],
+          "dataNeeded": [
+            "Industry-specific challenges",
+            "Relevant KPIs and benchmarks",
+            "Case studies from industry",
+            "Industry-specific features"
+          ]
+        },
+        "location_pages": {
+          "name": "Location-Based TMS Pages",
+          "template": "TMS Software in [City/State]",
+          "examples": [
+            "TMS Software in Mumbai",
+            "TMS Software in Gujarat",
+            "TMS Software in Chennai",
+            "TMS Software in Pune",
+            "Logistics Software in Maharashtra"
+          ],
+          "dataNeeded": [
+            "Local manufacturing hubs",
+            "Regional logistics challenges",
+            "Local customer references",
+            "Regional compliance requirements"
+          ]
+        },
+        "usecase_pages": {
+          "name": "Use Case Pages",
+          "template": "[Use Case] with TMS",
+          "examples": [
+            "Freight Cost Reduction with TMS",
+            "OTIF Improvement with TMS",
+            "Real-time Shipment Tracking Solutions",
+            "Freight Invoice Reconciliation Software",
+            "Multi-modal Transport Management",
+            "Fleet Utilization Optimization"
+          ],
+          "dataNeeded": [
+            "Problem definition",
+            "Solution approach",
+            "ROI metrics",
+            "Feature mapping"
+          ]
+        },
+        "comparison_pages": {
+          "name": "Competitor Comparison Pages",
+          "template": "Fretron vs [Competitor]",
+          "examples": [
+            "Fretron vs SAP TM",
+            "Fretron vs Oracle TMS",
+            "Fretron vs Ramco Logistics",
+            "Fretron vs Locus",
+            "Fretron vs FarEye",
+            "Fretron vs Excel Spreadsheets"
+          ],
+          "dataNeeded": [
+            "Competitor features",
+            "Pricing comparison",
+            "Implementation comparison",
+            "Target customer comparison"
+          ]
+        },
+        "alternative_pages": {
+          "name": "Alternative To Pages",
+          "template": "[Competitor] Alternatives",
+          "examples": [
+            "SAP TM Alternatives for Mid-Market",
+            "Oracle TMS Alternatives India",
+            "Best Ramco Logistics Alternatives",
+            "Excel for Logistics Alternatives"
+          ],
+          "dataNeeded": [
+            "Why companies switch",
+            "Feature comparison",
+            "Migration path",
+            "Customer testimonials"
+          ]
+        },
+        "integration_pages": {
+          "name": "Integration Pages",
+          "template": "TMS Integration with [System]",
+          "examples": [
+            "TMS Integration with SAP",
+            "TMS Integration with Oracle ERP",
+            "TMS Integration with Tally",
+            "GPS Tracking Integration",
+            "E-way Bill Integration"
+          ],
+          "dataNeeded": [
+            "Integration architecture",
+            "API documentation",
+            "Implementation steps",
+            "Customer examples"
+          ]
+        }
+      },
+      "scope": [
+        "Template design for each page type",
+        "Data collection and structuring",
+        "Dynamic content generation",
+        "Internal linking strategy",
+        "Schema markup (JSON-LD) automation",
+        "URL structure planning",
+        "Meta tag templates",
+        "Content quality guidelines",
+        "Page generation automation",
+        "Performance monitoring"
+      ],
+      "technicalImplementation": {
+        "approach": "Next.js dynamic routes with static generation",
+        "dataSource": "Structured JSON/database",
+        "generation": "Build-time static generation (SSG)",
+        "hosting": "Vercel/similar with ISR support"
+      },
+      "contentStrategy": {
+        "uniqueness": [
+          "Industry-specific data and benchmarks",
+          "Real customer quotes and case studies",
+          "Unique insights per page",
+          "Avoid thin/duplicate content"
+        ],
+        "quality": [
+          "Minimum 800 words per page",
+          "Unique H1/H2 structure",
+          "Custom images/graphics where possible",
+          "Regular content refresh schedule"
+        ]
+      },
+      "estimatedPages": {
+        "industry": "15-20 pages",
+        "location": "20-30 pages",
+        "usecase": "15-20 pages",
+        "comparison": "10-15 pages",
+        "alternative": "10-15 pages",
+        "integration": "10-15 pages",
+        "total": "80-115 pages"
+      },
+      "relatedSkills": [
+        "writing-seo-content",
+        "optimizing-for-ai-discovery",
+        "creating-comparison-pages",
+        "researching-keywords"
+      ],
+      "dependencies": ["F008"],
+      "estimatedEffort": "large",
+      "notes": "Programmatic SEO can 10x organic traffic. Key is unique data per page to avoid thin content penalties. Build on top of F008 (AI-First SEO strategy)."
+    }
+  ],
+  "statusDefinitions": {
+    "backlog": "Not started, in queue",
+    "planning": "In plan mode, designing implementation",
+    "in_progress": "Active development/execution",
+    "review": "Implementation complete, reviewing results",
+    "done": "Fully shipped and operational",
+    "paused": "Temporarily on hold"
+  },
+  "priorityDefinitions": {
+    "critical": "Foundation/blocker for other work",
+    "high": "Core to GTM success, do soon",
+    "medium": "Important but can wait",
+    "low": "Nice to have"
+  },
+  "effortDefinitions": {
+    "small": "1-2 days",
+    "medium": "1-2 weeks",
+    "large": "1+ month"
+  }
+}

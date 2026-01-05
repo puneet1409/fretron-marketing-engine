@@ -1,0 +1,126 @@
+{
+  "success": 20,
+  "failed": 0,
+  "details": [
+    {
+      "company": "Mahindra & Mahindra",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Tata Motors",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Coal India Ltd",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Hindalco Industries",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Reliance Industries",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "IFFCO",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Nestle India",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "SAIL",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Varun Beverages (PepsiCo)",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "BPCL",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Chemplast Sanmar",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Mondelez India",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Karnataka Milk Federation",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Imports (Port Delivery)",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "NMDC",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Pengg Industries",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "NMDC (Steel)",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Chemplast Sanmar",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "Piaggio India",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    },
+    {
+      "company": "JSW Ispat Special",
+      "success": true,
+      "status_code": 200,
+      "response": "{\"data\":\"ok\"}"
+    }
+  ]
+}
