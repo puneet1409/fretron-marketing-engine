@@ -127,14 +127,23 @@ The goal is not "more accounts touched" but "right accounts moved through trust 
 
 ## ABM Measurement Framework
 
+### Metrics By Program Type
+
+| Program | Leading Indicators | Lagging Indicators |
+|---------|-------------------|-------------------|
+| **Warmup** | Accounts engaged, content views | Meetings booked, reply rate |
+| **Events** | Registrations, attendance | Meetings from attendees, pipeline |
+| **Content** | Downloads, time on site | MQLs, form submissions |
+| **Ads** | Impressions, account reach | Pipeline influenced, cost/opp |
+
 ### Leading Indicators (Weekly)
 
-| Metric | Source |
-|--------|--------|
-| Accounts engaged | CRM |
-| Contact coverage per account | CRM |
-| Content consumption | Marketing automation |
-| Warmth score changes | `warming-up-accounts` |
+| Metric | What It Tells You |
+|--------|-------------------|
+| Accounts engaged | Reach - are we getting in front of targets? |
+| Contact coverage | Multi-threading - how many people per account? |
+| Content consumption | Interest - are they engaging? |
+| Warmth score changes | Progression - are accounts moving stages? |
 
 ### Lagging Indicators (Monthly)
 
@@ -154,6 +163,22 @@ Track cluster progression:
 - Cluster ICP → Future Pipeline (awareness achieved)
 - Future Pipeline → Active Focus (need validated)
 - Active Focus → Opportunity (sales engaged)
+
+---
+
+## 4 Levels of ABM Personalization
+
+| Level | Scope | Content Approach |
+|-------|-------|------------------|
+| **Vertical** | Industry | Same content for entire vertical (e.g., "Manufacturing logistics trends") |
+| **JTBD** | Problem cluster | Grouped by job-to-be-done (e.g., "Reducing detention costs") |
+| **Account** | Company | Account-specific content (their news, challenges, competitors) |
+| **Buyer** | Individual | Role + account context (CFO at [Company] facing [specific issue]) |
+
+**Effort increases with depth.** Match personalization level to account tier:
+- Tier 1: Buyer-level personalization
+- Tier 2: Account-level personalization
+- Tier 3: JTBD/Vertical level
 
 ---
 

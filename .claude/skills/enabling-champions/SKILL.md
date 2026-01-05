@@ -108,6 +108,32 @@ Champions bet their reputation on you. Make them the hero:
 
 **Test**: Do you have their cell phone number? Real relationship marker.
 
+---
+
+## Deal Acceleration Playbook
+
+When deals stall, use these tactics to re-ignite momentum:
+
+### 1. Live Case Study Webinar
+Invite pipeline accounts to see similar company succeed. Champion brings colleagues. Social proof + multi-threading in one event.
+
+### 2. Pre-Meeting Education
+Send short video or 1-pager BEFORE scheduled calls. Reduces meeting time on basics, focuses discussion on their specific situation.
+
+### 3. Executive Roundtable
+Small format (6-10 people). Bring your champion's exec alongside peer executives. Peer influence accelerates internal approval.
+
+### 4. Multi-Thread via Events
+Use events to naturally meet other stakeholders without champion feeling bypassed. "Would your [CFO/CTO/VP] find this valuable?"
+
+### 5. Quantify Cost of Delay
+Help champion articulate: "Every month we wait costs us $X." Create urgency with concrete numbers.
+
+### Key Principle
+**Don't just follow up—add value.** Each touchpoint should give them something useful, not just check on status.
+
+---
+
 ## Integration
 
 - Trust calibration → `trust-building-principles`
