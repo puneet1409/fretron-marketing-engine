@@ -1,6 +1,6 @@
 ---
 name: defining-icp-and-tiers
-description: Use for defining Ideal Customer Profile and account tiering. Covers the 6 Pillars framework (firmographics, qualification criteria, buying committee, tiering, JTBD, buyer journey). Invoke when building ICP, defining tier criteria, or mapping buying committees.
+description: Use for defining Ideal Customer Profile and account tiering. Covers the 6 Pillars framework (firmographics, qualification, buying committee, tiering, JTBD, buyer journey). Invoke when building ICP, defining tier criteria, or mapping buying committees.
 ---
 
 # Defining ICP and Tiers
@@ -9,166 +9,83 @@ description: Use for defining Ideal Customer Profile and account tiering. Covers
 
 ## Core Insight
 
-**ABM is about replicating your best deals and expanding your best customers. The key difference between good and bad ABM is how accounts are sourced.**
+**ABM is about replicating your best deals. The key difference between good and bad ABM is how accounts are sourced. Build a list of accounts that have need AND that you can win and retain.**
 
-Build a list of accounts that have **need** for your solution and that you can reasonably **win and retain**.
-
-## The 6 Pillars Framework (Full Funnel)
+## The 6 Pillars Framework
 
 ### Pillar 1: Firmographic & Demographic Criteria
 
-**Why**: Replicate your best deals by analyzing patterns from won deals.
+Replicate best deals by analyzing won deal patterns:
 
-| Dimension | Questions to Answer |
-|-----------|---------------------|
-| **Company Size** | Employee range? Revenue range? Sweet spot? |
-| **Industry** | Which verticals have highest win rate? |
-| **Geography** | Regions that close faster? Clusters? |
-| **Volume** | Transaction/shipment/user thresholds? |
-| **Tech Stack** | Current solutions? ERP presence? |
+| Dimension | Questions |
+|-----------|-----------|
+| Company size | Employee range? Revenue range? Sweet spot? |
+| Industry | Which verticals have highest win rate? |
+| Geography | Regions that close faster? |
+| Volume | Usage thresholds that make sense? |
+| Tech stack | Current solutions? ERP presence? |
 
-### Pillar 2: Qualification & Disqualification Criteria
+### Pillar 2: Qualification & Disqualification
 
-**Qualification Signals** (Must Have):
-- Pain point indicators visible (job postings, complaints, manual processes)
-- Technology readiness (ERP, digital initiatives, IT team size)
-- Buying signals (leadership changes, expansion, relevant hiring)
-- Organizational fit (budget authority, team structure)
+**Qualification signals**: Pain point indicators, technology readiness, buying signals (leadership changes, expansion), organizational fit (budget authority)
 
-**Disqualification Red Flags**:
-- Recently implemented competitor (<12 months)
-- Locked in long-term contract
-- Company in distress (bankruptcy, downsizing)
-- Too small to justify cost
-- 100% outsourced function
+**Disqualification red flags**: Recently implemented competitor (<12 mo), long-term contract lock, company distress, too small, 100% outsourced function
 
-### Pillar 3: Buying Committee Mapping
+### Pillar 3: Buying Committee
 
-**In enterprise, 14+ people average comprise buying committee.**
+Enterprise deals average 14+ people. Map:
 
-| Role | Typical Titles | Priority | When Needed |
-|------|----------------|----------|-------------|
-| **Champion** | VP Ops, Director, Manager | Critical | Problem identification |
-| **Executive Sponsor** | CFO, COO, CEO | Critical | Budget approval |
-| **Finance** | Controller, Finance Manager | High | ROI validation |
-| **IT/Technical** | CIO, IT Director | High | Integration approval |
-| **End Users** | Plant Managers, Team Leads | Medium | Problem validation |
-| **Procurement/Legal** | Procurement, Legal | Medium | Vendor confirmation |
-| **Potential Blocker** | Incumbent champion, Status quo advocate | Watch | Identify early |
+| Role | Typical Titles | Priority |
+|------|----------------|----------|
+| Champion | VP, Director | Critical |
+| Executive sponsor | C-suite | Critical |
+| Finance | CFO, Controller | High |
+| IT/Technical | CIO, IT Director | High |
+| End users | Managers, Team Leads | Medium |
+| Potential blocker | Incumbent champion | Watch |
 
 ### Pillar 4: Account Tiering
 
-**An account worth $500K annually should not be marketed the same as a $50K account.**
+| Tier | Criteria | Program | Count |
+|------|----------|---------|-------|
+| Tier 1 | Highest ACV, strategic logo, complex | Fully personalized 1:1 | 10-20 |
+| Tier 2 | Good ACV, industry fit | Micro-segment campaigns | 30-50 |
+| Tier 3 | Standard ACV, single location | Vertical campaigns, scaled | 100-200 |
 
-| Tier | Criteria | Program | Target Count |
-|------|----------|---------|--------------|
-| **Tier 1** | Highest ACV potential, strategic logo value, multi-location | Fully personalized 1:1, executive engagement, custom content | 10-20 accounts |
-| **Tier 2** | Good ACV potential, industry fit, moderate complexity | Micro-segment campaigns, role-based personalization | 30-50 accounts |
-| **Tier 3** | Standard ACV, single location, experimental segments | Vertical-based campaigns, scaled content, limited personalization | 100-200 accounts |
+**Tiering components**: Deal value (40%), strategic logo value (20%), tech readiness (15%), signal strength (15%), complexity (10%)
 
-**Tiering Score Components**:
-- Potential deal value (40%)
-- Strategic logo value (20%)
-- Technology readiness (15%)
-- Buying signal strength (15%)
-- Multi-location complexity (10%)
-
-### Pillar 5: Jobs To Be Done (JTBD)
-
-**Enterprise companies buy for different reasons. Understanding JTBD enables personalized messaging.**
+### Pillar 5: Jobs To Be Done
 
 | JTBD | Trigger | Champion | Messaging Focus |
 |------|---------|----------|-----------------|
-| **Cost Reduction** | CFO mandate, margin pressure | Finance, CFO | ROI, savings, payback period |
-| **Growth Enablement** | Rapid growth, scaling constraints | VP Ops, COO | Scale without headcount, automation |
-| **Risk Mitigation** | Penalties, compliance issues, audit findings | Operations, Quality | SLAs, visibility, compliance |
-| **Digital Transformation** | Board mandate, competitive pressure | CIO, CDO | Modern SaaS, fast implementation, API |
+| Cost reduction | CFO mandate, margin pressure | Finance | ROI, savings, payback |
+| Growth enablement | Rapid growth, scaling constraints | Ops, COO | Scale without headcount |
+| Risk mitigation | Penalties, compliance, audit | Operations | SLAs, visibility |
+| Digital transformation | Board mandate, competitive pressure | CIO | Modern, fast implementation |
 
-### Pillar 6: Buyer Journey & Channel Presence
+### Pillar 6: Buyer Journey & Channels
 
-**Market and sell the way your best customers buy.**
+Interview won customers:
+- What event created the need?
+- Who raised the problem internally?
+- What factors influenced the decision?
+- What almost caused you NOT to buy?
+- Where do you learn about technology?
 
-Questions for won customer interviews:
-1. What event or shift created the need?
-2. Who first raised the problem internally?
-3. Who was involved in evaluating solutions?
-4. What factors influenced the decision?
-5. What almost caused you NOT to buy?
-6. Where do you learn about technology?
-7. What events/communities do you follow?
+Map journey: Problem Recognition → Solution Exploration → Vendor Evaluation → Decision
 
-**Map the typical journey stages**:
-- Problem Recognition → Solution Exploration → Vendor Evaluation → Decision/Procurement
+## ICP Documentation
 
-## ICP Documentation Template
-
-```markdown
-# [Company] Ideal Customer Profile
-
-## Firmographics
-- Industry: [Tier 1/2/3 verticals]
-- Company Size: [Employee and revenue ranges]
-- Geography: [Primary regions/clusters]
-- Volume: [Transaction/usage thresholds]
-
-## Technographics
-- Current Solution: [What they use today]
-- Tech Stack: [ERP, relevant systems]
-- IT Maturity: [Cloud readiness]
-
-## Qualification Criteria
-- Must Have: [5-7 criteria]
-- Nice to Have: [3-5 criteria]
-- Disqualifiers: [5-7 red flags]
-
-## Buying Committee
-- Champion: [Typical title, role]
-- Executive Sponsor: [Title]
-- Key Stakeholders: [Finance, IT, Ops]
-
-## JTBD
-- Primary: [Cost/Growth/Risk/Digital]
-- Secondary: [Others]
-
-## Buyer Journey
-- Typical trigger: [Event or shift]
-- Key decision factors: [Why they choose us]
-- Common objections: [And how addressed]
-- Preferred channels: [Where they research]
-```
-
-## Tier 1 Account Profile Template
-
-For each Tier 1 account, document:
-
-```markdown
-## Account: [Company Name]
-
-### Firmographics
-- Revenue, Industry, Employees, Locations, Volume
-
-### Current State
-- Current Solution, Known Challenges, Tech Stack
-
-### Buying Committee
-| Name | Title | Role | Contact Status |
-|------|-------|------|----------------|
-
-### Trigger/Timing
-- Active Trigger: [Yes/No - describe]
-- Urgency: [High/Medium/Low]
-- Budget Cycle: [When]
-
-### Score
-- Fit Score: [X/60]
-- Intent Score: [X/40]
-- Total: [X/100]
-- Tier: [1/2/3]
-```
+Define your ICP with:
+- **Firmographics**: Industry tiers, size ranges, geography, volume thresholds
+- **Technographics**: Current solutions, tech stack, IT maturity
+- **Qualification**: Must-haves, nice-to-haves, disqualifiers
+- **Buying committee**: Champion titles, sponsor, stakeholders
+- **JTBD**: Primary and secondary jobs
+- **Journey**: Typical trigger, decision factors, preferred channels
 
 ## Integration
 
-- After ICP defined → Use `selecting-and-researching-accounts` to build list
-- For tiering criteria → Cross-reference with won deal analysis
-- For JTBD messaging → Use `writing-persuasive-copy`
-- For buying committee engagement → Use `enabling-champions`
+- After ICP defined → `selecting-and-researching-accounts`
+- For JTBD messaging → `writing-persuasive-copy`
+- For buying committee engagement → `enabling-champions`

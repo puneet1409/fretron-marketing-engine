@@ -88,6 +88,7 @@ Channels by stage:
 |-------|---------|
 | `discovering-positioning-angles` | What to say, how to differentiate |
 | `mapping-buyer-triggers` | When to engage, why they buy |
+| `generating-demand` | Three Levels of Demand (Content → Solution → Vendor) |
 
 ### Tier 3: Channel Execution
 | Skill | Purpose |
@@ -195,6 +196,7 @@ LinkedIn impression (0→1)
 | Calibrate my CTA | trust-building-principles |
 | Define messaging | discovering-positioning-angles |
 | Know when to engage | mapping-buyer-triggers |
+| Plan demand gen programs | generating-demand |
 | Target named accounts | running-abm-programs (hub) |
 | Define ICP and tiers | defining-icp-and-tiers |
 | Build target account list | selecting-and-researching-accounts |
