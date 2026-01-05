@@ -1,11 +1,11 @@
 ---
 name: running-abm-programs
-description: Use for account-based marketing - selecting target accounts, warming them up, and orchestrating multi-channel campaigns. Covers ICP definition, account tiering, signal-based prioritization, warmup sequences, and ABM measurement. Invoke when building account lists, planning ABM campaigns, or coordinating sales-marketing on named accounts.
+description: Use as the orchestration hub for ABM programs. Routes to specialized ABM skills for ICP definition, account selection, warmup, events, and cluster-based approaches. Invoke when planning overall ABM strategy or needing guidance on which ABM skill to use.
 ---
 
 # Running ABM Programs
 
-**Depends on**: `trust-building-principles`
+**Orchestration Hub for Full Funnel ABM**
 
 ## Core Insight
 
@@ -13,183 +13,189 @@ description: Use for account-based marketing - selecting target accounts, warmin
 
 The goal is not "more accounts touched" but "right accounts moved through trust levels."
 
-## Account Selection
+---
 
-### ICP Definition
+## ABM Program Architecture
 
-Define your Ideal Customer Profile across three dimensions:
-
-| Dimension | Questions to Answer |
-|-----------|---------------------|
-| **Firmographic** | Revenue range? Employee count? Industry? Geography? |
-| **Technographic** | Current tools? Tech maturity? Integration needs? |
-| **Behavioral** | Active triggers? Prior engagement? Buying signals? |
-
-### Signal-Based Prioritization
-
-Not all accounts are equal. Score based on:
-
-**Fit Signals** (static):
-- Industry match
-- Company size in sweet spot
-- Tech stack compatibility
-
-**Intent Signals** (dynamic):
-- Leadership changes (new VP = new initiatives)
-- Expansion news (new locations = new needs)
-- Website visits (pricing page = active evaluation)
-- Content engagement (multiple touches = interest)
-
-**Engagement Signals** (your data):
-- Email replies
-- Event attendance
-- Demo requests
-
-### Account Tiering
-
-| Tier | Count | Investment | Approach |
-|------|-------|------------|----------|
-| 1 | 10-25 | High | 1:1 personalized, multi-threaded |
-| 2 | 50-100 | Medium | Role-based personalization |
-| 3 | 200-500 | Low | Programmatic, scaled |
-
-**Key Principle**: Better to deeply engage 20 right accounts than superficially touch 200.
-
-## Warmup Mechanics
-
-### The Warmup Goal
-
-Move accounts from "Never heard of you" → "I've seen them, they seem relevant" BEFORE sales outreach.
-
-### 90-Day Framework
+### The Full Funnel ABM Stack
 
 ```
-Days 1-30:  VISIBILITY
-            - Follow key contacts on LinkedIn
-            - Engage with their content (genuine, not promotional)
-            - Run awareness ads to account list
-            - NO direct outreach yet
-
-Days 31-60: FAMILIARITY
-            - Connect with 2-3 key contacts
-            - Share valuable content via DM
-            - Start email sequence (value-first)
-            - Monitor engagement signals
-
-Days 61-90: INTEREST
-            - Personalized outreach based on engagement
-            - Soft meeting asks to engaged contacts
-            - Multi-thread into buying committee
-            - Hand off warm accounts to sales
+┌─────────────────────────────────────────────────────────────┐
+│                    RUNNING-ABM-PROGRAMS                     │
+│                    (This Orchestration Hub)                 │
+└─────────────────────────────────────────────────────────────┘
+                              │
+          ┌───────────────────┼───────────────────┐
+          ▼                   ▼                   ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ FOUNDATION      │ │ EXECUTION       │ │ SEGMENTATION    │
+├─────────────────┤ ├─────────────────┤ ├─────────────────┤
+│ defining-icp-   │ │ warming-up-     │ │ cluster-abm     │
+│ and-tiers       │ │ accounts        │ │                 │
+│                 │ │                 │ │                 │
+│ selecting-and-  │ │ running-abm-    │ │                 │
+│ researching-    │ │ events          │ │                 │
+│ accounts        │ │                 │ │                 │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
 ```
 
-### Multi-Threading
+---
 
-Don't rely on single contacts. For each Tier 1 account, engage:
+## Skill Routing Guide
 
-| Role | Focus | Content Type |
-|------|-------|--------------|
-| Champion (likely buyer) | Deep engagement | Problem-solution content |
-| Economic buyer (CFO/exec) | ROI/cost focus | Business case content |
-| Technical influencer | Integration/security | Technical validation |
-| End users | Day-to-day pain | Operational content |
+### "I need to define my ICP and tiering criteria"
+→ Use `defining-icp-and-tiers`
+- 6 Pillars Framework
+- Firmographic/Technographic/Behavioral criteria
+- Account tiering (Tier 1/2/3)
+- Jobs To Be Done mapping
+- Buying committee roles
 
-## Channel Orchestration
+### "I need to build and prioritize my target account list"
+→ Use `selecting-and-researching-accounts`
+- Signal-based selection (6 categories)
+- Account scoring models
+- Lookalike identification
+- Trigger-based prioritization
+- Account research process
 
-### Channel Roles
+### "I need to warm up cold accounts before sales outreach"
+→ Use `warming-up-accounts`
+- 90-Day Warmup Framework
+- Market Research Play (1-to-Few)
+- Meaningful Commenting Play
+- Multi-channel coordination
+- Warmth scoring
 
-| Channel | ABM Role | Trust Level |
-|---------|----------|-------------|
-| Display ads | Awareness, frequency | 0→1 |
-| LinkedIn organic | Familiarity, credibility | 1→2 |
-| LinkedIn ads | Targeted content delivery | 1→3 |
-| Email | Value delivery, conversation | 2→4 |
-| Sales outreach | Conversion | 3→5 |
+### "I need to plan ABM events"
+→ Use `running-abm-events`
+- Small format (executive dinners, roundtables)
+- Large format (webinars, conferences)
+- Event activation and follow-up
+- Pre/during/post event playbooks
 
-### Coordination Principle
+### "I need to segment accounts by awareness and readiness"
+→ Use `cluster-abm`
+- Cluster ICP (cold, unaware)
+- Future Pipeline (aware, unvalidated)
+- Active Focus (ready for sales)
+- Differentiated programs per cluster
+- Micro-segmentation
 
-Channels should reinforce, not repeat. Same account sees:
-- Display ad → Brand awareness
-- LinkedIn content → Your expertise
-- Email → Relevant insight
-- Sales call → "I've seen your content, let's talk"
+---
 
-## Measurement
+## ABM Program Lifecycle
+
+### Phase 1: Foundation (Weeks 1-3)
+
+| Task | Skill to Use |
+|------|--------------|
+| Define ICP with 6 Pillars | `defining-icp-and-tiers` |
+| Set tier criteria | `defining-icp-and-tiers` |
+| Build target account list | `selecting-and-researching-accounts` |
+| Score and tier accounts | `selecting-and-researching-accounts` |
+| Segment into clusters | `cluster-abm` |
+
+### Phase 2: Warmup (Weeks 4-12)
+
+| Task | Skill to Use |
+|------|--------------|
+| Launch 90-day warmup for Tier 1 | `warming-up-accounts` |
+| Run market research play | `warming-up-accounts` |
+| Begin meaningful commenting | `warming-up-accounts` |
+| Plan 1-to-Few events | `running-abm-events` |
+
+### Phase 3: Engagement (Weeks 8-16)
+
+| Task | Skill to Use |
+|------|--------------|
+| Host executive roundtables | `running-abm-events` |
+| Transition warm accounts to sales | `warming-up-accounts` |
+| Multi-thread buying committee | `enabling-champions` |
+| Develop champions | `enabling-champions` |
+
+### Phase 4: Acceleration (Ongoing)
+
+| Task | Skill to Use |
+|------|--------------|
+| Move accounts between clusters | `cluster-abm` |
+| Scale with webinars | `running-abm-events` |
+| Nurture Future Pipeline | `cluster-abm` |
+| Measure and optimize | This skill |
+
+---
+
+## ABM Measurement Framework
 
 ### Leading Indicators (Weekly)
 
-- Accounts engaged (any touch response)
-- Contact coverage per account
-- Content consumption
-- Email/LinkedIn response rates
+| Metric | Source |
+|--------|--------|
+| Accounts engaged | CRM |
+| Contact coverage per account | CRM |
+| Content consumption | Marketing automation |
+| Warmth score changes | `warming-up-accounts` |
 
 ### Lagging Indicators (Monthly)
 
-- Meetings booked from ABM accounts
-- Pipeline created from ABM accounts
-- Win rate: ABM vs non-ABM
-- Deal velocity: ABM vs non-ABM
+| Metric | Benchmark |
+|--------|-----------|
+| Meetings booked from ABM accounts | 5-10% of warmed accounts |
+| Pipeline created | 20-30% of engaged accounts |
+| Win rate: ABM vs non-ABM | ABM should be 2x+ higher |
+| Deal size: ABM vs non-ABM | ABM should be 1.5x+ higher |
+| Sales cycle: ABM vs non-ABM | ABM should be faster |
 
 ### The Real ABM Question
 
 **Are we moving accounts through trust levels, or just touching them?**
 
-Track trust level progression, not just activity metrics.
+Track cluster progression:
+- Cluster ICP → Future Pipeline (awareness achieved)
+- Future Pipeline → Active Focus (need validated)
+- Active Focus → Opportunity (sales engaged)
+
+---
 
 ## Common ABM Failures
 
-**Too many accounts**: Can't go deep enough. Cut list in half.
+**Too many accounts**: Can't go deep enough. Start with 50-100 max.
 
-**Marketing-only ABM**: Sales not involved until handoff fails. Involve sales in account selection.
+**Marketing-only ABM**: Sales not involved until handoff fails. Involve sales in account selection from Day 1.
 
-**Activity over outcomes**: Measuring touches instead of trust progression.
+**Activity over outcomes**: Measuring touches instead of trust/cluster progression.
 
 **Generic "personalization"**: {{FirstName}} isn't personalization. Account-specific insights are.
 
+**No cluster segmentation**: Treating Cluster ICP same as Active Focus wastes resources.
+
+---
+
 ## Inbound Lead Qualification
 
-### Quick Scoring Framework
-
-| Dimension | High (10pts) | Medium (5pts) | Low (2pts) |
-|-----------|--------------|---------------|------------|
-| **Firmographic fit** | ICP match | Adjacent | Partial |
-| **Role/authority** | VP+/Decision maker | Manager/Influencer | Analyst |
-| **Engagement** | Multi-touch, pricing | 2-3 pages | Single visit |
-| **Urgency signals** | "Evaluating now" | "Planning for Q[X]" | "Exploring" |
-
-### Score Interpretation
+When inbound leads arrive, qualify quickly:
 
 | Score | Classification | Action |
 |-------|----------------|--------|
-| 30-40 | Hot | Sales <2 hours |
-| 20-29 | Warm | SDR same-day |
-| 10-19 | Cool | Nurture + SDR |
-| <10 | Cold/DQ | Marketing only or archive |
+| 30-40 | Hot (ICP + buying signals) | Sales <2 hours |
+| 20-29 | Warm (ICP + some interest) | SDR same-day |
+| 10-19 | Cool (Partial fit) | Nurture + SDR |
+| <10 | Cold/DQ | Marketing only |
 
-### Qualification Questions
-
+**Qualification Questions**:
 - "What prompted you to reach out now?" (trigger)
 - "What's not working about current approach?" (pain)
 - "Who else is involved in evaluating?" (authority)
 - "What's your timeline for a decision?" (urgency)
 
-### Instant Disqualifiers
+---
 
-- Student/academic
-- Competitor
-- Wrong geography
-- No logistics need
-- Consultant research
+## Integration Map
 
-## B2B Tech Context
-
-**For SaaS**: Focus on tech stack compatibility, integration triggers
-**For logistics/ops**: Plant expansions, leadership changes, operational pain signals
-**For enterprise**: Multi-threading critical, longer warmup, exec engagement required
-
-## Integration
-
-- Trust calibration → `trust-building-principles`
-- Email sequences → `writing-b2b-emails`
-- Champion development → `enabling-champions`
-- Trigger detection → `mapping-buyer-triggers`
+| Need | Skill |
+|------|-------|
+| Trust principles | `trust-building-principles` |
+| Email sequences | `writing-b2b-emails` |
+| Champion development | `enabling-champions` |
+| Trigger detection | `mapping-buyer-triggers` |
+| Content creation | `writing-persuasive-copy` |

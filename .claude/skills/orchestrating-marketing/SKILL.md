@@ -92,11 +92,20 @@ Channels by stage:
 ### Tier 3: Channel Execution
 | Skill | Purpose |
 |-------|---------|
-| `running-abm-programs` | Named account selection, warmup, orchestration |
+| `running-abm-programs` | **ABM Hub** - orchestrates the ABM sub-skills below |
 | `seo-and-content-strategy` | Organic traffic, SEO, AI discovery |
 | `linkedin-organic-and-paid` | Professional network presence + paid |
 | `writing-b2b-emails` | Outreach and nurture sequences |
 | `events-and-partnerships` | Trust transfer channels |
+
+### Tier 3b: ABM Sub-Skills (Full Funnel)
+| Skill | Purpose |
+|-------|---------|
+| `defining-icp-and-tiers` | 6 Pillars ICP, tiering, JTBD, buying committee |
+| `selecting-and-researching-accounts` | Signal-based selection, scoring, lookalikes |
+| `warming-up-accounts` | 90-day framework, market research play, commenting |
+| `running-abm-events` | Small format (dinners) + Large format (webinars) |
+| `cluster-abm` | Cluster ICP, Future Pipeline, Active Focus segmentation |
 
 ### Tier 4: Tactical
 | Skill | Purpose |
@@ -105,7 +114,10 @@ Channels by stage:
 | `generating-lead-magnets` | Conversion assets |
 | `atomizing-content` | Content repurposing |
 | `writing-persuasive-copy` | Copy that converts |
-| `running-paid-ads` | Paid search campaigns |
+| `running-bofu-google-ads` | Bottom-funnel paid search |
+| `accelerating-time-to-value` | Onboarding, pilots, quick wins |
+| `planning-product-launches` | Multi-channel launch coordination |
+| `tracking-competitor-moves` | Competitive intelligence |
 
 ## Decision Trees
 
@@ -113,8 +125,12 @@ Channels by stage:
 
 ```
 Targeting named accounts?
-├── YES → running-abm-programs
-│         └── Channels: linkedin-organic-and-paid + writing-b2b-emails
+├── YES → running-abm-programs (hub)
+│         ├── Need to define ICP? → defining-icp-and-tiers
+│         ├── Need to build list? → selecting-and-researching-accounts
+│         ├── Need to warm up accounts? → warming-up-accounts
+│         ├── Need to segment by readiness? → cluster-abm
+│         └── Need to plan events? → running-abm-events
 └── NO → seo-and-content-strategy + generating-lead-magnets
          └── Nurture: writing-b2b-emails
 ```
@@ -179,7 +195,12 @@ LinkedIn impression (0→1)
 | Calibrate my CTA | trust-building-principles |
 | Define messaging | discovering-positioning-angles |
 | Know when to engage | mapping-buyer-triggers |
-| Target named accounts | running-abm-programs |
+| Target named accounts | running-abm-programs (hub) |
+| Define ICP and tiers | defining-icp-and-tiers |
+| Build target account list | selecting-and-researching-accounts |
+| Warm up cold accounts | warming-up-accounts |
+| Segment by readiness | cluster-abm |
+| Plan ABM events | running-abm-events |
 | Write email sequences | writing-b2b-emails |
 | Build organic traffic | seo-and-content-strategy |
 | Build LinkedIn presence | linkedin-organic-and-paid |
