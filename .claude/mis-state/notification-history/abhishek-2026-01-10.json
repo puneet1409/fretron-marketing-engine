@@ -1,0 +1,58 @@
+{
+  "notification_id": "notif-abhishek-20260110-001",
+  "ae_id": "abhishek",
+  "sent_at": "2026-01-10T17:30:00.000Z",
+  "channel": "email",
+  "level": 2,
+  "subject": "Blue star India needs attention (₹44.5L at stake)",
+  "content": {
+    "priority_action": {
+      "type": "follow_up",
+      "deal_name": "Blue star India - E2E TMS",
+      "deal_value": 4450000,
+      "days_since": 24,
+      "context": null,
+      "current_stage": "Unknown",
+      "cta_options": [
+        "Add Update",
+        "Deal is Cold",
+        "Already Handled Offline"
+      ]
+    },
+    "secondary_items": [
+      {
+        "deal_name": "Megha Engineering (₹30.8L)",
+        "action_needed": "33 days stale - likely cold, confirm status"
+      },
+      {
+        "deal_name": "Jesons - TMS + EXIM (₹22.9L)",
+        "action_needed": "26 days stale - follow up required"
+      }
+    ],
+    "progress": {
+      "calls": {
+        "current": 0,
+        "target": 15
+      },
+      "emails": {
+        "current": 0,
+        "target": 20
+      },
+      "meetings": {
+        "current": 0,
+        "target": 3
+      },
+      "notes": {
+        "current": 0,
+        "target": 5
+      }
+    },
+    "warning": "17 of 20 deals haven't been touched in 14+ days"
+  },
+  "tracking": {
+    "sent_at": "2026-01-10T16:03:56.100Z",
+    "opened_at": null,
+    "action_taken": null,
+    "action_at": null
+  }
+}

@@ -1,6 +1,7 @@
 ---
 name: trust-building-principles
 description: Foundation for all B2B marketing and sales. The ask must match the trust level. Invoke when calibrating CTAs, designing nurture journeys, diagnosing conversion problems, or planning any outreach. This is the prerequisite principle for all other marketing skills.
+knowledge_only: true
 ---
 
 # Trust Building Principles

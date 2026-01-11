@@ -1,6 +1,9 @@
 ---
 name: discovering-positioning-angles
 description: Use for finding unique value propositions and differentiation strategies. Combines April Dunford's positioning framework with capability-market-fit. Invoke when developing positioning, finding competitive angles, or crafting "why us" messaging.
+knowledge_only: true
+depends_on:
+  - trust-building-principles
 ---
 
 # Discovering Positioning Angles

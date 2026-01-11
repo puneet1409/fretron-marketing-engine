@@ -1,6 +1,13 @@
 ---
 name: writing-b2b-emails
 description: Use for all B2B email campaigns - cold outreach, nurture sequences, lifecycle automation, follow-ups. Applies trust-first principles to email design. Invoke for outbound sequences, lead nurturing, re-engagement, or auditing existing campaigns.
+requires_tools:
+  - hubspot_search_contacts
+  - hubspot_get_deal_contacts
+context_tools:
+  - enrich_company
+  - fetch_company_news
+execution_capable: false
 ---
 
 # Writing B2B Emails
@@ -40,6 +47,89 @@ Don't compress the trust journey into one email. A sequence of value → credibi
 - Brief insight
 - Reference how you've helped similar companies
 - Low-commitment ask: "10 minutes to swap notes?"
+
+---
+
+## LinkedIn DM Templates (NEW)
+
+**Core insight**: LinkedIn DMs are NOT emails. Shorter = better. 25 words max.
+
+### The High-Intent DM Framework
+
+When you detect an intent signal, skip formality. Reference the signal directly.
+
+**Initial DM (23 words max)**:
+```
+Hey [Name],
+
+Quick question - what's your biggest challenge with [topic from signal] right now?
+```
+
+### Signal-Specific DM Templates
+
+**Competitor Engagement**:
+```
+Hey [Name], noticed you've been exploring [competitor/topic]. Curious - what's driving the evaluation?
+```
+
+**Pain Point Post**:
+```
+Hey [Name], saw your post about [specific pain]. We solved that for [similar company]. What's not working?
+```
+
+**New Role**:
+```
+Hey [Name], congrats on the new role! What's your biggest ops priority in your first 90 days?
+```
+
+**Company Expansion**:
+```
+Hey [Name], saw [Company] expanding to [location]. How are you handling logistics for the new footprint?
+```
+
+**Funding News**:
+```
+Hey [Name], congrats on the raise! When companies scale fast, logistics often breaks first. Feeling that yet?
+```
+
+### Response Handling DMs
+
+**After They Respond (27 words)**:
+```
+Interesting - we just helped [similar company] solve that exact problem. Cut their [metric] by [X]%.
+
+Mind if I send a 3-min video showing how?
+```
+
+**Backup DM - No Response (29 words)**:
+```
+Hey [Name], noticed [specific observation about their business]. We helped [similar company] navigate similar. Worth a quick chat?
+```
+
+**Breakup DM**:
+```
+[Name] - timing might be off. No worries. If [pain point] becomes urgent, happy to help. Good luck with [initiative]!
+```
+
+### DM vs Email Decision
+
+| Situation | Channel | Why |
+|-----------|---------|-----|
+| High-intent signal detected | LinkedIn DM first | Faster, more personal |
+| No LinkedIn response (5 days) | Email | Different channel |
+| No email found | LinkedIn only | Only option |
+| Both available, cold | Email first, then LinkedIn | Email less intrusive |
+| Downloaded your content | Both simultaneously | They know you |
+
+### What Kills LinkedIn DMs
+
+- "I hope this finds you well"
+- "I'd love to pick your brain"
+- "We're the leading provider of..."
+- Anything over 50 words
+- Generic compliments
+- Immediate pitch
+- Exclamation points!
 
 ### What Makes Cold Emails Work
 

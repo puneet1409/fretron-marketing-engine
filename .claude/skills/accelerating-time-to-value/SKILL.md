@@ -1,6 +1,13 @@
 ---
 name: accelerating-time-to-value
 description: Use for collapsing time between prospect discovery and first value realization. Covers onboarding optimization, quick wins, and activation metrics. Invoke when designing pilots, improving onboarding, or creating fast value demonstrations.
+context_tools:
+  - hubspot_get_deal
+  - hubspot_create_task
+  - enrich_company
+execution_capable: false
+depends_on:
+  - trust-building-principles
 ---
 
 # Accelerating Time-to-Value
@@ -83,6 +90,36 @@ Compress each transition.
 3. Pilot scope creep (start small)
 4. No success criteria defined upfront
 5. Training delayed until after go-live
+
+---
+
+## Context Tools
+
+Tools provide deal and company context for designing time-to-value strategies.
+
+```
+hubspot_get_deal(deal_id)
+→ Deal stage, value, timeline
+→ Use for: Understanding pilot status, identifying stall points
+
+hubspot_create_task(contact_id, title, due_date)
+→ Create follow-up tasks for value milestones
+→ Use for: Activation tracking, pilot check-ins
+
+enrich_company(company_name)
+→ Company size, industry, tech stack
+→ Use for: Tailoring quick-win approaches to company context
+```
+
+### Context Applications
+
+| Question | Tool | Use |
+|----------|------|-----|
+| What stage is this deal? | `hubspot_get_deal` | Determine next value milestone |
+| What's their company profile? | `enrich_company` | Customize pilot package |
+| Need to track activation? | `hubspot_create_task` | Create milestone tasks |
+
+---
 
 ## Integration
 

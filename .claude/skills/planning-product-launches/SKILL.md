@@ -1,6 +1,12 @@
 ---
 name: planning-product-launches
 description: Use for coordinating multi-channel product launches - features, products, market entry, milestones. Covers launch planning, channel coordination, and momentum building. Invoke when launching new capabilities or major announcements.
+context_tools:
+  - hubspot_search_contacts
+  - hubspot_create_task
+execution_capable: false
+depends_on:
+  - trust-building-principles
 ---
 
 # Planning Product Launches
@@ -97,6 +103,24 @@ Simultaneous push:
 3. One day wonder (no sustain plan)
 4. Feature announcement vs benefit story
 5. Demo CTA to cold audiences
+
+---
+
+## Context Tools
+
+Tools help coordinate launch communications.
+
+```
+hubspot_search_contacts(query)
+→ Find contacts by segment for targeted launch emails
+→ Use for: Customer vs prospect messaging
+
+hubspot_create_task(owner, title, due_date)
+→ Create launch coordination tasks
+→ Use for: Sales enablement, follow-up tracking
+```
+
+---
 
 ## Integration
 

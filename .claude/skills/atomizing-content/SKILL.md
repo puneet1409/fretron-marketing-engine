@@ -1,6 +1,9 @@
 ---
 name: atomizing-content
 description: Use for repurposing content into multiple formats - blog posts to social, articles to video, case studies to carousels. Invoke when maximizing content ROI by creating multiple assets from one piece.
+knowledge_only: true
+depends_on:
+  - seo-and-content-strategy
 ---
 
 # Atomizing Content

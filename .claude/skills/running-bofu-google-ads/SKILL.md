@@ -1,6 +1,9 @@
 ---
 name: running-bofu-google-ads
 description: Use for bottom-of-funnel Google Ads campaigns in B2B tech - high-intent keywords, competitor conquesting, and remarketing. Covers campaign structure, trust-matched landing pages, and cross-channel synergy. Invoke when planning paid search for demo generation.
+knowledge_only: true
+depends_on:
+  - trust-building-principles
 ---
 
 # Running BoFU Google Ads

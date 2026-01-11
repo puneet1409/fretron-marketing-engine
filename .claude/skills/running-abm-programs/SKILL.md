@@ -1,6 +1,15 @@
 ---
 name: running-abm-programs
 description: Use as the orchestration hub for ABM programs. Routes to specialized ABM skills for ICP definition, account selection, warmup, events, and cluster-based approaches. Invoke when planning overall ABM strategy or needing guidance on which ABM skill to use.
+requires_tools:
+  - enrich_company
+  - fetch_company_news
+  - score_account
+  - hubspot_search_companies
+  - hubspot_get_deals
+  - hubspot_create_task
+  - hubspot_add_note
+execution_capable: true
 ---
 
 # Running ABM Programs

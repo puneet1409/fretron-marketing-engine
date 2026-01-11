@@ -1,6 +1,9 @@
 ---
 name: generating-lead-magnets
 description: Use for creating gated content that captures emails and generates qualified leads. Covers lead magnet hierarchy, design principles, and interactive tools. Invoke when building top-of-funnel content, email capture mechanisms, or conversion assets.
+knowledge_only: true
+depends_on:
+  - trust-building-principles
 ---
 
 # Generating Lead Magnets

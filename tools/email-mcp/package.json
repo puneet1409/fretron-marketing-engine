@@ -1,0 +1,14 @@
+{
+  "name": "email-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for sending MIS notification emails via Resend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "send-digest": "node send-digest.js"
+  },
+  "dependencies": {
+    "resend": "^4.0.0"
+  }
+}

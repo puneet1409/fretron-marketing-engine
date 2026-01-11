@@ -1,6 +1,9 @@
 ---
 name: writing-persuasive-copy
 description: Use for persuasive marketing copy - headlines, landing pages, ads, sales pages. Combines direct response principles with consistent brand voice. Invoke when writing copy that needs to convert, defining voice guidelines, or reviewing copy for effectiveness.
+knowledge_only: true
+depends_on:
+  - trust-building-principles
 ---
 
 # Writing Persuasive Copy

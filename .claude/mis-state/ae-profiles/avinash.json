@@ -1,0 +1,50 @@
+{
+  "ae_id": "avinash",
+  "name": "Avinash Shekhar",
+  "email": "avinash@fretron.com",
+  "hubspot_owner_id": "1386335541",
+
+  "responsiveness": {
+    "score": 50,
+    "actions_taken": 0,
+    "actions_ignored": 0,
+    "last_action_date": null,
+    "trend": "stable"
+  },
+
+  "notification_config": {
+    "frequency": "daily",
+    "channel": "email",
+    "max_items_per_digest": 3,
+    "escalation_threshold_days": 7,
+    "best_send_time": "17:30"
+  },
+
+  "targets": {
+    "calls_per_week": 15,
+    "emails_per_week": 20,
+    "meetings_per_week": 3,
+    "notes_per_week": 5
+  },
+
+  "patterns": {
+    "logs_after_calls": false,
+    "updates_notes_regularly": false,
+    "moves_stages_proactively": false,
+    "responds_to_nudges": null
+  },
+
+  "current_portfolio": {
+    "active_deals": 20,
+    "total_pipeline_value": 52580000,
+    "deals_at_risk": 5,
+    "last_hubspot_activity": "2020-07-01"
+  },
+
+  "notes": [
+    "Initial profile based on HubSpot audit Jan 2026",
+    "No logged activities in HubSpot since July 2020",
+    "Uses SmartLead for emails - not synced to HubSpot",
+    "Gap analysis shows 7 deals mentioned in weekly update not in HubSpot"
+  ]
+}

@@ -1,5 +1,9 @@
 # Dependencies
-/node_modules
+node_modules/
+**/node_modules/
+
+# Large data files (exceed GitHub 100MB limit)
+abm-data/records/contacts.json
 /.pnp
 .pnp.js
 
@@ -31,3 +35,4 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+abm-data/scripts/google-ads-auth.js

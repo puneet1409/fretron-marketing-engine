@@ -1,6 +1,12 @@
 ---
 name: events-and-partnerships
 description: Use for event marketing and partner programs - conferences, webinars, co-marketing, and referral partnerships. Invoke when planning event participation, designing partner programs, or coordinating co-marketing initiatives.
+context_tools:
+  - hubspot_create_task
+  - hubspot_add_note
+execution_capable: false
+depends_on:
+  - trust-building-principles
 ---
 
 # Events and Partnerships
@@ -135,8 +141,27 @@ When a trusted advisor recommends you:
 **Partnership focus**: Integration partners, implementation consultants, adjacent tools
 **Co-marketing opportunity**: Webinars with complementary solutions
 
+---
+
+## Context Tools
+
+Tools help track event and partnership activities in CRM.
+
+```
+hubspot_create_task(contact_id, title, due_date)
+→ Create follow-up tasks for event leads
+→ Use for: Post-event action items
+
+hubspot_add_note(contact_id, body)
+→ Log partner interactions, event conversations
+→ Use for: Relationship tracking
+```
+
+---
+
 ## Integration
 
 - Event follow-up → `writing-b2b-emails`
 - Partner outreach → `trust-building-principles`
 - Event content → `seo-and-content-strategy`
+- ABM events → `running-abm-events`

@@ -1,6 +1,27 @@
 ---
 name: running-abm-events
 description: Use for ABM event strategy - small format (dinners, roundtables), large format (webinars, summits), and cluster events. Covers event selection, execution, and post-event activation. Invoke when planning events for target accounts.
+requires_tools:
+  - hubspot_create_task
+  - hubspot_add_note
+  - hubspot_get_deal_contacts
+  - hubspot_search_contacts
+execution_capable: true
+depends_on:
+  - warming-up-accounts
+  - trust-building-principles
+expects_context:
+  - name: target_accounts
+    from_skill: selecting-and-researching-accounts
+    required: false
+  - name: cluster_assignments
+    from_skill: cluster-abm
+    required: false
+provides_context:
+  - name: event_attendees
+    schema: "{event_name, attendees[], engagement_level}"
+  - name: event_follow_ups
+    schema: "{attendee, engagement_tier, follow_up_action, task_id}"
 ---
 
 # Running ABM Events
@@ -102,9 +123,103 @@ Questions to evaluate any event:
 
 ---
 
+## Tool Usage
+
+### Pre-Event: Target Account Identification
+
+```
+1. hubspot_search_contacts(industry, title filters)
+   → Identify contacts from target accounts to invite
+
+2. For each target account:
+   a. hubspot_get_deal_contacts(deal_id)
+      → Get existing contacts in pipeline
+   b. Prioritize by deal stage and engagement
+
+3. hubspot_add_note(contact_id, "Invited to [Event Name]")
+   → Log invitation for tracking
+```
+
+### Post-Event: Follow-Up Task Creation
+
+Segment attendees by engagement and create tasks:
+
+```
+1. For each attendee:
+   a. Classify engagement tier:
+      - Hot: Asked questions, requested demo, stayed for full event
+      - Warm: Attended, some engagement
+      - Cool: Registered but didn't attend
+
+2. Create follow-up tasks:
+   hubspot_create_task({
+     contact_id,
+     title: "[Event] Follow-up - [Tier]",
+     description: "Event: [name], Engagement: [notes], Action: [specific follow-up]",
+     due_date: tier_based_date,  // Hot=today, Warm=day 2, Cool=day 5
+     priority: tier_based_priority
+   })
+
+3. hubspot_add_note(contact_id, "Attended [Event]. Engagement: [level]. Key discussion: [topic]")
+   → Log engagement for future reference
+```
+
+### Event Follow-Up Workflow
+
+```
+Post-Event Day 0 (same day):
+- Hot leads: Personal email/call task created
+- Log all attendee engagement notes
+
+Post-Event Day 1-2:
+- Warm leads: Follow-up tasks due
+- Send recording + key takeaways
+
+Post-Event Day 3-5:
+- Cool leads: Nurture sequence tasks
+- No-shows: Recording + nurture
+
+Post-Event Week 2:
+- Review: Who converted to next stage?
+- Update cluster/pipeline status
+```
+
+### Cluster Event Coordination
+
+For events targeting account clusters:
+```
+1. Get cluster members from cluster_assignments context
+2. hubspot_search_contacts for contacts at cluster companies
+3. Create invitation tasks for each target contact
+4. Post-event: Update cluster status based on attendance
+```
+
+---
+
+## Human Checkpoints
+
+Pause for human review when:
+- **Event format selection**: Budget and strategic alignment needed
+- **Guest list curation**: Especially for small format events
+- **Hot lead follow-up**: Personal outreach requires human touch
+- **Content from event**: Approval before publishing
+
+---
+
+## Tool Failure Handling
+
+| Tool | Failure Mode | Fallback |
+|------|--------------|----------|
+| `hubspot_search_contacts` | No contacts found | Manual attendee list import |
+| `hubspot_create_task` | API error | Log tasks to spreadsheet, bulk import later |
+| `hubspot_add_note` | API error | Store notes in campaign state file |
+
+---
+
 ## Integration
 
 - Before event → Warm up accounts with `warming-up-accounts`
 - For content repurposing → Use `atomizing-content`
 - For follow-up → Use `writing-b2b-emails`
 - For cluster approach → Use `cluster-abm`
+- For attendee research → Use `selecting-and-researching-accounts`

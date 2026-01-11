@@ -1,6 +1,9 @@
 ---
 name: generating-demand
 description: Use for demand generation strategy aligned with buyer journey. Covers the Three Levels of Demand framework (Content → Solution → Vendor), content-to-demand mapping, and demand capture. Invoke when planning demand gen programs or content strategy.
+knowledge_only: true
+depends_on:
+  - trust-building-principles
 ---
 
 # Generating Demand

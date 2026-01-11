@@ -1,6 +1,7 @@
 ---
 name: orchestrating-marketing
 description: Master hub for B2B marketing orchestration. Use when planning marketing strategy, sequencing activities, or determining which skill to use. Provides the big picture of how skills work together as an integrated system for B2B tech marketing and sales enablement.
+knowledge_only: true
 ---
 
 # Orchestrating B2B Marketing
@@ -76,6 +77,55 @@ Channels by stage:
 | Events | Trust transfer | 2→4 |
 | Champions | Internal selling | 4→5 |
 
+## Skill Classification by Capability
+
+### Execution-Capable Skills (`execution_capable: true`)
+Skills with `requires_tools` that can automate end-to-end workflows.
+
+| Skill | Tools | Automation Scope |
+|-------|-------|------------------|
+| `linkedin-high-intent-outreach` | enrich, news, score, hubspot | Signal detection → prioritized DM list |
+| `mapping-buyer-triggers` | fetch_company_news | Trigger detection → categorization |
+| `cluster-abm` | score_account, hubspot | Cluster assignment workflow |
+| `defining-icp-and-tiers` | score_account | ICP validation workflow |
+| `tracking-competitor-moves` | news, extract_website | Competitor monitoring workflow |
+| `running-abm-events` | hubspot tasks/notes | Pre/post event task creation |
+| `selecting-and-researching-accounts` | score, enrich, hubspot | Full account research workflow |
+| `warming-up-accounts` | hubspot, enrich | Warmup campaign orchestration |
+| `running-abm-programs` | all ABM tools | ABM campaign orchestration |
+| `writing-b2b-emails` | hubspot, enrich, news | Email sequence workflow |
+
+### Context-Aware Skills (`execution_capable: false` + `context_tools`)
+Skills that use tools for research but human executes the output.
+
+| Skill | Context Tools | Human Executes |
+|-------|---------------|----------------|
+| `linkedin-organic-and-paid` | enrich, news | LinkedIn publishing/ads |
+| `enabling-champions` | hubspot deals, enrich | Champion strategy |
+| `events-and-partnerships` | hubspot tasks/notes | Event coordination |
+| `planning-product-launches` | hubspot contacts/tasks | Launch execution |
+| `accelerating-time-to-value` | hubspot deals, enrich | Pilot design |
+| `ai-content-workflows` | news, extract_website | Content creation |
+| `programmatic-seo` | extract_website, news | Page generation |
+| `90-day-seo-playbook` | extract_website, news | SEO execution |
+| `ai-citation-strategies` | extract_website, news | Entity building |
+| `seo-and-content-strategy` | extract_website, news | Content publishing |
+
+### Knowledge-Only Skills (`knowledge_only: true`)
+Pure frameworks/principles—no tool integration, used for strategic guidance.
+
+| Skill | Purpose |
+|-------|---------|
+| `trust-building-principles` | Foundation: ask must match trust level |
+| `discovering-positioning-angles` | What to say, how to differentiate |
+| `generating-demand` | Three Levels of Demand framework |
+| `generating-lead-magnets` | Conversion asset design |
+| `atomizing-content` | Content repurposing patterns |
+| `writing-persuasive-copy` | Copy that converts |
+| `running-bofu-google-ads` | Paid search strategy |
+| `topical-authority-building` | Pillar/cluster architecture |
+| `orchestrating-marketing` | This skill - the meta-orchestrator |
+
 ## Consolidated Skill Inventory
 
 ### Tier 1: Foundation
@@ -107,6 +157,7 @@ Channels by stage:
 | `warming-up-accounts` | 90-day framework, market research play, commenting |
 | `running-abm-events` | Small format (dinners) + Large format (webinars) |
 | `cluster-abm` | Cluster ICP, Future Pipeline, Active Focus segmentation |
+| `linkedin-high-intent-outreach` | Signal-based LinkedIn outreach |
 
 ### Tier 4: Tactical
 | Skill | Purpose |
@@ -119,6 +170,15 @@ Channels by stage:
 | `accelerating-time-to-value` | Onboarding, pilots, quick wins |
 | `planning-product-launches` | Multi-channel launch coordination |
 | `tracking-competitor-moves` | Competitive intelligence |
+
+### Tier 5: SEO & AI Discovery
+| Skill | Purpose |
+|-------|---------|
+| `programmatic-seo` | Template-based page generation at scale |
+| `90-day-seo-playbook` | Structured SEO execution timeline |
+| `ai-citation-strategies` | AI/LLM visibility optimization |
+| `topical-authority-building` | Pillar/cluster content architecture |
+| `ai-content-workflows` | AI-assisted content production |
 
 ## Decision Trees
 
@@ -211,6 +271,109 @@ LinkedIn impression (0→1)
 | Write converting copy | writing-persuasive-copy |
 | Close enterprise deals | enabling-champions |
 | Plan events/partners | events-and-partnerships |
+| Track AE activity compliance | MIS Subagent |
+| Generate weekly sales report | MIS Subagent |
+| Send adaptive nudges | MIS Subagent |
+
+## Subagent Architecture
+
+The Marketing Engine includes specialized subagents for automated workflows:
+
+### Research & Intelligence Subagent
+**Location**: `.claude/subagents/research/`
+**Purpose**: Gather and synthesize account intelligence
+
+| Workflow | Command | Output |
+|----------|---------|--------|
+| Account Research | "Research [company]" | AccountIntelligenceBrief |
+| Trigger Detection | "Scan for triggers" | TriggerReport |
+| Competitor Analysis | "Analyze [competitor]" | CompetitorIntelBrief |
+
+**When to use**: Before starting any ABM campaign, when detecting buying signals, for competitive positioning.
+
+### ABM Campaigns Subagent
+**Location**: `.claude/subagents/abm/`
+**Purpose**: Orchestrate account-based marketing campaigns
+
+| Workflow | Command | Output |
+|----------|---------|--------|
+| Warmup Campaign | "Warm up [company]" | WarmupPlan + HubSpot tasks |
+| Cluster Assignment | "Segment accounts" | ClusterAssignments |
+| Event Planning | "Plan dinner for [location]" | EventPlan + task sequences |
+| Progress Review | "Review campaign progress" | CampaignProgressReport |
+
+**When to use**: For named account warmup, cluster management, event coordination, campaign tracking.
+
+### MIS (Management Information System) Subagent
+**Location**: `.claude/subagents/mis/`
+**Purpose**: Automated sales activity tracking, CRM compliance, and adaptive notifications
+
+| Workflow | Command | Output |
+|----------|---------|--------|
+| Daily Compliance Check | "Run compliance check" | ComplianceReport |
+| Adaptive Notification | "Send daily digest" | NotificationPayload |
+| Weekly Report | "Generate weekly MIS report" | WeeklyMISReport |
+| Deal Risk Analysis | "Analyze deal risks" | RiskAssessment[] |
+
+**When to use**: For CRM hygiene monitoring, AE activity tracking, automated nudges, weekly reporting.
+
+**Core Philosophy**:
+- Automate the trackable, nudge the rest
+- Adaptive over overwhelming (adjust to responsiveness)
+- Trust-first, compliance-second
+- Leading indicators over lagging
+
+### Subagent Invocation Patterns
+
+**Research → ABM Flow**
+```
+"Research Delhivery"        → Get intel brief
+[Approve pursuit]           → Human decision
+"Warm up Delhivery"        → Create campaign
+[Weekly] "Review progress"  → Track and iterate
+```
+
+**Trigger-Driven Flow**
+```
+"Scan for triggers"                   → Detect signals
+[For hot triggers: decide action]     → Human decision
+"Accelerate warmup for [company]"     → Modify campaign
+```
+
+**Event-Based Flow**
+```
+"Plan executive dinner for Mumbai"    → Create event plan
+[Approve invite list]                 → Human decision
+[After event]                         → Start warmup for attendees
+```
+
+**MIS Daily Flow**
+```
+[Daily 5pm] "Run compliance check"    → Identify gaps
+"Send daily digest"                   → Adaptive notification
+[AE action or ignore]                 → Updates responsiveness
+[Weekly] "Generate weekly MIS"        → Report for leadership
+```
+
+**Deal Risk Flow**
+```
+"Analyze deal risks"                  → Identify stale deals
+[For critical: decide action]         → Human reviews
+"Send escalation for [deal]"          → Manager notification
+```
+
+### State Management
+
+Campaign, research, and MIS state is persisted in:
+- `.claude/research-cache/` - Account briefs, trigger reports
+- `.claude/abm-campaigns/` - Active campaigns, events, clusters
+- `.claude/mis-state/` - AE profiles, notification history, compliance snapshots
+- `.claude/subagents/pending-requests.json` - Inter-subagent requests
+- `.claude/subagents/trigger-alerts.json` - Urgent signals
+
+See `CONTEXT-FLOW.md` for data flow between skills and subagents.
+
+---
 
 ## Common Mistakes
 
@@ -225,3 +388,6 @@ LinkedIn impression (0→1)
 
 **Activity vs outcomes**: Measuring touches, not trust progression.
 → Fix: Track movement through trust levels.
+
+**Skipping research**: Starting campaigns without intel brief.
+→ Fix: Always run "Research [company]" before "Warm up [company]".

@@ -1,6 +1,13 @@
 ---
 name: enabling-champions
 description: Use for developing internal champions who sell on your behalf. Covers champion identification, business case co-creation, multi-threading, and unstalling deals. Invoke when deals stall, need to accelerate through buying committee, or want to equip buyers for internal selling.
+context_tools:
+  - hubspot_get_deal
+  - hubspot_get_deal_contacts
+  - enrich_company
+execution_capable: false
+depends_on:
+  - trust-building-principles
 ---
 
 # Enabling Champions
@@ -158,10 +165,41 @@ Help champion articulate: "Every month we wait costs us $X." Create urgency with
 
 ---
 
+---
+
+## Context Tools
+
+Tools provide deal and company context to inform champion enablement strategy.
+
+```
+hubspot_get_deal(deal_id)
+→ Deal stage, value, history
+→ Use for: Assessing deal health, identifying stall points
+
+hubspot_get_deal_contacts(deal_id)
+→ All contacts associated with deal
+→ Use for: Mapping buying committee, identifying gaps
+
+enrich_company(company_name)
+→ Company size, industry, tech stack
+→ Use for: Tailoring business case content
+```
+
+### Context Applications
+
+| Question | Tool | Use |
+|----------|------|-----|
+| Who else is involved in deal? | `hubspot_get_deal_contacts` | Multi-threading targets |
+| What's the deal history? | `hubspot_get_deal` | Stall diagnosis |
+| What's their company context? | `enrich_company` | Business case customization |
+
+---
+
 ## Integration
 
 - Trust calibration → `trust-building-principles`
 - ABM warmup before champions emerge → `running-abm-programs`
 - Trigger identification → `mapping-buyer-triggers`
+- Event-based acceleration → `running-abm-events`
 
 **Framework sources**: Nate Nasralla's "Selling With" and Fluint buyer enablement methodology.

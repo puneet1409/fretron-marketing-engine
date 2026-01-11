@@ -1,0 +1,58 @@
+{
+  "notification_id": "notif-avinash-20260110-001",
+  "ae_id": "avinash",
+  "sent_at": "2026-01-10T17:30:00.000Z",
+  "channel": "email",
+  "level": 1,
+  "subject": "Quick win: Forace Group needs a stage update",
+  "content": {
+    "priority_action": {
+      "type": "update_stage",
+      "deal_name": "Forace Group",
+      "deal_value": 1522000,
+      "days_since": 8,
+      "context": "You mentioned: C-suite aligned, shortlisted to final 2, F2F Haridwar this week",
+      "current_stage": "Problem Identification",
+      "expected_stage": "Commercial Negotiation",
+      "cta_options": [
+        "Update Stage",
+        "Add Note",
+        "Nothing New"
+      ]
+    },
+    "secondary_items": [
+      {
+        "deal_name": "CAMPA Cola - Reliance (₹1.62 Cr)",
+        "action_needed": "Update stage to Proposal Evaluation"
+      },
+      {
+        "deal_name": "Jindal Steel & Power (₹2.2 Cr)",
+        "action_needed": "Add status note - 12 days stale"
+      }
+    ],
+    "progress": {
+      "calls": {
+        "current": 0,
+        "target": 15
+      },
+      "emails": {
+        "current": 0,
+        "target": 20
+      },
+      "meetings": {
+        "current": 0,
+        "target": 3
+      },
+      "notes": {
+        "current": 0,
+        "target": 5
+      }
+    }
+  },
+  "tracking": {
+    "sent_at": "2026-01-10T16:03:54.584Z",
+    "opened_at": null,
+    "action_taken": null,
+    "action_at": null
+  }
+}

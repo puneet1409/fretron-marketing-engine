@@ -1,6 +1,12 @@
 ---
 name: seo-and-content-strategy
 description: Use for SEO and content marketing - keyword research, content creation, AI/AEO optimization, comparison pages, and content refresh. Invoke when planning content strategy, writing for organic traffic, optimizing for search (traditional and AI), or auditing existing content.
+context_tools:
+  - extract_website_content
+  - fetch_company_news
+execution_capable: false
+depends_on:
+  - trust-building-principles
 ---
 
 # SEO and Content Strategy
@@ -145,6 +151,32 @@ Before publishing:
 - "[Industry] benchmarks"
 
 **Link building**: Industry publications, partner content, expert roundups
+
+---
+
+## Context Tools
+
+Tools support content research and competitor analysis, but content publishing requires human platform access.
+
+```
+extract_website_content(url)
+→ Page content and structure analysis
+→ Use for: Competitor research, SERP analysis, content gap identification
+
+fetch_company_news(company_name)
+→ Industry and company news
+→ Use for: Timely content topics, news hooks, trend identification
+```
+
+### Research Applications
+
+| Research Need | Tool | SEO Use |
+|---------------|------|---------|
+| Competitor content audit | `extract_website_content` | Identify gaps and opportunities |
+| SERP analysis | `extract_website_content` | Understand what ranks |
+| Timely topics | `fetch_company_news` | Find newsworthy angles |
+
+---
 
 ## Integration
 
