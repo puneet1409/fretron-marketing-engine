@@ -143,19 +143,14 @@ def strict_match(target_name: str, customer_name: str) -> tuple:
         if t_norm in c_norm:
             return True, 95, "target_in_customer"
 
-    # High fuzzy match (>85% similarity)
+    # High fuzzy match (>95% similarity) - raised from 85% to reduce false positives
     ratio = SequenceMatcher(None, t_norm, c_norm).ratio()
-    if ratio >= 0.85:
+    if ratio >= 0.95:
         return True, int(ratio * 100), "fuzzy_match"
 
-    # Check if significant words match (at least 2 substantial words)
-    t_words = [w for w in t_norm.split() if len(w) >= 4]
-    c_words = [w for w in c_norm.split() if len(w) >= 4]
-
-    if len(t_words) >= 2 and len(c_words) >= 2:
-        common = set(t_words) & set(c_words)
-        if len(common) >= 2:
-            return True, 80, f"word_match:{','.join(common)}"
+    # Disabled: word matching was causing too many false positives
+    # e.g., "Tata Steel" matching "Tata Bhushan Steel" when they're different entities
+    # Only rely on exact/contained matches and very high fuzzy similarity
 
     return False, 0, None
 
@@ -180,15 +175,20 @@ def main():
 
     customer_names = set(CONFIRMED_CUSTOMERS)
 
+    # CRITICAL: Stage 3082160 is "Closed Won" in Fretron's HubSpot
+    # Other stages are active opportunities, closed-lost, etc.
+    CLOSED_WON_STAGE = "3082160"
+
     for deal in deals:
         props = deal.get('properties', {})
         deal_name = props.get('dealname', '')
         amount = float(props.get('amount', 0) or 0)
         close_date = props.get('closedate', '')
+        deal_stage = props.get('dealstage', '')
 
-        # Only consider deals with actual revenue (amount > 50000 INR)
-        # and a close date (indicating it was won)
-        if amount >= 50000 and close_date:
+        # Only consider CLOSED WON deals (stage 3082160) with actual revenue
+        # This filters out active opportunities, closed-lost, etc.
+        if deal_stage == CLOSED_WON_STAGE and amount >= 50000 and close_date:
             company_name = extract_company_name(deal_name)
             if company_name and len(company_name) >= 4:
                 customer_names.add(company_name)
