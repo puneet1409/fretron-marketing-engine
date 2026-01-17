@@ -517,7 +517,9 @@ External thought leadership builds backlinks and authority to pillar content.
 ## Integration
 
 - Content velocity → `ai-content-workflows`
-- Scale with programmatic → `programmatic-seo`
+- Scale with programmatic → `programmatic-seo` (includes 100k+ page architecture with hub/spoke at scale)
 - AI visibility → `ai-citation-strategies`
 - 90-day execution → `90-day-seo-playbook`
 - Overall strategy → `seo-and-content-strategy`
+
+**Note**: Pillar-cluster architecture is the editorial version of hub/spoke. At programmatic scale (10k+ pages), see `programmatic-seo` for internal linking as a graph, automated breadcrumbs, and content uniqueness enforcement.

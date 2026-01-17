@@ -19,6 +19,106 @@ depends_on:
 
 Organic for trust-building. Paid for scale and cross-channel synergy.
 
+## The 2024+ LinkedIn Reality
+
+**Critical shift**: LinkedIn's algorithm changed significantly. Corporate pages are effectively dead. AI slop is flooding the timeline. What worked 18 months ago doesn't work now.
+
+### Founder-Led Content (Company Pages Are Dead)
+
+Growing a company page from scratch is nearly impossible now. People follow people, not logos.
+
+| Channel | Reality | Recommendation |
+|---------|---------|----------------|
+| Personal profiles | 5-10x reach of company pages | **Primary investment** |
+| Company page | Near-zero organic reach | Skip until personal is working |
+
+**Example**: Adam Robinson built 140k followers → converted to $6M ARR for RB2B. That distribution is impossible to replicate with ads or cold outreach.
+
+**If building from scratch**:
+1. Put 100% into founder's personal account
+2. Post 3-5x per week minimum
+3. Don't touch the corporate page until you're nailing personal content
+
+### Content Ecosystem Strategy (Multi-Account Orchestration)
+
+LinkedIn is capacity constrained—you hit diminishing returns after 1 post/day per account. You can't spam 20 posts like X and get linear results.
+
+**Solution**: Run 3-5+ coordinated accounts across your team.
+
+**Scaling progression**:
+
+| Phase | Timeline | Action |
+|-------|----------|--------|
+| Foundation | Months 1-3 | One founder posting consistently |
+| Expansion | Months 4-6 | Layer in 2-3 co-founders |
+| Team | Month 7+ | Incentivize employees to start posting |
+
+**Pro tip**: Use each account to speak to different ICP subsets. Founder speaks to executives, marketing lead speaks to marketing managers, technical lead speaks to IT—total market coverage without audience fatigue.
+
+**Example**: Beehiiv does this perfectly—Tyler Denk + entire team active = omnipresent brand perception.
+
+Some companies pay $500 bonuses for hitting posting cadence. Consider incentivizing the behavior.
+
+### Visual Authenticity (Proving You're Human)
+
+With AI flooding the timeline, you need ways to certify content as human and real. Posts with relevant media (video/photo) consistently outperform text-only.
+
+**The office-as-film-set approach**:
+- Proper lighting setup
+- Branded elements (Pylon painted their SF office purple)
+- Designated person capturing B-roll daily
+- Behind-the-scenes footage library
+
+**Recurring visual sets** are a hook that says "this is a real person with a real company." This isn't optional anymore—it's the difference between looking AI-generated and authentic.
+
+### Algorithm Changes (Extended Shelf Life)
+
+Half your feed is content from days or weeks ago. LinkedIn tweaked the algorithm to extend shelf life and reduce the content treadmill.
+
+**Implications**:
+
+| Content Type | Shelf Life | Recommendation |
+|--------------|------------|----------------|
+| Evergreen topics | Weeks | Prioritize—gets second/third life |
+| Trendjacking | Hours | Use sparingly for attention spikes |
+| Breaking news | Dead on arrival if resurfaced | Avoid unless truly timely |
+
+**Balance your content**: Trendjacking gets attention but evergreen content has staying power. If someone sees your "breaking news" post a week later, it's dead weight.
+
+### Personality as Moat (Defense Against AI Slop)
+
+ChatGPT and Claude can pump out "pretty okay" LinkedIn posts in 10 seconds. The timeline is flooded with generic AI garbage that reads fine but has zero substance.
+
+**What AI cannot replicate**:
+- Your specific metrics and outcomes
+- Personal anecdotes only you can share
+- Your actual writing voice and personality
+- Personal interests that humanize you
+
+**Actionable plays**:
+
+1. **Shift from "how to" to "how I"**
+   - Not: "How to improve logistics efficiency"
+   - Instead: "How I reduced delivery exceptions 34% in 90 days"
+
+2. **Share stories only you can tell**
+   - Your failures, pivots, lessons
+   - Specific customer conversations (anonymized)
+
+3. **Case study posts with your own system**
+   - Your results, your method, your numbers
+
+4. **Inject personal interests selectively**
+   - Your endurance training, reading habits, whatever
+   - Humanizes you from "industry expert" to "real person"
+   - Fast-tracks trust and rapport
+   - (Gary Vee's blueberry obsession is an example)
+
+5. **Use casual tone relative to your industry**
+   - Logistics/supply chain is formal → slightly casual stands out
+
+---
+
 ## Organic Presence
 
 ### Personal vs Company
@@ -28,22 +128,24 @@ Organic for trust-building. Paid for scale and cross-channel synergy.
 | Personal profiles | Higher reach, more trust | Thought leadership, relationship |
 | Company page | Brand credibility | Product updates, social proof |
 
-**Priority**: Personal profiles of founders/experts often outperform company pages 5-10x.
+**Priority**: Personal profiles of founders/experts often outperform company pages 5-10x. See "Founder-Led Content" above for the current reality.
 
 ### Content That Works
 
 **High engagement**:
 - Contrarian takes with evidence
-- Specific results/numbers
+- Specific results/numbers (your own, not generic)
 - Behind-the-scenes insights
 - Frameworks and mental models
 - Industry observations
+- "How I did X" stories (personality moat)
 
 **Low engagement**:
 - Product announcements
-- Generic tips
+- Generic tips ("5 ways to improve...")
 - Obvious advice
 - Self-promotional content
+- AI-generated slop (readers can tell)
 
 ### Posting Principles
 
@@ -52,14 +154,24 @@ Organic for trust-building. Paid for scale and cross-channel synergy.
 - **Value**: Would you save this if someone else posted it?
 - **Engagement**: Ask questions, invite perspective
 - **Consistency**: Regular posting > occasional viral
+- **Media**: Include relevant photos/videos—outperforms text-only
+- **Evergreen**: Prioritize content that works when resurfaced weeks later
 
 ### Thought Leadership Formula
 
 ```
-1. Observation from your domain
+1. Observation from your domain (specific, from experience)
 2. Why it matters (so what?)
-3. What to do about it
+3. What to do about it (actionable)
 4. Question or invitation to discuss
+```
+
+**Personality version**:
+```
+1. Something that happened to me/us
+2. What I thought would happen vs what actually happened
+3. The lesson or mental model I extracted
+4. Question to the audience
 ```
 
 ## LinkedIn Advertising
