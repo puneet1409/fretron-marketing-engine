@@ -36,3 +36,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 abm-data/scripts/google-ads-auth.js
+.env.local
+.claude/WORKTREE-CONTEXT.md
