@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Worktree Context
+
+If `.claude/WORKTREE-CONTEXT.md` exists, read it first. It contains the specific focus and priorities for this worktree (e.g., salescoach, thoughtleadership). The worktree context defines which skills to prioritize and what type of work this branch is focused on.
+
 ## Project Overview
 
 Fretron Move-as-One Command Center is an interactive sales demo application for Fretron TMS (Transportation Management System). It positions Fretron as a "value-lever-first TMS" through interactive dashboards showcasing KPI tracking and value lever activation. This is a Next.js 15 app with TypeScript and Tailwind CSS.
