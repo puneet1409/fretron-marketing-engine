@@ -9,6 +9,7 @@
     "send-digest": "node send-digest.js"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "resend": "^4.0.0"
   }
 }

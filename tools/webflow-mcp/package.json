@@ -1,0 +1,15 @@
+{
+  "name": "webflow-mcp",
+  "version": "1.0.0",
+  "description": "Webflow CMS integration for pSEO content management",
+  "type": "module",
+  "scripts": {
+    "list-collections": "node scripts/list-collections.js",
+    "create-collections": "node scripts/create-collections.js",
+    "push-levers": "node scripts/push-levers.js",
+    "push-comparisons": "node scripts/push-comparisons.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

@@ -41,3 +41,8 @@ next-env.d.ts
 abm-data/scripts/google-ads-auth.js
 .env.local
 .claude/WORKTREE-CONTEXT.md
+
+# Webflow MCP
+tools/webflow-mcp/.env
+tools/webflow-mcp/generated/
+tools/webflow-mcp/node_modules/
